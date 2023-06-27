@@ -1,0 +1,9 @@
+{{ $data := index site.Data "data" }}
+{{ with $data.index }}
+<style>
+.main_hero {
+    background-image: url('{{ .hero_image | relURL }}');
+    background-size: cover;
+  }
+</style>
+{{ end }}
