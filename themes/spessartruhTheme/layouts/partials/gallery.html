@@ -1,55 +1,63 @@
+{{ $gallery := index site.Data "gallery" }}
+{{ with $gallery.gallery }}
+{{- $index := 0}}
+
+
+{{- $index = 1}}
+
+<style>
+  /* Carousel styling */
+  #introCarousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: 100vh;
+  }
+
+{{ range .items }}
+{{ if fileExists (printf "images/gallery/%s" .image) | relURL }}
+  .carousel-item:nth-child({{ $index }}) {
+    background-image: url('{{- (printf "images/gallery/%s" .image) | relURL -}}');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  {{ $index = add $index 1}}
+{{ end }}
+{{ end }}
+</style>
+
+
+{{- $index = 0}}
 <!-- Carousel wrapper -->
 <div id="introCarousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+        {{- range .items -}}
+        {{- if fileExists (printf "images/gallery/%s" .image) | relURL }} 
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ $index }}" {{ if eq $index 0}} class="active" {{ end }}></li>
+        {{- $index = add $index 1 -}}
+        {{- end -}}
+        {{- end -}}
       </ol>
 
     <!-- Inner -->
     <div class="carousel-inner">
+        {{- $index = 0 -}}
+        {{ range .items }}
+        {{ if fileExists (printf "images/gallery/%s" .image) | relURL }}
         <!-- Single item -->
-        <div class="carousel-item active">
+        <div class="carousel-item {{if eq $index 0}} active{{ end }}">
             <div class="d-flex justify-content-center align-items-end h-100 pb-5">
                 <div class="text-white text-center">
-                    <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
-                    <h5 class="mb-4">Best & free guide of responsive web design</h5>
+                    <h1 class="mb-3">{{ .title }}</h1>
+                    <h5 class="mb-4">{{ .subtitle }}</h5>
                 </div>
             </div>
         </div>
-        <!-- Single item -->
-        <!-- Single item -->
-        <div class="carousel-item">
-            <div class="d-flex justify-content-center align-items-end h-100 pb-5">
-                <div class="text-white text-center">
-                    <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
-                    <h5 class="mb-4">Best & free guide of responsive web design</h5>
-                </div>
-            </div>
-        </div>
-        <!-- Single item -->
-        <!-- Single item -->
-        <div class="carousel-item">
-            <div class="d-flex justify-content-center align-items-end h-100 pb-5">
-                <div class="text-white text-center">
-                    <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
-                    <h5 class="mb-4">Best & free guide of responsive web design</h5>
-                </div>
-            </div>
-        </div>
-        <!-- Single item -->
-        <!-- Single item -->
-        <div class="carousel-item">
-            <div class="d-flex justify-content-center align-items-end h-100 pb-5">
-                <div class="text-white text-center">
-                    <h1 class="mb-3">Learn Bootstrap 5 with MDB</h1>
-                    <h5 class="mb-4">Best & free guide of responsive web design</h5>
-                </div>
-            </div>
-        </div>
-        <!-- Single item -->
-
+        {{- $index = add $index 1 -}}
+        {{ end }}
+        {{ end }}
     </div>
 
     <!-- Controls -->
@@ -63,3 +71,4 @@
     </a>
 </div>
 <!-- Carousel wrapper -->
+{{ end }}

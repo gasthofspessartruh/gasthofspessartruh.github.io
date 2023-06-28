@@ -1,4 +1,0 @@
----
-title: "Speisekarte"
-layout: "Speisekarte"
----
