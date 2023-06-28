@@ -29,27 +29,15 @@
 
             <ul class="navbar-nav list-inline">
                 <!-- Icons -->
-                <li class="">
-                    <a class="nav-link text-black-50" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
-                        target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </li>
-                <li class="">
-                    <a class="nav-link text-black-50" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
+                {{ with $data.social_media}}
+                {{ range .items}}
                 <li class="nav-item">
-                    <a class="nav-link text-black-50" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
-                        <i class="fab fa-twitter"></i>
+                    <a class="nav-link text-black-50" href="{{.url}}" rel="nofollow" target="_blank">
+                        <i class="fab {{.item}}"></i>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-black-50" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
+                {{ end }}
+                {{ end }}
             </ul>
         </div>
     </div>

@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Gasthof Spessartruh'
+title = 'Gasthof-Pension Spessartruh Steiger'
 theme = "spessartruhTheme"
 defaultContentLanguage = "de"
 
@@ -51,3 +51,4 @@ contentDir = "content/german"
 weight = 2
 home = "Home"
 copyright = "Copyright &copy; 2022 Musikverein Sailauf"
+

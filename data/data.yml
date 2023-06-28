@@ -6,3 +6,11 @@ index:
 contact:
   festnetz: "06093996960"
   email: "info@spessartruh-steiger.de"
+
+
+social_media:
+  items:
+  - item: "fa-facebook-f"
+    url: "https://www.facebook.com/Spessartruh/"
+  - item: "fa-instagram"
+    url: "https://www.instagram.com/gasthofspessartruh/"
