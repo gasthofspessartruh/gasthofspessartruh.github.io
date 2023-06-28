@@ -45,3 +45,13 @@ weight = 13
 name = "Jobs"
 url = "/location"
 weight = 14 
+
+
+################################ German Language ########################
+[Languages.de]
+languageName = "De"
+languageCode = "de-de"
+contentDir = "content/german"
+weight = 2
+home = "Home"
+copyright = "Copyright &copy; 2022 Musikverein Sailauf"

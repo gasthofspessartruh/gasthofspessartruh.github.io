@@ -1,0 +1,45 @@
+{{ define "main" }}
+{{ partial "navbar.html" .}}
+
+<div class="">
+    <div class="container pt-1">
+        <!-- Suiten -->
+        <div class="row justify-content-center pb-3">
+            {{ $data := index site.Data site.Language.Lang}}
+            {{ with $data.titles}}
+            <h2>{{ .suite }}</h2>
+            {{ end }}
+            {{ range .Pages.ByPublishDate.Reverse}}
+            {{ if strings.Contains .Title "Suite"}}
+            {{ partial "room.html" . }}
+            {{ end }}
+            {{ end }}
+        </div>
+        <hr class="my-5" />
+        <div class="row justify-content-center pb-3">
+            {{ $data := index site.Data site.Language.Lang}}
+            {{ with $data.titles}}
+            <h2>{{ .comfort_room }}</h2>
+            {{ end }}
+            {{ range .Pages.ByPublishDate.Reverse}}
+                {{ if strings.Contains .Title "Komfort"}}
+                    {{ partial "room.html" . }}
+                {{ end }}
+            {{ end }}
+        </div>
+        <hr class="my-5" />
+        <div class="row justify-content-center pb-3">
+            {{ $data := index site.Data site.Language.Lang}}
+            {{ with $data.titles}}
+            <h2>{{ .standard_room }}</h2>
+            {{ end }}
+            {{ range .Pages.ByPublishDate.Reverse}}
+                {{ if strings.Contains .Title "Standard"}}
+                    {{ partial "room.html" . }}
+                {{ end }}
+            {{ end }}
+        </div>
+
+    </div>
+</div>
+{{ end }}

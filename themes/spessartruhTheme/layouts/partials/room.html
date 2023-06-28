@@ -1,0 +1,35 @@
+<div class="card">
+    {{ if gt (len .Params.Resources.Images) 1}}
+    {{- $ctr := 0 }}
+    {{- $id := printf "carousel%s" .Params.Title}}
+    <div id="{{$id}}" class="card-img-top carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            {{ range .Params.Resources.Images }}
+            <button type="button" data-bs-target="#{{- $id}}" data-bs-slide-to="{{$ctr}}" {{ if eq $ctr 0 }}
+                class="active" aria-current="true" {{ end }} aria-label="{{.title}}"></button>
+            {{ $ctr = add $ctr 1}}
+            {{ end }}
+        </div>
+        <div class="carousel-inner">
+            {{ $ctr = 0 }}
+            {{ range .Params.Resources.Images }}
+            <div class="carousel-item {{if eq $ctr 0 }} active {{ $ctr = 1}}{{end}}">
+                <img src="{{.src}}" class="rounded-top d-block w-100" alt="{{.title}}">
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    {{ else }}
+    {{ range first 1 .Params.Resources.Images }}
+    {{ if .src }}
+    <img class="card-img-top" load="lazy" src="{{ .src | relURL}}" alt="{{.title}}">
+    {{ end }}
+    {{ end }}
+    {{ end }}
+    <div class="card-body">
+        <h5 class="card-title">{{ .Title }}</h5>
+        <div class="card-text text-break blocksatz">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
