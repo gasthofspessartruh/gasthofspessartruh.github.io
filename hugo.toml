@@ -23,7 +23,7 @@ weight = 3
 
 [[Languages.de.menu.main]]
 name = "Panoramabilder"
-url = "/rooms"
+url = "/panorama"
 weight = 4
 
 [[Languages.de.menu.main]]

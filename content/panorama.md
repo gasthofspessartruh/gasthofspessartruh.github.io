@@ -1,0 +1,4 @@
+---
+title: "Panoramabilder"
+layout: "panorama"
+---
