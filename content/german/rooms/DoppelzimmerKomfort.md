@@ -4,6 +4,8 @@ title: "Doppelzimmer Komfort"
 draft: false
 image: 
 resources:
+    prices:
+    - "99,-"
     images:
     - name: Test 
       src: "/images/gallery/1.jpg"

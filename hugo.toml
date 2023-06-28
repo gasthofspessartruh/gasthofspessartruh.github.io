@@ -6,10 +6,6 @@ defaultContentLanguage = "de"
 
 
 ################### German Navigation ########################
-[[Languages.de.menu.main]]
-name = "Gasthof"
-url = "/"
-weight = 1
 
 [[Languages.de.menu.main]]
 name = "Speisekarte"

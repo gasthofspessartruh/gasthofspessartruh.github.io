@@ -4,6 +4,8 @@ title: "Vierbettzimmer Standard"
 draft: false
 image: 
 resources:
+    prices:
+    - "138,-"
     images:
     - name: Test 
       src: "/images/gallery/comfortzimmer.jpg"
