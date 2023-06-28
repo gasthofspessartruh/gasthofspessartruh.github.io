@@ -44,10 +44,11 @@
     {{ end }}
     {{ end }}
     {{ end }}
-    <div class="card-body position-relative">
+    <div class="card-body">
+        <div class="position-relative">
         <div class="row card-title">
             <div class="col">
-                <a href="{{.context.Permalink | relURL}}" class="text-black stretched-link"> <h5>{{.context.Title}}</h5></a>
+                <a href="{{.context.Permalink | relURL}}" class="text-black {{ if lt .content 1 }}stretched-link {{ end }}"> <h5>{{.context.Title}}</h5></a>
             </div>
             <div class="col">
                 <div class="text-black-50 text-end"> {{.context.Params.Resources.persons}}</div>
@@ -66,8 +67,9 @@
             <p class="fw-bold">{{ . }} {{$data.data.breakfast}}</p>
             {{ end }}
             {{ end }}
-            <button type="button" class="btn btn-outline-dark float-end" data-mdb-ripple-color="dark">Zur
-                Buchung</button>
         </div>
+    </div>
+            <a class="btn btn-outline-dark float-end" style="z-index: 20000;" href="/contact" data-mdb-ripple-color="dark">Zur
+                Buchung</a>
     </div>
 </div>

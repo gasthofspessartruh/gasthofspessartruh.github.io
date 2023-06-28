@@ -4,7 +4,6 @@ title = 'Gasthof-Pension Spessartruh Steiger'
 theme = "spessartruhTheme"
 defaultContentLanguage = "de"
 
-
 ################### German Navigation ########################
 
 [[Languages.de.menu.main]]
@@ -43,6 +42,8 @@ url = "/location"
 weight = 14 
 
 
+
+
 ################################ German Language ########################
 [Languages.de]
 languageName = "De"
@@ -52,3 +53,5 @@ weight = 2
 home = "Home"
 copyright = "Copyright &copy; 2022 Musikverein Sailauf"
 
+[params]
+formspark_form_id = "v2KI1ERx"

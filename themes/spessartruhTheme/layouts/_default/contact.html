@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{- partial "navbar.html" . -}}
+
+<main class="mt-5 mb-5 vh-100">
+    <div class="container">
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form action="https://submit-form.com/{{- .Site.Params.formspark_form_id -}}">
+            <input
+            type="hidden"
+            name="_redirect"
+            value="/thanks"
+          />
+            <textarea name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</main>
+{{ end }}
