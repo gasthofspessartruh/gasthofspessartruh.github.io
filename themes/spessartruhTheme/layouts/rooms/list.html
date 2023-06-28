@@ -27,7 +27,7 @@
         {{ range .Pages.ByPublishDate.Reverse}}
         {{ if strings.Contains .Title "Standard"}}
         <div class="col-lg-6 pt-3">
-            {{ partial "room.html" (dict "context" . "content" "0") }}
+            {{ partial "room.html" (dict "context" . "content" 0) }}
         </div>
         {{ end }}
         {{ end }}

@@ -5,7 +5,9 @@ draft: false
 image: 
 resources:
     persons: "Für 2-4 Personen"
-    price: "130,- für 2 Personen zzgl. 7,- Frühstück pro Person"
+    prices: 
+    - "130,- für 2 Personen"
+    - "190,- für 4 Personen"
     images:
     - name: Test 
       src: "/images/gallery/comfortzimmer.jpg"
