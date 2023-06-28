@@ -9,6 +9,7 @@ resources:
       src: "/images/gallery/1.jpg"
     - name: Test 
       src: "/images/gallery/comfortzimmer.jpg"
+
 layout: "rooms"
 ---
 

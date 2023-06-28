@@ -1,12 +1,12 @@
 <div class="card">
-    {{ if gt (len .Params.Resources.Images) 1}}
+    {{ if gt (len .context.Params.Resources.Images) 1}}
     {{- $ctr := 0 }}
-    {{- $id := base64Encode (printf "room_carousel%s" .Params.Title)}}
+    {{- $id := base64Encode (printf "room_carousel%s" .context.Params.Title)}}
     <!-- Carousel wrapper -->
     <div id="{{$id}}" class="carousel slide carousel-fade" data-mdb-ride="carousel">
         <!-- Indicators -->
         <div class="carousel-indicators">
-            {{ range .Params.Resources.Images}}
+            {{ range .context.Params.Resources.Images}}
             <button type="button" data-mdb-target="#{{- $id}}" data-mdb-slide-to="{{$ctr}}" {{ if eq $ctr 0 }}
                 class="active" aria-current="true" {{ end }}  aria-label="{{.name}}"></button>
             {{ $ctr = add $ctr 1}}
@@ -17,7 +17,7 @@
         <!-- Inner -->
         <div class="carousel-inner">
             <!-- Single item -->
-            {{ range .Params.Resources.Images }}
+            {{ range .context.Params.Resources.Images }}
             <div class="carousel-item {{ if eq $ctr 0}} active {{end}}">
                 <img src="{{ .src | relURL }}" class="d-block w-100" alt="{{.name}}" />
             </div>
@@ -37,16 +37,28 @@
     </div>
     <!-- Carousel wrapper -->
         {{ else }}
-        {{ range first 1 .Params.Resources.Images }}
+        {{ range first 1 .context.Params.Resources.Images }}
         {{ if .src }}
         <img class="card-img-top" load="lazy" src="{{ .src | relURL}}" alt="{{.title}}"/>
         {{ end }}
         {{ end }}
         {{ end }}
         <div class="card-body">
-            <h5 class="card-title">{{ .Title }}</h5>
-            <div class="card-text text-break blocksatz">
+            <div class="row card-title">
+                <div class="col">
+                <h5>{{ .Title }}</h5>
+                </div>
+                <div class="col">
+                <div class="text-black-50 text-end"> {{.context.Params.Resources.persons}}</div>
+                </div>
+            </div>
+            <div class="card-text">
+                <p class="fw-bold">{{ .context.Params.Resources.price}}
+                </p>
+                {{ if eq .content 1}}
                 {{ .Content }}
+                {{ end }}
+                <button type="button" class="btn btn-outline-dark float-end" data-mdb-ripple-color="dark">Zur Buchung</button>
             </div>
         </div>
     </div>
