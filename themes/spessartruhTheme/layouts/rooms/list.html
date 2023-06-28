@@ -23,5 +23,15 @@
     </div>
     <hr class="my-4" />
 
+    <div class="row justify-content-center pb-3">
+        {{ range .Pages.ByPublishDate.Reverse}}
+        {{ if strings.Contains .Title "Standard"}}
+        <div class="col-lg-6 pt-3">
+            {{ partial "room.html" . }}
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+
 </div>
 {{ end }}
