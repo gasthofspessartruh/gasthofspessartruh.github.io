@@ -42,9 +42,19 @@
       </div>
     </div>
   </div>
+  <!-- Copyright -->
+  <div class="text-white text-center align-items-center pb-3">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main.ByWeight }}
+    {{ if gt .Weight 11 }}
+    <a class='button text-white {{ if in $currentPage .URL  }} active {{ end }}' href="{{ .URL }}">
+      {{ .Name }}
+  </a> 
+  |
+    {{ end }}
+    {{ end }}
 
   <!-- Copyright -->
-  <div class="text-center p-3">
     &copy; 2023 - Gasthof Pension Spessartruh.
   </div>
   <!-- Copyright -->

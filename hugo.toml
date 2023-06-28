@@ -2,3 +2,46 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Gasthof Spessartruh'
 theme = "spessartruhTheme"
+defaultContentLanguage = "de"
+
+
+################### German Navigation ########################
+[[Languages.de.menu.main]]
+name = "Gasthof"
+url = "/"
+weight = 1
+
+[[Languages.de.menu.main]]
+name = "Speisekarte"
+url = "/menu"
+weight = 2
+
+[[Languages.de.menu.main]]
+name = "Zimmer & Suite"
+url = "/rooms"
+weight = 3
+
+[[Languages.de.menu.main]]
+name = "Panoramabilder"
+url = "/rooms"
+weight = 4
+
+[[Languages.de.menu.main]]
+name = "Anfahrt"
+url = "/location"
+weight = 5
+
+[[Languages.de.menu.main]]
+name = "Datenschutz"
+url = "/location"
+weight = 12
+
+[[Languages.de.menu.main]]
+name = "Impressum"
+url = "/location"
+weight = 13 
+
+[[Languages.de.menu.main]]
+name = "Jobs"
+url = "/location"
+weight = 14 
