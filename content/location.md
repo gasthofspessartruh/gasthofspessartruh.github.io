@@ -1,4 +1,4 @@
 ---
 title: "Speisekarte"
-layout: "speisekarte"
+layout: "location"
 ---

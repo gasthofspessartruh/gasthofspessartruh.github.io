@@ -1,4 +1,4 @@
 ---
-title: "Anfahrt"
-layout: "location"
+title: "Zimmer & Suite"
+layout: "rooms"
 ---

@@ -1,8 +1,20 @@
 {{ define "main" }}
-    {{- partial "navbar.html" . -}}
+{{- partial "navbar.html" . -}}
 
-<main class="mt-5">
-  <div class="container">
-    <!--Section: Content-->
+<main class="mt-5 mb-5">
+  <div class="container w-100">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col">
+        <div class="card w-100">
+          <object data="/pdf/Speisekarte.pdf" type="application/pdf" height="1200">
+            <a href="pdf/Speisekarte.pdf">Unsere Speisearte.pdf</a>
+          </object>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
 </main>
 {{ end }}
