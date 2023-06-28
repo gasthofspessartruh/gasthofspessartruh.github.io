@@ -1,6 +1,6 @@
 ---
 date: 2023-03-02T08:20:34+01:00
-title: "Doppelzimmer Komfort"
+title: "Test Komfort"
 draft: false
 image: 
 resources:
