@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{- partial "navbar.html" . -}}
+{{ $lang_data := index site.Data site.Language.Lang}}
+{{ $data := index site.Data "data" }}
+
+<main class="mt-5 mb-5">
+    <div class="container vh-100">
+        <div class="row d-flex justify-content-center align-items-center">
+                {{ with $data.logos }}
+                <img src="{{ .logo | relURL}}" height="300" alt="Gasthof Pension Spessartruh Steiger"
+                    loading="lazy"/>
+                    {{ end }}
+                <h1 class="text-center">{{$lang_data.data.fourohfour_text}}</h1>
+        </div>
+    </div>
+</main>
+{{ end }}
