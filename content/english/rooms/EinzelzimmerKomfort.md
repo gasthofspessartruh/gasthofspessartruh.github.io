@@ -1,6 +1,6 @@
 ---
 date: 2023-03-02T08:19:34+01:00
-title: "Einzelzimmer Komfort"
+title: "Comfort Single Room"
 draft: false
 weight: 3 
 resources:
@@ -12,10 +12,10 @@ resources:
 layout: "rooms"
 ---
 
-Ausstattung:
+Facilities:
 
-- Bequeme Boxspringbetten
-- Moderner TV
-- Teilweise mit Balkon
-- Bad mit Dusche, WC und Fön
-- WLAN
+- Comfortable box spring beds
+- Modern TV
+- Some with balcony
+- Bathroom with shower, toilet, and hairdryer
+- Wi-Fi

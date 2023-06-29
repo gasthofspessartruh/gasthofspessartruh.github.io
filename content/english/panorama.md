@@ -1,4 +1,4 @@
 ---
-title: "Panoramabilder"
+title: "Panorama"
 layout: "panorama"
 ---

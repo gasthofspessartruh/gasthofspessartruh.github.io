@@ -1,4 +1,4 @@
 ---
-title: "Speisekarte"
+title: "Anfahrt"
 layout: "location"
 ---

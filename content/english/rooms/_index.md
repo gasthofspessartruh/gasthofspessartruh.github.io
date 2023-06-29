@@ -1,5 +1,5 @@
 ---
-title: "Zimmer & Suite"
+title: "Rooms & Suites"
 layout: "rooms"
 weight: 0
 ---

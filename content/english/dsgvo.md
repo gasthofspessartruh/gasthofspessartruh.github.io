@@ -1,4 +1,4 @@
 ---
-title: "Datenschutz"
+title: "Privacy Policy"
 layout: "dsgvo"
 ---

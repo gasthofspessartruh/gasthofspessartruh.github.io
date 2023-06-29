@@ -37,7 +37,7 @@
     {{ $currentPage := . }}
     {{ range .Site.Menus.main.ByWeight }}
     {{ if gt .Weight 11 }}
-    <a class='button text-white {{ if in $currentPage .URL  }} active {{ end }}' href="{{ .URL }}">
+    <a class='button text-white {{ if in $currentPage .URL  }} active {{ end }}' href="{{ .URL | relLangURL }}">
       {{ .Name }}
   </a> 
   |

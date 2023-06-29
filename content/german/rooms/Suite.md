@@ -17,6 +17,13 @@ layout: "rooms"
 ---
 
 Ausstattung:
-- test
-- test 2
-- test 3
+
+- Bequeme Boxspringbetten
+- Wohnbereich mit Esstisch & Espressomaschine
+- Küche mit Backofen und Herd
+- Bad mit Regendusche
+- 55 Zoll Smart-TV
+- Schlafsofa
+- Großer Balkon mit Esstisch und Morgensonne
+- WLAN
+- 

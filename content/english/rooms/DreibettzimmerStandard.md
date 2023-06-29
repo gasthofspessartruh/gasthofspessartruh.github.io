@@ -1,6 +1,6 @@
 ---
 date: 2023-03-02T08:20:34+01:00
-title: "Dreibettzimmer Standard"
+title: "Standard Triple Room"
 draft: false
 weight: 11 
 resources:
@@ -12,8 +12,8 @@ resources:
 layout: "rooms"
 ---
 
-Ausstattung:
+Facilities:
 
-- Moderner TV
-- Bad mit Dusche, WC und Fön
-- WLAN
+- Modern TV
+- Bathroom with shower, toilet, and hairdryer
+- Wi-Fi

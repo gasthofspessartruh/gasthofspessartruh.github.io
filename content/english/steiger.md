@@ -1,36 +1,35 @@
 ---
-title: "Steiger und Umgebung"
+title: "Steiger and Surroundings"
 layout: "steiger"
 ---
 
-Steiger und Umgebung
-Der kleine Ort Steiger mit rund 80 Einwohnern, liegt auf einer Anhöhe ohne Durchgangsverkehr.
+Steiger and Surroundings
+The small village of Steiger, with around 80 inhabitants, is located on a hilltop without through traffic.
 
-Die frische Spessartluft und die ruhige, erholsame Lage eigenen sich hervorragend für ausgedehnte Wanderungen,
- Rad- und Motorradtouren. Sehenswürdigkeiten und Geschäfte sind schnell per Auto zu erreichen.
+The fresh air of the Spessart forest and the quiet, relaxing location make it perfect for extensive hikes, cycling, and motorcycle tours. Sightseeing spots and shops are easily accessible by car.
 
-Planen Sie einen Zwischenstopp auf dem Weg in den Urlaub?
+Are you planning a stopover on your way to your vacation?
 
-Die Nähe zur A3 und unser großer Parkplatz bieten sich geradezu an.
+The proximity to the A3 motorway and our large parking lot make it a great choice.
 
-Vielleicht gönnen Sie sich aber auch ein Stück Zuhause auf Ihrer Geschäftsreise. Messe und Flughafen Frankfurt sind nur 30 Autominuten entfernt.
+Perhaps you would like to have a piece of home on your business trip as well. The Frankfurt Trade Fair and Airport are only 30 minutes away by car.
 
-**Was sie noch interessieren könnte:**
+**Here are some things that might interest you:**
 
-- Schloss Mespelbrunn
-- Schloss Johannisburg in Aschaffenburg
+- Mespelbrunn Castle
+- Johannisburg Castle in Aschaffenburg
 - Pompejanum in Aschaffenburg
-- Schloss Schönbusch
-- Wandern auf dem Spessartweg 1 und 2
+- Schönbusch Palace
+- Hiking on Spessartweg 1 and 2
 - Wertheim Village
-- Schneewittchen-Stadt Lohr am Main
-- Biker Betten
-- Flughafen Frankfurt (FRA)
-- Messe Frankfurt
-- Wald erFahren (E-Bikes)
-- Urlaub im Naturpark Spessart: Tourismus 
-- Spessartwege
-- komoot
-- Brauerei Schlappeseppel
-- Brauerei Spessart Specht
-- Stadtrundfahrt.com
+- Snow White City of Lohr am Main
+- Biker Beds
+- Frankfurt Airport (FRA)
+- Frankfurt Trade Fair
+- Exploring the forest with e-bikes
+- Vacation in the Spessart Nature Park: Tourism
+- Spessart Trails
+- Komoot
+- Schlappeseppel Brewery
+- Spessart Specht Brewery
+- Stadtrundfahrt.com (City Sightseeing Tours)

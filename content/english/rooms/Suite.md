@@ -16,7 +16,13 @@ resources:
 layout: "rooms"
 ---
 
-Ausstattung:
-- test
-- test 2
-- test 3
+Facilities:
+
+- Comfortable box spring beds
+- Living area with dining table & espresso machine
+- Kitchen with oven and stove
+- Bathroom with rain shower
+- 55-inch Smart TV
+- Sofa bed
+- Large balcony with dining table and morning sun
+- Wi-Fi

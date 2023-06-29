@@ -1,6 +1,6 @@
 ---
-title: "Vielen Dank!"
+title: "Thank You!"
 layout: "thanks"
 ---
 
-Ihre Anfrage wurde übermittelt.
+Your inquiry has been submitted.

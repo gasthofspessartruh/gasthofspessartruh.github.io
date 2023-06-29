@@ -7,6 +7,7 @@ social_media_title: "Social Media"
 social_media_disclaimer: "Folgen Sie uns auch auf Social Media"
 contact_title: "Kontakt"
 calendar_title: "Anstehende Veranstaltungen"
+booking_text: "Zur Buchung"
 
 fourohfour_text: "404 - Webseite nicht gefunden"
 index:
@@ -37,7 +38,7 @@ index:
 
   short_info:
   - title: "Öffnungszeiten"
-    text: "Montag bis Freitag ab 17 Uhr  \n Samstag ab 14 Uhr  \n Sonntag ab 11 Uhr  \n  Donnerstag Ruhetag  \n Durchgehend warme Küche."
+    text: "Montag bis Freitag ab 17 Uhr  \n Samstag ab 14 Uhr  \n Sonntag ab 11 Uhr  \n  Donnerstag Ruhetag  \n Durchgehend warme Küche"
     icon: "far fa-calendar-alt"
   - title: "Mit Herz dabei!"
     text: "Wir bringen für Sie die Spezialitäten des Spessarts, frisch und herzhaft zubereitet auf den Tisch."

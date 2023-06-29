@@ -3,12 +3,12 @@ title: "Jobs"
 layout: "jobs"
 ---
 
-Wir suchen Unterstützung für unser Team!
-**In Teil-/Vollzeit oder auf 520€-Basis**
+We are looking for support for our team!
+**In part-time/full-time or on a 520€ basis**
 
-- Koch/Köchin
-- Küchenhilfe (m/w/d)
-- Servicekraft (m/w/d)
-- Reinigungskraft (m/w/d)
+- Cook
+- Kitchen assistant
+- Waitstaff
+- Cleaning staff
 
-**Hast Du Interesse?** Dann freuen wir uns auf Deine Bewerbung schriftlich, per E-Mail oder telefonisch!
+**Are you interested?** Then we look forward to receiving your application in writing, via email, or by phone!

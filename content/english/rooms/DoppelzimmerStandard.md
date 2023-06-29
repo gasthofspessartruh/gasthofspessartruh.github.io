@@ -1,6 +1,6 @@
 ---
 date: 2023-03-02T08:19:34+01:00
-title: "Doppelzimmer Standard"
+title: "Standard Double Room"
 draft: false
 weight: 12 
 resources:
@@ -13,8 +13,8 @@ layout: "rooms"
 ---
 
 
-Ausstattung:
+Facilities:
 
-- Moderner TV
-- Bad mit Dusche, WC und Fön
-- WLAN
+- Modern TV
+- Bathroom with shower, toilet, and hairdryer
+- Wi-Fi

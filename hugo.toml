@@ -37,27 +37,27 @@ url = "/jobs"
 weight = 14 
 
 [[Languages.en.menu.main]]
-name = "Speisekarte"
+name = "Menu"
 url = "/menu"
 weight = 2
 
 [[Languages.en.menu.main]]
-name = "Zimmer & Suite"
+name = "Rooms & Suites"
 url = "/rooms"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "Anfahrt"
+name = "Directions"
 url = "/location"
 weight = 5
 
 [[Languages.en.menu.main]]
-name = "Datenschutz"
+name = "Privacy Policy"
 url = "/dsgvo"
 weight = 12
 
 [[Languages.en.menu.main]]
-name = "Impressum"
+name = "Imprint"
 url = "/impress"
 weight = 13 
 
@@ -68,14 +68,13 @@ weight = 14
 
 
 
+
 ################################ German Language ########################
 [Languages.de]
 languageName = "De"
 languageCode = "de-de"
 contentDir = "content/german"
 weight = 1
-home = "Home"
-copyright = "Copyright &copy; 2022 Musikverein Sailauf"
 
 ################################ English Language ########################
 [Languages.en]
@@ -83,8 +82,6 @@ languageName = "En"
 languageCode = "en-en"
 contentDir = "content/english"
 weight = 2
-home = "Home"
-copyright = "Copyright &copy; 2022 Musikverein Sailauf"
 
 [params]
 formspark_form_id = "v2KI1ERx"
