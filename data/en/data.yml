@@ -1,6 +1,6 @@
 breakfast: "plus €7 breakfast per person"
 about_title: "About Us"
-about_text: "Welcome to the Gerber Family! Enjoy fresh air in the heart of the Spessart region. For over 60 years, we have been welcoming our guests with good food and warm hospitality. We look forward to your visit!"
+about_text: "Welcome to the Gerber Family! Enjoy fresh air in the heart of the Spessart region. For over 100 years, we have been welcoming our guests with good food and warm hospitality. We look forward to your visit!"
 social_media_title: "Social Media"
 social_media_disclaimer: "Follow us on social media too"
 contact_title: "Contact"
@@ -68,6 +68,7 @@ contact_form:
 location:
   title: "Directions"
   text: "**By Car:**  \n From the A3 highway, take exit 63 towards Bessenbach and merge onto L2305. Follow the road for about 2 kilometers, then turn right onto Steiger Straße. Our Gasthof Spessartruh is located at number 16 and is clearly signposted. Parking spaces are available directly in front of the guesthouse. \n\n For further questions or specific information about the journey, please feel free to contact us by phone or email.  \n*We look forward to welcoming you at Gasthof Spessartruh!*"
+
 steiger:
   images:
   - name: "Spessartweg"
