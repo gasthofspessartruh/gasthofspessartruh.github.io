@@ -4,7 +4,7 @@ title: "Suite"
 draft: false
 weight: 1
 resources:
-    persons: "Für 2-4 Personen"
+    persons: "For 2-4 Persons"
     prices: 
     - "130,- for 2 persons"
     - "190,- for 4 persons"
