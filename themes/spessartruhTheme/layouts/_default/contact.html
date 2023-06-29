@@ -1,80 +1,72 @@
 {{ define "main" }}
 {{- partial "navbar.html" . -}}
+{{ $data := index site.Data site.Language.Lang}}
 
-<main class="mt-5 mb-5 vh-100">
+<main class="mt-5 mb-5">
     <div class="container">
         <div class="card">
+            <h2 class="card-title">Buchung</h2>
             <div class="card-body">
-                <form action="https://submit-form.com/{{- .Site.Params.formspark_form_id -}}">
-                    <!-- <input type="hidden" name="_redirect" value='{{relURL "thanks" }}' /> -->
-                    <div class="row mb-4">
-                        <div class="col">
-                            <div class="form-outline">
-                                <input type="text" id="first_name" class="form-control" name="Vorname" required />
-                                <label class="form-label" for="first_name">First name</label>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-outline">
-                                <input type="text" id="last_name" class="form-control" name="Nachname" required />
-                                <label class="form-label" for="last_name">Last name</label>
-                            </div>
-                        </div>
-                    </div>
+                <table class="table align-middle mb-0 bg-white">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Zimmerpreise Komfort </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ range .Site.Pages.ByWeight}}
+                        {{ if and (and (eq .File.Dir "rooms/") (gt .Weight 0)) (lt .Weight 10)}}
+                        <tr>
+                            <td> {{.Name }}</td>
+                            <td class="text-end">
+                                {{ range .Params.Resources.prices }}
+                                {{.}}
+                                {{ end }}
+                            </td>
+                        </tr>
+                        {{ end }}
+                        {{ end }}
+                        <tr>
+                            <td>
+                                {{ $data.data.breakfast}}
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="my-3"/>
+                <table class="table align-middle mb-0 bg-white">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Zimmerpreise Komfort </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ range .Site.Pages.ByWeight}}
+                        {{ if and (eq .File.Dir "rooms/") (gt .Weight 9)}}
+                        <tr>
+                            <td> {{.Name }}</td>
+                            <td class="text-end">
+                                {{ range .Params.Resources.prices }}
+                                {{.}}
+                                {{ end }}
+                            </td>
+                        </tr>
+                        {{ end }}
+                        {{ end }}
+                        <tr>
+                            <td>
+                                {{ $data.data.breakfast}}
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="my-5"/>
 
-                    <div class="row mb-4">
-                        <div class="col">
-                            <div class="form-outline">
-                                <input type="email" id="email" class="form-control" name="Email" required />
-                                <label class="form-label" for="email">Email</label>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-outline">
-                                <input type="tel" id="telephone" class="form-control" name="Telefon" />
-                                <label class="form-label" for="telephone">Telefon</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-4">
-                        <div class="col">
-                            <label class="form-label" for="numRooms">Anzahl Zimmer</label>
-                            <div class="range">
-                                <input type="range" class="form-range" min="0" max="5" value="1" id="numRooms"
-                                    name="Anzahl Zimmer" />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <label class="form-label" for="numPersons">Anzahl Personen</label>
-                            <div class="range">
-                                <input type="range" class="form-range" min="0" max="5" value="2" id="numPersons"
-                                    name="Anzahl Personen" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-4 pb-3">
-                        <div class="col">
-                            <div class="form-outline">
-                                <input type="date" id="arrival" class="form-control" name="Anreise" />
-                                <div class="form-helper">Anreise</div>
-
-
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-outline">
-                                <input type="date" id="departure" class="form-control" name="Anreise" />
-                                <div class="form-helper">Abreise</div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Submit button -->
-                    <button type="submit" class="btn btn-primary btn-block mb-4">Abschicken</button>
-                </form>
+                {{ partial "contact_form.html" . }}
             </div>
         </div>
     </div>

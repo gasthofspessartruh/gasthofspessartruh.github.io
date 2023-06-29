@@ -1,6 +1,6 @@
 ---
 date: 2023-03-02T08:20:34+01:00
-title: "Suite"
+title: "En Suite"
 draft: false
 weight: 1
 resources:

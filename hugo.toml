@@ -49,6 +49,15 @@ weight = 14
 languageName = "De"
 languageCode = "de-de"
 contentDir = "content/german"
+weight = 1
+home = "Home"
+copyright = "Copyright &copy; 2022 Musikverein Sailauf"
+
+################################ English Language ########################
+[Languages.en]
+languageName = "En"
+languageCode = "en-en"
+contentDir = "content/english"
 weight = 2
 home = "Home"
 copyright = "Copyright &copy; 2022 Musikverein Sailauf"

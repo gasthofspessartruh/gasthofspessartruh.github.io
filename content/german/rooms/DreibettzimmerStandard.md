@@ -2,7 +2,7 @@
 date: 2023-03-02T08:20:34+01:00
 title: "Dreibettzimmer Standard"
 draft: false
-image: 
+weight: 11 
 resources:
     prices: 
     - "112,-"
