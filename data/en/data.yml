@@ -72,8 +72,6 @@ location:
 steiger:
   images:
   - name: "Spessartweg"
-    src: "/images/gallery/1.jpg"
-  - name: "Spessartweg"
-    src: "/images/gallery/1.jpg"
+    src: "/images/gallery/1.avif"
 
 more_button: "Learn more"
