@@ -3,7 +3,6 @@ title: "Steiger und Umgebung"
 layout: "steiger"
 ---
 
-Steiger und Umgebung
 Der kleine Ort Steiger mit rund 80 Einwohnern, liegt auf einer Anhöhe ohne Durchgangsverkehr.
 
 Die frische Spessartluft und die ruhige, erholsame Lage eigenen sich hervorragend für ausgedehnte Wanderungen,

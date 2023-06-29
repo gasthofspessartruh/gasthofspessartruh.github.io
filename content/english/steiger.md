@@ -3,7 +3,6 @@ title: "Steiger and Surroundings"
 layout: "steiger"
 ---
 
-Steiger and Surroundings
 The small village of Steiger, with around 80 inhabitants, is located on a hilltop without through traffic.
 
 The fresh air of the Spessart forest and the quiet, relaxing location make it perfect for extensive hikes, cycling, and motorcycle tours. Sightseeing spots and shops are easily accessible by car.
