@@ -9,18 +9,9 @@
       <div class="col-md-3 pt-4">
         <h5 class="">{{$lang_data.data.about_title}}</h5>
         <p>{{$lang_data.data.about_text}}</p>
+       
       </div>
       <div class="col-md-6 pt-4 py-4 text-center align-items-center">
-        <h5>{{$lang_data.data.social_media_title}}</h5>
-        <p>{{$lang_data.data.social_media_disclaimer}}</p>
-        {{ with $data.social_media}}
-        {{ range .items}}
-            <a class="button pe-1" href="{{.url}}" rel="nofollow" target="_blank">
-                <i class="fab {{.item}} fa-lg"></i>
-            </a>
-        {{ end }}
-        {{ end }}
-        <div class="pt-3"></div>
         <h5>{{$lang_data.data.calendar_title}}</h5>
         {{ with $lang_data.calendar.items}}
         {{ range first 5 .}}
@@ -37,6 +28,7 @@
         <p> <i class="fa fa-fax" aria-hidden="true"></i>  {{ .fax}} </p>
         <p> <i class="fa fa-envelope" aria-hidden="true"></i>  {{ .email}} </p>
         {{ end }}
+
       </div>
     </div>
   </div>
