@@ -11,6 +11,7 @@ booking_text: "Zur Buchung"
 goto_home: "Zur Startseite zurückkehren"
 
 fourohfour_text: "404 - Webseite nicht gefunden"
+
 index:
   welcome_title: "Wilkommen im Landgasthof Spessartruh in Steiger"
   welcome_text: "Inmitten des Spessarts finden Sie ein traditionelles Wirtshaus mit blank gescheuerten Holztischen, gemütlichem Kachelofen und deftigen Speisen.  \n  Freuen Sie sich auf regionale Küche in der beste Produkte aus eigener Zucht und Herstellung verwendet werden.  \n Hausmacher Wurst und Schinken werden von Metzgermeister Georg Gerber herzhaft und deftig zubereitet.  \n Vom Vesper bis hin zum saftigen Steak, über leckere Salate und Vegetarisches lässt die Speisekarte kaum Wünsche offen.   \n Vielleicht kosten Sie auch ein Glas selbstgemachten „Äppelwoi“ oder genießen ein frisch gezapftes Bier aus der Region."
@@ -36,7 +37,7 @@ index:
     url_title: "Mehr erfahren"
     images:
     - name: "Spessartweg"
-      src: "/images/gallery/1.jpg" 
+      src: "/images/gallery/4.avif" 
 
   short_info:
   - title: "Öffnungszeiten"
@@ -69,11 +70,10 @@ contact_form:
 location:
   title: "Anfahrt"
   text: "**Anfahrt mit dem Auto:**  \n Von der Autobahn A3 nehmen Sie die Ausfahrt 63 Richtung Bessenbach und fahren auf die L2305. Folgen Sie der Straße für etwa 2 Kilometer und biegen Sie dann rechts auf die Steiger Straße ab. Unser Gasthof Spessartruh befindet sich auf der Nummer 16 und ist deutlich ausgeschildert. Parkplätze stehen Ihnen direkt vor dem Gasthof zur Verfügung.  \n\n Für weitere Fragen oder spezifische Informationen zur Anreise stehen wir Ihnen gerne telefonisch oder per E-Mail zur Verfügung.  \n *Wir freuen uns darauf, Sie bei uns im Gasthof Spessartruh begrüßen zu dürfen!*"
+
 steiger:
   images:
   - name: "Spessartweg"
-    src: "/images/gallery/1.jpg" 
-  - name: "Spessartweg"
-    src: "/images/gallery/1.jpg" 
+    src: "/images/gallery/1.avif" 
 
 more_button: "Mehr erfahren"
