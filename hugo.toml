@@ -35,7 +35,7 @@ weight = 13
 
 [[Languages.de.menu.main]]
 name = "Jobs"
-url = "/location"
+url = "/jobs"
 weight = 14 
 
 
