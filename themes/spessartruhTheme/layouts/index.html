@@ -10,9 +10,10 @@
     <!--Section: Content-->
     <section>
       <div class="row">
-        <h4 class="text-center"><strong>{{$lang_data.data.index.welcome_text}}</strong></h4>
+        <h4 class="text-center"><strong>{{$lang_data.data.index.welcome_title}}</strong></h4>
+        <p class="text-center">{{$lang_data.data.index.welcome_text | markdownify}}</p>
         {{ range $lang_data.data.index.short_info}}
-        <div class="col-sm-4">
+        <div class="col-sm-4 pt-3">
           {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_color)}}
         </div>
         {{ end }}
