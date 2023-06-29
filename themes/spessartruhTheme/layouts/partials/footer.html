@@ -26,7 +26,7 @@
         <p> <i class="fa fa-home" aria-hidden="true"></i>  {{ .address}} </p>
         <p> <i class="fa fa-phone" aria-hidden="true"></i>  {{ .festnetz}} </p>
         <p> <i class="fa fa-fax" aria-hidden="true"></i>  {{ .fax}} </p>
-        <p> <i class="fa fa-envelope" aria-hidden="true"></i>  {{ .email}} </p>
+        <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:{{.email}}" class="text-white"> {{.email}}</a>
         {{ end }}
 
       </div>
