@@ -6,8 +6,9 @@ weight: 1
 resources:
     persons: "Für 2-4 Personen"
     prices: 
-    - "130,- für 2 Personen"
-    - "190,- für 4 Personen"
+    - "130,- for 2 persons"
+    - "190,- for 4 persons"
+
     images:
     - name: Test 
       src: "/images/gallery/comfortzimmer.jpg"
