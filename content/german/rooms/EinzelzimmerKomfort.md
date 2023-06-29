@@ -7,7 +7,7 @@ resources:
     prices:
     - "68,-"
     images:
-    - name: "Comfort Single Room 01"
+    - name: "Einzelzimmer Komfort 01"
       src: "/images/rooms/Comfort_01_01.avif"
 layout: "rooms"
 ---

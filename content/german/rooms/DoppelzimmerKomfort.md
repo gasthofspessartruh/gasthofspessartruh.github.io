@@ -7,7 +7,7 @@ resources:
     prices:
     - "99,-"
     images:
-    - name: "Comfort Double Room 01"
+    - name: "Doppelzimmer Komfort 01"
       src: "/images/rooms/Comfort_02_01.avif"
 
 layout: "rooms"

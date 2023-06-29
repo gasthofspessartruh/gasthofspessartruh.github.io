@@ -7,7 +7,7 @@ resources:
     prices: 
     - "112,-"
     images:
-    - name: "Standard Triple Room 01"
+    - name: "Dreibettzimmer Standard 01"
       src: "/images/rooms/Standard_03_01.avif"
 layout: "rooms"
 ---

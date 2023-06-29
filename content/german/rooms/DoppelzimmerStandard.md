@@ -7,7 +7,7 @@ resources:
     prices:
     - "82,-"
     images:
-    - name: "Standard Double Room 01"
+    - name: "Doppelzimmer Standard 01"
       src: "/images/rooms/Standard_02_01.avif"
 layout: "rooms"
 ---

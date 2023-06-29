@@ -7,7 +7,7 @@ resources:
     prices:
     - "48,-"
     images:
-    - name: "Standard Single Room 01"
+    - name: "Einzelzimmer Standard 01"
       src: "/images/rooms/Standard_01_01.avif"
 layout: "rooms"
 ---
