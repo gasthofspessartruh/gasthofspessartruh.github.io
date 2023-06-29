@@ -4,13 +4,13 @@
         <div class="col">
             <div class="form-outline">
                 <input type="text" id="first_name" class="form-control" name="Vorname" required />
-                <label class="form-label" for="first_name">First name</label>
+                <label class="form-label" for="first_name">Vorname</label>
             </div>
         </div>
         <div class="col">
             <div class="form-outline">
                 <input type="text" id="last_name" class="form-control" name="Nachname" required />
-                <label class="form-label" for="last_name">Last name</label>
+                <label class="form-label" for="last_name">Nachname</label>
             </div>
         </div>
     </div>
@@ -32,11 +32,14 @@
 
     <div class="row mb-4">
         <div class="col">
-            <label class="form-label" for="numRooms">Anzahl Zimmer</label>
-            <div class="range">
-                <input type="range" class="form-range" min="0" max="5" value="1" id="numRooms"
-                    name="Anzahl Zimmer" />
-            </div>
+            <label class="form-label" for="roomSelect">Zimmerauswahl</label>
+            <select class="form-select" aria-label="Default select example" id="roomSelect">
+                {{ range .Site.Pages.ByWeight}}
+                        {{ if and (eq .File.Dir "rooms/") (gt .Weight 0)}}
+                <option {{ if eq .Weight 2 }} selected {{end}} value="{{.Name}}">{{.Name}}</option>
+                        {{ end }}
+                        {{ end }}
+              </select>
         </div>
         <div class="col">
             <label class="form-label" for="numPersons">Anzahl Personen</label>
