@@ -10,6 +10,8 @@ calendar_title: "Anstehende Veranstaltungen"
 
 
 index:
+  welcome_text: "Wilkommen im Landgasthof Spessartruh in Steiger"
+  cards_title: "Ein Gasthof zum Wohlfühlen"
   cards:
   - title: "Unser Biergarten"
     text: "Nehmen Sie Platz in unserem großen Biergarten! \n\n Es erwartet Sie ein einzigartiges Panorama, schattenspendende Walnussbäume und ein Kinderspielplatz."
@@ -33,6 +35,20 @@ index:
     - name: "Spessartweg"
       src: "/images/gallery/1.jpg" 
 
+  short_info:
+  - title: "Öffnungszeiten"
+    text: "Montag bis Freitag ab 17 Uhr  \n Samstag ab 14 Uhr  \n Sonntag ab 11 Uhr  \n  Donnerstag Ruhetag  \n Durchgehend warme Küche."
+    icon: "far fa-calendar-alt"
+  - title: "Mit Herz dabei!"
+    text: "Wir bringen für Sie die Spezialitäten des Spessarts, frisch und herzhaft zubereitet auf den Tisch."
+    icon: "fas fa-heart"
+  - title: "Gästezimmer"
+    text: "Ob Geschäftsreise oder Urlaub, Entspannung oder Erlebnis - Wir haben ein Zimmer!"
+    icon: "fas fa-home"
+
+location:
+  title: "Anfahrt"
+  text: "**Anfahrt mit dem Auto:**  \n Von der Autobahn A3 nehmen Sie die Ausfahrt 63 Richtung Bessenbach und fahren auf die L2305. Folgen Sie der Straße für etwa 2 Kilometer und biegen Sie dann rechts auf die Steiger Straße ab. Unser Gasthof Spessartruh befindet sich auf der Nummer 16 und ist deutlich ausgeschildert. Parkplätze stehen Ihnen direkt vor dem Gasthof zur Verfügung.  \n\n Für weitere Fragen oder spezifische Informationen zur Anreise stehen wir Ihnen gerne telefonisch oder per E-Mail zur Verfügung.  \n *Wir freuen uns darauf, Sie bei uns im Gasthof Spessartruh begrüßen zu dürfen!*"
 steiger:
   images:
   - name: "Spessartweg"

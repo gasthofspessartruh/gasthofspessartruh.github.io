@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{- partial "navbar.html" . -}}
+{{ $lang_data := index site.Data site.Language.Lang}}
 
 <main class="mt-5 mb-5 vh-100">
   <div class="container">
@@ -15,11 +16,11 @@
           </iframe>
           <div class="card-body">
             <h5 class="card-title">
-              Anfahrt
+              {{$lang_data.data.location.title}}
             </h5>
-            <p class="card-text">
-              Hallo
-            </p>
+            <div class="card-text">
+              {{$lang_data.data.location.text | markdownify}}
+            </div>
           </div>
         </div>
       </div>

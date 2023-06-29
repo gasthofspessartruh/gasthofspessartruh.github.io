@@ -16,10 +16,7 @@ name = "Zimmer & Suite"
 url = "/rooms"
 weight = 3
 
-[[Languages.de.menu.main]]
-name = "Panoramabilder"
-url = "/panorama"
-weight = 4
+
 
 [[Languages.de.menu.main]]
 name = "Anfahrt"
@@ -64,3 +61,4 @@ copyright = "Copyright &copy; 2022 Musikverein Sailauf"
 
 [params]
 formspark_form_id = "v2KI1ERx"
+contrast_color = "#8ab42f"

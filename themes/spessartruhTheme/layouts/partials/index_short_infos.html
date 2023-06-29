@@ -1,0 +1,12 @@
+
+        {{.Site}}
+      <p class="text-center">
+        <i class="{{.context.icon}} fa-6x" style="color: {{.color}};"
+          aria-hidden="true"></i>
+      </p>
+      <h5 class="card-title text-center">
+        {{.context.title}}
+      </h5>
+      <p class="card-text text-center">
+        {{ .context.text | markdownify}}
+      </p>
