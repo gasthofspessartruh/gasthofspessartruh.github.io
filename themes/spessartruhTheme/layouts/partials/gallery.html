@@ -6,32 +6,12 @@
 
 {{- $index = 1}}
 
-<style>
-  /* Carousel styling */
-  #introCarousel,
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item.active {
-    height: 100vh;
-  }
 
-{{ range .items }}
-{{ if fileExists (printf "images/gallery/%s" .image) | relURL }}
-  .carousel-item:nth-child({{ $index }}) {
-    background-image: url('{{- (printf "images/gallery/%s" .image) | relURL -}}');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-  {{ $index = add $index 1}}
-{{ end }}
-{{ end }}
-</style>
 
 
 {{- $index = 0}}
 <!-- Carousel wrapper -->
-<div id="introCarousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+<div id="introCarousel" class="carousel slide carousel-fade" data-mdb-ride="carousel" style="height: 100vh;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         {{- range .items -}}
@@ -43,13 +23,16 @@
       </ol>
 
     <!-- Inner -->
-    <div class="carousel-inner">
+    <div class="carousel-inner " style="height: 100vh;">
         {{- $index = 0 -}}
         {{ range .items }}
         {{ if fileExists (printf "images/gallery/%s" .image) | relURL }}
         <!-- Single item -->
-        <div class="carousel-item {{if eq $index 0}} active{{ end }}">
-            <div class="d-flex justify-content-center align-items-end h-100 pb-5">
+        <div class="carousel-item {{if eq $index 0}} active{{ end }}" style="height: 100vh;">
+            <div class="d-flex justify-content-center align-items-end h-100 pb-5" style=" background-image: url('{{- (printf "images/gallery/%s" .image) | relURL -}}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center; height: 100vh;">
                 <div class="text-white text-center">
                     <h1 class="mb-3">{{ .title }}</h1>
                     <h5 class="mb-4">{{ .subtitle }}</h5>
