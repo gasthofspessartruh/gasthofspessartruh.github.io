@@ -28,7 +28,7 @@
         {{ range .items }}
         {{ if fileExists (printf "images/gallery/%s" .image) | relURL }}
         <!-- Single item -->
-        <div class="carousel-item {{if eq $index 0}} active{{ end }}" style="height: 100vh;">
+        <div class="carousel-item {{if eq $index 0}} active{{ end }}" style='height: calc(100vh - 58.59px);'>
             <div class="d-flex justify-content-center align-items-end h-100 pb-5" style=" background-image: url('{{- (printf "images/gallery/%s" .image) | relURL -}}');
             background-repeat: no-repeat;
             background-size: cover;
