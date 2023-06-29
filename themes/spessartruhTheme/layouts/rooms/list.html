@@ -3,8 +3,8 @@
 
 <div class="container">
     <div class="row justify-content-center pt-3">
-        {{ range .Pages.ByPublishDate.Reverse}}
-        {{ if strings.Contains .Title "Suite"}}
+        {{ range .Pages.ByWeight}}
+        {{ if and (eq .File.Dir "rooms/") (eq .Weight 1) }}
         <div class="col-lg-8 pt-3">
             {{ partial "room.html" (dict "context" . "content" "0") }}
         </div>
@@ -13,9 +13,8 @@
     </div>
     <hr class="my-4" />
     <div class="row justify-content-center">
-        {{ range .Pages.ByPublishDate.Reverse}}
-        {{ if strings.Contains .Title "Komfort"}}
-        <div class="col-lg-6 pt-3">
+        {{ range .Pages.ByWeight}}
+        {{ if and (and (eq .File.Dir "rooms/") (gt .Weight 1)) (lt .Weight 10)}}        <div class="col-lg-6 pt-3">
             {{ partial "room.html" (dict "context" . "content" "0") }}
         </div>
         {{ end }}
@@ -24,8 +23,8 @@
     <hr class="my-4" />
 
     <div class="row justify-content-center pb-3">
-        {{ range .Pages.ByPublishDate.Reverse}}
-        {{ if strings.Contains .Title "Standard"}}
+        {{ range .Pages.ByWeight}}
+        {{ if and (eq .File.Dir "rooms/") (gt .Weight 9)}}          
         <div class="col-lg-6 pt-3">
             {{ partial "room.html" (dict "context" . "content" 0) }}
         </div>

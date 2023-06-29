@@ -7,8 +7,8 @@ resources:
     prices:
     - "138,-"
     images:
-    - name: Test 
-      src: "/images/gallery/comfortzimmer.jpg"
+    - name: "Standard Four-bed Room 01"
+      src: "/images/rooms/Standard_04_01.avif"
 layout: "rooms"
 ---
 

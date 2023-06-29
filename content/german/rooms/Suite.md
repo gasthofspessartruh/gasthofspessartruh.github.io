@@ -9,10 +9,10 @@ resources:
     - "130,- für 2 Personen"
     - "190,- für 4 Personen"
     images:
-    - name: Test 
-      src: "/images/gallery/comfortzimmer.jpg"
-    - name: Test 
-      src: "/images/gallery/comfortzimmer.jpg"
+    - name: Suite 01 
+      src: "/images/rooms/Suite_01.avif"
+    - name: Suite 02 
+      src: "/images/rooms/Suite_02.avif"
 layout: "rooms"
 ---
 

@@ -10,10 +10,10 @@ resources:
     - "190,- for 4 persons"
 
     images:
-    - name: Test 
-      src: "/images/gallery/comfortzimmer.jpg"
-    - name: Test 
-      src: "/images/gallery/comfortzimmer.jpg"
+    - name: Suite 01 
+      src: "/images/rooms/Suite_01.avif"
+    - name: Suite 02 
+      src: "/images/rooms/Suite_02.avif"
 layout: "rooms"
 ---
 

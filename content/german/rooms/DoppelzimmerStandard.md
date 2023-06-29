@@ -7,8 +7,8 @@ resources:
     prices:
     - "82,-"
     images:
-    - name: Test 
-      src: "/images/gallery/comfortzimmer.jpg"
+    - name: "Standard Double Room 01"
+      src: "/images/rooms/Standard_02_01.avif"
 layout: "rooms"
 ---
 
