@@ -12,3 +12,8 @@ resources:
 layout: "rooms"
 ---
 
+Ausstattung:
+
+- Moderner TV
+- Bad mit Dusche, WC und Fön
+- WLAN
