@@ -1,4 +1,4 @@
-index:
+logos:
   hero_image : "images/Schorsch.jpeg"
   logo: "images/spessartraeuber.svg"
   logo_wide: "images/logo_wide.svg"
@@ -15,3 +15,4 @@ social_media:
     url: "https://www.facebook.com/Spessartruh/"
   - item: "fa-instagram"
     url: "https://www.instagram.com/gasthofspessartruh/"
+

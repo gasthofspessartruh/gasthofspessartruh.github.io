@@ -2,8 +2,7 @@
 <div class="card">
     {{ if gt (len .context.Params.Resources.Images) 1}}
     {{- $ctr := 0 }}
-    {{- $id := base64Encode (printf "room_carousel%s" .context.Params.Title)}}
-    <!-- Carousel wrapper -->
+    {{- $id := printf "room_carousel%d" (crypto.FNV32a .context.Params.Title)}}    <!-- Carousel wrapper -->
     <div id="{{$id}}" class="carousel slide carousel-fade" data-mdb-ride="carousel">
         <!-- Indicators -->
         <div class="carousel-indicators">

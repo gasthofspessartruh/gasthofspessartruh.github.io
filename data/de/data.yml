@@ -7,3 +7,37 @@ social_media_title: "Social Media"
 social_media_disclaimer: "Folgen Sie uns auch auf Social Media"
 contact_title: "Kontakt"
 calendar_title: "Anstehende Veranstaltungen"
+
+
+index:
+  cards:
+  - title: "Unser Biergarten"
+    text: "Nehmen Sie Platz in unserem großen Biergarten! \n\n Es erwartet Sie ein einzigartiges Panorama, schattenspendende Walnussbäume und ein Kinderspielplatz."
+    images:
+    - name: "Clara, Mona und Frida"
+      src: "/images/biergarten/Mona-Clara-und-Frida.jpeg"
+  - title: "Feierlichkeiten"
+    text: "Ob mit oder ohne Tischdecke, wir freuen uns Ihre nächste Feier zu begleiten. \n\n  Einfach telefonisch oder per Mail einen Termin zur Besprechung machen."
+    images:
+    - name: "Kommunion"
+      src: "/images/feierlichkeiten/kommunion_gruen.jpeg"
+    - name: "Hochzeit"
+      src: "/images/feierlichkeiten/hochzeit.jpeg"
+    - name: "Hochzeit"
+      src: "/images/feierlichkeiten/Hochzeit-2.jpg"
+  - title: "Steiger und Umgebung"
+    text: " Der kleine Ort Steiger mit rund 80 Einwohnern, liegt auf einer Anhöhe ohne Durchgangsverkehr.  Die frische Spessartluft und die ruhige, erholsame Lage eigenen sich hervorragend für ausgedehnte Wanderungen, Rad- und Motorradtouren. "
+    url: "steiger"
+    url_title: "Mehr erfahren"
+    images:
+    - name: "Spessartweg"
+      src: "/images/gallery/1.jpg" 
+
+steiger:
+  images:
+  - name: "Spessartweg"
+    src: "/images/gallery/1.jpg" 
+  - name: "Spessartweg"
+    src: "/images/gallery/1.jpg" 
+
+more_button: "Mehr erfahren"
