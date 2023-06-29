@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{- partial "navbar.html" . -}}
 {{ $lang_data := index site.Data site.Language.Lang}}
-
+{{ $data := index site.Data "data" }}
 <main class="mt-5 mb-5">
   <div class="container vh-100">
     <div class="row d-flex justify-content-center align-items-center">
@@ -13,7 +13,7 @@
          </h5> 
          <div class="card-text">
           {{ .Content }}
-          <a class="btn btn-outline-dark float-end" style="z-index: 20000;" href='{{ relLangURL "/" }}' data-mdb-ripple-color="green">{{$lang_data.data.goto_home}}</a>
+          <a class="btn btn-outline-dark float-end btn-contrast" href='{{ relLangURL "/" }}' data-mdb-ripple-color="green">{{$lang_data.data.goto_home}}</a>
          </div>
           </div>
         </div>
