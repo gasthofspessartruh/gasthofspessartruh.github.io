@@ -15,3 +15,10 @@ resources:
 layout: "rooms"
 ---
 
+Ausstattung:
+
+- Bequeme Boxspringbetten
+- Moderner TV
+- Teilweise mit Balkon
+- Bad mit Dusche, WC und Fön
+- WLAN

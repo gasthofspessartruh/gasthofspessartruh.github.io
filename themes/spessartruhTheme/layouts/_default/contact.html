@@ -1,16 +1,17 @@
 {{ define "main" }}
 {{- partial "navbar.html" . -}}
 {{ $data := index site.Data site.Language.Lang}}
+{{ $lang_data := index site.Data site.Language.Lang}}
 
 <main class="mt-5 mb-5">
     <div class="container">
         <div class="card">
-            <h2 class="card-title">Buchung</h2>
+            <h2 class="card-title">{{$lang_data.data.contact.booking_title}}</h2>
             <div class="card-body">
                 <table class="table align-middle mb-0 bg-white">
                     <thead class="bg-light">
                         <tr>
-                            <th>Zimmerpreise Komfort </th>
+                            <th>{{$lang_data.data.contact.price_comfort}} </th>
                             <th></th>
                         </tr>
                     </thead>
@@ -39,7 +40,7 @@
                 <table class="table align-middle mb-0 bg-white">
                     <thead class="bg-light">
                         <tr>
-                            <th>Zimmerpreise Komfort </th>
+                            <th>{{$lang_data.data.contact.price_standard}} </th>
                             <th></th>
                         </tr>
                     </thead>

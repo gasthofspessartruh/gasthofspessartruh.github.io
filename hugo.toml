@@ -16,8 +16,6 @@ name = "Zimmer & Suite"
 url = "/rooms"
 weight = 3
 
-
-
 [[Languages.de.menu.main]]
 name = "Anfahrt"
 url = "/location"
@@ -38,6 +36,35 @@ name = "Jobs"
 url = "/jobs"
 weight = 14 
 
+[[Languages.en.menu.main]]
+name = "Speisekarte"
+url = "/menu"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "Zimmer & Suite"
+url = "/rooms"
+weight = 3
+
+[[Languages.en.menu.main]]
+name = "Anfahrt"
+url = "/location"
+weight = 5
+
+[[Languages.en.menu.main]]
+name = "Datenschutz"
+url = "/dsgvo"
+weight = 12
+
+[[Languages.en.menu.main]]
+name = "Impressum"
+url = "/impress"
+weight = 13 
+
+[[Languages.en.menu.main]]
+name = "Jobs"
+url = "/jobs"
+weight = 14 
 
 
 
