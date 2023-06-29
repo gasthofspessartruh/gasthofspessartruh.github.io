@@ -23,9 +23,9 @@
       <div class="col-md-3 pt-4">
         <h5 class="">{{$lang_data.data.contact_title}}</h5>
         {{ with $data.contact}}
-        <p> <i class="fa fa-home" aria-hidden="true"></i>  {{ .address}} </p>
-        <p> <i class="fa fa-phone" aria-hidden="true"></i>  {{ .festnetz}} </p>
-        <p> <i class="fa fa-fax" aria-hidden="true"></i>  {{ .fax}} </p>
+        <p class="text-white"> <i class="fa fa-home" aria-hidden="true"></i>  {{ .address}} </p>
+        <p class="text-white"> <i class="fa fa-phone" aria-hidden="true"></i>  {{ .festnetz}} </p>
+        <p class="text-white"> <i class="fa fa-fax" aria-hidden="true"></i>  {{ .fax}} </p>
         <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:{{.email}}" class="text-white"> {{.email}}</a>
         {{ end }}
 
