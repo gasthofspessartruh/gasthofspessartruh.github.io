@@ -25,12 +25,12 @@ weight = 5
 
 [[Languages.de.menu.main]]
 name = "Datenschutz"
-url = "/location"
+url = "/dsgvo"
 weight = 12
 
 [[Languages.de.menu.main]]
 name = "Impressum"
-url = "/location"
+url = "/impress"
 weight = 13 
 
 [[Languages.de.menu.main]]
