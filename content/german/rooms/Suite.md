@@ -26,4 +26,3 @@ Ausstattung:
 - Schlafsofa
 - Großer Balkon mit Esstisch und Morgensonne
 - WLAN
-- 
