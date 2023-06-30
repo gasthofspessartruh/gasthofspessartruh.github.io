@@ -1,8 +1,26 @@
 <style>
+    .btn-contrast {
+        color: {
+                {
+                $.Site.Params.contrast_color
+            }
+        }
 
-    .btn-contrast{
-        color: {{$.Site.Params.contrast_color}};
-        border-color: {{$.Site.Params.contrast_color}};
+        ;
+
+        border-color: {
+                {
+                $.Site.Params.contrast_color
+            }
+        }
+
+        ;
     }
-    
+
+    .sr-fullpage-gallery-item {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+    }
 </style>

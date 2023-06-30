@@ -30,10 +30,8 @@
         {{ if fileExists (printf "images/gallery/%s" .image) | relURL }}
         <!-- Single item -->
         <div class="carousel-item {{if eq $index 0}} active{{ end }}" style='height: calc(100vh - 58px);'>
-            <div class="d-flex lazy justify-content-center align-items-end h-100 pb-5"
-                data-bg='{{- (printf "images/gallery/%s" .image) | relURL -}}' style="background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center; height: 100vh;">
+            <div class="d-flex lazy justify-content-center align-items-end h-100 pb-5 sr-fullpage-gallery-item"
+                data-bg='{{- (printf "images/gallery/%s" .image) | relURL -}}'>
                 <div class="text-white text-center">
                     <h1 class="mb-3">{{ .title }}</h1>
                     <h5 class="mb-4">{{ .subtitle }}</h5>
