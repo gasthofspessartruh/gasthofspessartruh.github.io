@@ -15,12 +15,13 @@
     <!-- Indicators -->
     <ol class="carousel-indicators">
         {{- range .items -}}
-        {{- if fileExists (printf "images/gallery/%s" .image) | relURL }} 
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ $index }}" {{ if eq $index 0}} class="active" {{ end }}></li>
+        {{- if fileExists (printf "images/gallery/%s" .image) | relURL }}
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ $index }}" {{ if eq $index 0}} class="active" {{ end
+            }}></li>
         {{- $index = add $index 1 -}}
         {{- end -}}
         {{- end -}}
-      </ol>
+    </ol>
 
     <!-- Inner -->
     <div class="carousel-inner " style="height: 100vh;">
@@ -29,8 +30,8 @@
         {{ if fileExists (printf "images/gallery/%s" .image) | relURL }}
         <!-- Single item -->
         <div class="carousel-item {{if eq $index 0}} active{{ end }}" style='height: calc(100vh - 58px);'>
-            <div class="d-flex justify-content-center align-items-end h-100 pb-5" style=" background-image: url('{{- (printf "images/gallery/%s" .image) | relURL -}}');
-            background-repeat: no-repeat;
+            <div class="d-flex lazy justify-content-center align-items-end h-100 pb-5"
+                data-bg='{{- (printf "images/gallery/%s" .image) | relURL -}}' style="background-repeat: no-repeat;
             background-size: cover;
             background-position: center center; height: 100vh;">
                 <div class="text-white text-center">
@@ -46,11 +47,11 @@
 
     <!-- Controls -->
     <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <i class="fas fa-arrow-left"></i>
         <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <i class="fas fa-arrow-right"></i>
         <span class="sr-only">Next</span>
     </a>
 </div>

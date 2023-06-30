@@ -20,18 +20,18 @@
                 <!-- Single item -->
                 {{ range .images }}
                 <div class="carousel-item {{ if eq $ctr 0}} active {{end}}">
-                    <img src="{{ .src | relURL }}" class="d-block w-100" alt="{{.name}}" />
+                    <img data-src="{{ .src | relURL }}" class="d-block w-100 lazy" alt="{{.name}}" />
                 </div>
                 {{ $ctr = add $ctr 1}}
                 {{ end }}
 
                 <!-- Controls -->
                 <button class="carousel-control-prev" type="button" data-mdb-target="#{{- $id}}" data-mdb-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <i class="fas fa-arrow-left"></i>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-mdb-target="#{{- $id}}" data-mdb-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <i class="fas fa-arrow-right"></i>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -40,7 +40,7 @@
 
         {{ else }}
         {{ range first 1 .images }}
-        <img src="{{ .src | relURL }}" class="img-fluid bg-image" />
+        <img data-src="{{ .src | relURL }}" class="img-fluid bg-image lazy" />
         {{ end }}
         {{ end }}
         {{ end }}
@@ -59,3 +59,7 @@
         </p>
     </div>
 </div>
+
+
+
+
