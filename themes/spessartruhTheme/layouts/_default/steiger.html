@@ -47,10 +47,11 @@
                         </div>
                     </div>
                     <!-- Carousel wrapper -->
-            
                     {{ else }}
                     {{ range first 1 .images }}
-                    <img src="{{ .src | relURL }}" class="img-fluid bg-image" />
+                    {{- partial "resize_images.html" (dict "image" .src "widths" (dict "lg" 25 "xl" 80)) -}}
+                    
+                    
                     {{ end }}
                     {{ end }}
                     {{ end }}

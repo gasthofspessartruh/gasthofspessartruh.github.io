@@ -1,6 +1,6 @@
 ---
 date: 2023-03-02T08:20:34+01:00
-title: "Einzelzimmer Standardd"
+title: "Vierbettzimmer Standard"
 draft: false
 weight: 10 
 resources:
