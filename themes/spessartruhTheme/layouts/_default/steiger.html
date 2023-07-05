@@ -2,46 +2,49 @@
 {{- partial "navbar.html" . -}}
 {{ $lang_data := index site.Data site.Language.Lang}}
 {{- $ctr := 0 }}
-{{- $id := printf "steiger_carousel" }}    <!-- Carousel wrapper -->
-    <main class="mt-5 mb-5">
-      <div class="container">
+{{- $id := printf "steiger_carousel" }} <!-- Carousel wrapper -->
+<main class="mt-5 mb-5">
+    <div class="container">
         <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-xl-7 col-md-8">
-            <div class="card h-100">
-                {{ with $lang_data.data.steiger}}
-                {{ if .images }}
-                {{- $ctr := 0 }}
-                {{- $id := printf "index_carousel%d" (crypto.FNV32a .title)}}
+            <div class="col-xl-7 col-md-8">
+                <div class="card h-100">
+                    {{ with $lang_data.data.steiger}}
+                    {{ if .images }}
+                    {{- $ctr := 0 }}
+                    {{- $id := printf "index_carousel%d" (crypto.FNV32a .title)}}
                     {{ if gt (len .images) 1}}
                     <!-- Carousel wrapper -->
                     <div id="{{$id}}" class="bg-image carousel slide carousel-fade" data-mdb-ride="carousel">
                         <!-- Indicators -->
                         <div class="carousel-indicators">
                             {{ range .images}}
-                            <button type="button" data-mdb-target="#{{- $id}}" data-mdb-slide-to="{{$ctr}}" {{ if eq $ctr 0 }}
-                                class="active" aria-current="true" {{ end }} aria-label="{{.name}}"></button>
+                            <button type="button" data-mdb-target="#{{- $id}}" data-mdb-slide-to="{{$ctr}}" {{ if eq
+                                $ctr 0 }} class="active" aria-current="true" {{ end }} aria-label="{{.name}}"></button>
                             {{ $ctr = add $ctr 1}}
                             {{ end }}
                         </div>
-            
+
                         {{ $ctr = 0 }}
                         <!-- Inner -->
                         <div class="carousel-inner">
                             <!-- Single item -->
                             {{ range .images }}
                             <div class="carousel-item {{ if eq $ctr 0}} active {{end}}">
-                                <img src="{{ .src | relURL }}" class="d-block w-100" alt="{{.name}}" />
+                                {{ $image := .src | relURL}}
+                                {{ partial "responsive_image.html" (dict "image" $image "title" .name "widths" (dict "xl" 60 "md" 70)) }}
                             </div>
                             {{ $ctr = add $ctr 1}}
                             {{ end }}
-            
+
                             <!-- Controls -->
-                            <button class="carousel-control-prev" type="button" data-mdb-target="#{{- $id}}" data-mdb-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <button class="carousel-control-prev" type="button" data-mdb-target="#{{- $id}}"
+                                data-mdb-slide="prev">
+                                <i class="fas fa-arrow-left"></i>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-mdb-target="#{{- $id}}" data-mdb-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <button class="carousel-control-next" type="button" data-mdb-target="#{{- $id}}"
+                                data-mdb-slide="next">
+                                <i class="fas fa-arrow-right"></i>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
@@ -49,20 +52,20 @@
                     <!-- Carousel wrapper -->
                     {{ else }}
                     {{ range first 1 .images }}
-                    {{ partial "responsive_image.html" (dict "image" .src "widths" (dict "lg" 25 "xl" 80)) }}
+                    {{ partial "responsive_image.html" (dict "image" .src "widths" (dict "xl" 60 "xl" 70)) }}
                     {{ end }}
                     {{ end }}
                     {{ end }}
                     {{ end }}
-                <div class="card-body">
-                    <h5 class="card-title">{{.Page.Title}}</h5>
-                    <p class="card-text">
-                        {{ .Content}}
+                    <div class="card-body">
+                        <h5 class="card-title">{{.Page.Title}}</h5>
+                        <p class="card-text">
+                            {{ .Content}}
                         </p>
+                    </div>
                 </div>
-            </div> 
-          </div>
+            </div>
         </div>
-      </div>
-    </main>
+    </div>
+</main>
 {{ end }}
