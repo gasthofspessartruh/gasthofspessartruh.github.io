@@ -24,7 +24,7 @@
         {{- if resources.Match $image -}}
 
         <div class="carousel-item sr-fullpage-carousel-item {{ if eq $index 0}} active {{end}}">
-            {{ partial "responsive_image.html" (dict "image" $image "class" "sr-fullpage-gallery-image") }}
+            {{ partial "responsive_image.html" (dict "image" $image "title" .title "class" "sr-fullpage-gallery-image") }}
             <div class="carousel-caption pb-5">
                 <h1 class="mb-3">{{- .title -}}</h1>
                 <h5 class="mb-4 pb-3">{{- .subtitle -}}</h5>
