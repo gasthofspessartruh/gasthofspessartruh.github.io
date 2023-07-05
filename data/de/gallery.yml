@@ -1,3 +1,5 @@
+# the images have to be provided both in the horizontal and the vertical assets folder
+# assets/images/gallery/horizontal and assets/images/gallery/vertical
 gallery:
   items:
   - title: "Sonntag 30.07. „Blechschlacht“"
