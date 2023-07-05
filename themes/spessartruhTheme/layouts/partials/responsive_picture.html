@@ -1,0 +1,40 @@
+<!-- creates a image for the following inputs:
+	horizontal_image: the path to the horizontal image version
+	vertical_image: the path to the vertical image version
+	title: title for the image
+	class: string of a class if not want to use the default "img-fluid bg-image"
+-->
+{{- $sizes := slice "320" "640" "960" "1280" -}}
+{{- $filter := "box" -}}
+{{- $title := .image -}}
+{{- $class := "img-fluid bg-image" -}}
+
+{{- $horizontal_src := resources.Get .horizontal_image -}}
+{{- $vertical_src := resources.Get .vertical_image -}}
+{{- if .title -}} {{- $title = .title -}} {{ end}}
+{{ if .class }} {{- $class = .class -}} {{ end }}
+{{ if and $horizontal_src $vertical_src }}
+<!-- compute sources -->
+<picture>
+<source media="(orientation: portrait)" srcset="
+{{- with $sizes -}}
+	{{- range $i, $e := . -}}
+		{{- if ge $vertical_src.Width . -}}
+			{{- if $i }}, {{ end -}}{{- ($vertical_src.Resize (print . "x webp " $filter ) ).RelPermalink }} {{ . }}w
+		{{- end -}}
+	{{- end -}}
+{{- end -}}
+"/>
+<source media="(orientation: landscape)" srcset="
+{{- with $sizes -}}
+	{{- range $i, $e := . -}}
+		{{- if ge $horizontal_src.Width . -}}
+			{{- if $i }}, {{ end -}}{{- ($horizontal_src.Resize (print . "x webp " $filter ) ).RelPermalink }} {{ . }}w
+		{{- end -}}
+	{{- end -}}
+{{- end -}}
+" />
+
+<img src="{{- ($horizontal_src.Resize (print 960 "x jpg " $filter ) ).RelPermalink -}}" alt="{{- $title -}}" class="{{$class}}"/>
+</picture>
+{{- end -}}

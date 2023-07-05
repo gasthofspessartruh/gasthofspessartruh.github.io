@@ -8,7 +8,7 @@
     <!-- Indicators -->
     <ol class="carousel-indicators">
         {{- range .items -}}
-        {{ if resources.Match (printf "images/gallery/%s" .image) }}
+        {{ if and (resources.Match (printf "images/gallery/horizontal/%s" .image)) (resources.Match (printf "images/gallery/vertical/%s" .image)) }}
         <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ $index }}" {{- if eq $index 0 }} class="active" {{-
             end -}}></li>
         {{- $index = add $index 1 -}}
@@ -20,17 +20,16 @@
     <div class="carousel-inner sr-fullpage-carousel-inner">
         {{- $index = 0 -}}
         {{- range .items -}}
-        {{- $image := printf "images/gallery/%s" .image -}}
-        {{- if resources.Match $image -}}
-
+        {{- $horizontal_image := printf "images/gallery/horizontal/%s" .image -}}
+        {{- $vertical_image := printf "images/gallery/vertical/%s" .image -}}
+        {{ if and (resources.Match $horizontal_image) (resources.Match $vertical_image) }}
         <div class="carousel-item sr-fullpage-carousel-item {{ if eq $index 0}} active {{end}}">
-            {{ partial "responsive_image.html" (dict "image" $image "title" .title "class" "sr-fullpage-gallery-image") }}
+            {{ partial "responsive_picture.html" (dict "horizontal_image" $horizontal_image "vertical_image" $vertical_image  "title" .title "class" "sr-fullpage-gallery-image") }}
             <div class="carousel-caption pb-5">
                 <h1 class="mb-3">{{- .title -}}</h1>
                 <h5 class="mb-4 pb-3">{{- .subtitle -}}</h5>
             </div>
         </div>
-      
         {{- $index = add $index 1 -}}
         {{- end -}}
         {{- end -}}
