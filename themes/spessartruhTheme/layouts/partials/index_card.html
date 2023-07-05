@@ -37,10 +37,9 @@
             </div>
         </div>
         <!-- Carousel wrapper -->
-
         {{ else }}
         {{ range first 1 .images }}
-        <img data-src="{{ .src | relURL }}" class="img-fluid bg-image lazy" />
+        {{ partial "responsive_image.html" (dict "image" .src "widths" (dict "lg" 33 "md" 50)) }}
         {{ end }}
         {{ end }}
         {{ end }}

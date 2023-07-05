@@ -19,23 +19,23 @@ index:
     text: "Take a seat in our spacious beer garden! \n\n Experience a unique panorama, shaded by walnut trees, and a children's playground."
     images:
     - name: "Clara, Mona, and Frida"
-      src: "/images/biergarten/Mona-Clara-und-Frida.avif"
+      src: "/images/biergarten/Mona-Clara-und-Frida.jpeg"
   - title: "Celebrations"
     text: "Whether with or without tablecloth, we are delighted to accompany your next celebration. \n\n Simply make an appointment for a discussion by phone or email."
     images:
     - name: "First Communion"
-      src: "/images/feierlichkeiten/kommunion_gruen.avif"
+      src: "/images/feierlichkeiten/kommunion_gruen.jpeg"
     - name: "Wedding"
-      src: "/images/feierlichkeiten/hochzeit.avif"
+      src: "/images/feierlichkeiten/hochzeit.jpeg"
     - name: "Wedding"
-      src: "/images/feierlichkeiten/Hochzeit-2.avif"
+      src: "/images/feierlichkeiten/Hochzeit-2.jpg"
   - title: "Steiger and Surroundings"
     text: "The small village of Steiger, with around 80 inhabitants, is located on an elevated plateau without through traffic. The fresh air of the Spessart region and the peaceful, relaxing location are perfect for extensive hikes, cycling, and motorbike tours."
     url: "steiger"
     url_title: "Learn more"
     images:
     - name: "Spessartweg"
-      src: "/images/gallery/4.avif"
+      src: "/images/gallery/4.jpg"
 
   short_info:
   - title: "Opening Hours"
@@ -72,6 +72,6 @@ location:
 steiger:
   images:
   - name: "Spessartweg"
-    src: "/images/gallery/1.avif"
+    src: "/images/gallery/1.jpg"
 
 more_button: "Learn more"

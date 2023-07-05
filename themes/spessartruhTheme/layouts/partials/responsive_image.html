@@ -5,28 +5,15 @@
 {{- $image := resources.Get .image -}}
 {{- $dataSzes := "(min-width: 1024px) 100vw, 50vw" -}}
 <!-- compute sizes -->
-{{.image}}
 {{- $src := resources.Get .image -}}
-{{- with $src -}}
-<!-- compute srcset -->
-src="{{- .RelPermalink -}}"
-
-
-
-srcset="
+<img src="{{- ($src.Resize (print 960 "x jpg " $filter ) ).RelPermalink }} -}}" srcset="
 {{- with $respSizes -}}
 	{{- range $i, $e := . -}}
 		{{- if ge $src.Width . -}}
 			{{- if $i }}, {{ end -}}{{- ($src.Resize (print . "x webp " $filter ) ).RelPermalink }} {{ . }}w
 		{{- end -}}
 	{{- end -}}
-{{- end -}}" 
-<!-- compute size set -->
-{{- end -}}
-
-
-
-sizes="
+{{- end -}}" sizes="
 {{- with .widths -}}
 {{- range $input_key, $input_percentage := . -}}
 	{{- range $bp_key, $bp_value  := $breakpoints -}}
@@ -35,4 +22,4 @@ sizes="
 	{{- end -}}
 {{- end -}}
 {{- end -}}
-100vw" 
+100vw" class="img-fluid bg-image"/>
