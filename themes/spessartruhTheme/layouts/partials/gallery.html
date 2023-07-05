@@ -1,16 +1,16 @@
-{{ $data := index site.Data site.Language.Lang}}
+{{- $data := index site.Data site.Language.Lang -}}
 
-{{ with $data.gallery.gallery }}
-{{- $index := 0}}
+{{- with $data.gallery.gallery -}}
+{{- $index := 0 -}}
 
 <!-- Carousel wrapper -->
 <div id="introCarousel" class="carousel slide carousel-fade" data-mdb-ride="carousel" style="height: 100vh;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         {{- range .items -}}
-        {{- if fileExists (printf "images/gallery/%s" .image) | relURL }}
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ $index }}" {{ if eq $index 0}} class="active" {{ end
-            }}></li>
+        {{ if resources.Match (printf "images/gallery/%s" .image) }}
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ $index }}" {{- if eq $index 0 }} class="active" {{- end
+            -}}></li>
         {{- $index = add $index 1 -}}
         {{- end -}}
         {{- end -}}
@@ -19,21 +19,20 @@
     <!-- Inner -->
     <div class="carousel-inner " style="height: 100vh;">
         {{- $index = 0 -}}
-        {{ range .items }}
-        {{ if fileExists (printf "images/gallery/%s" .image) | relURL }}
+        {{- range .items -}}
+        {{- $image := printf "images/gallery/%s" .image -}}
+        {{- if resources.Match $image -}}
         <!-- Single item -->
-        <div class="carousel-item {{if eq $index 0}} active{{ end }}" style='height: calc(100vh - 58px);'>
-            <div class="d-flex lazy justify-content-center align-items-end h-100 pb-5 sr-fullpage-gallery-item"
-                data-bg='{{- (printf "images/gallery/%s" .image) | relURL -}}'>
-                <div class="text-white text-center">
-                    <h1 class="mb-3">{{ .title }}</h1>
-                    <h5 class="mb-4">{{ .subtitle }}</h5>
-                </div>
+        <div class="carousel-item sr-fullpage-gallery-item {{- if eq $index 0}} active{{ end -}}">
+          {{ partial "responsive_image.html" (dict "image" $image "title" .title "class" "d-flex w-100 justify-content-center pb-5 sr-fullpage-gallery-image") }}
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="mb-3">{{- .title -}}</h1>
+                <h5 class="mb-4">{{- .subtitle -}}</h5>
             </div>
         </div>
-        {{- $index = add $index 1 -}}
-        {{ end }}
-        {{ end }}
+    {{- $index = add $index 1 -}}
+    {{- end -}}
+    {{- end -}}
     </div>
 
     <!-- Controls -->
