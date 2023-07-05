@@ -18,13 +18,19 @@
     }
 
     .sr-fullpage-gallery-image {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+        object-repeat: no-repeat;
+        object-fit: cover;
+        object-position: center center;
         height: 100vh;
+        width: 100vw;
     }
-    .sr-fullpage-gallery-item {
+
+    #introCarousel,
+    .sr-fullpage-carousel-inner,
+    .sr-fullpage-carousel-item,
+    .sr-fullpage-carousel-item.active{
         height: calc(100vh - 58px);
+        width: 100vw;
     }
 
 </style>

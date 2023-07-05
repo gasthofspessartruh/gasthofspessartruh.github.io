@@ -4,35 +4,36 @@
 {{- $index := 0 -}}
 
 <!-- Carousel wrapper -->
-<div id="introCarousel" class="carousel slide carousel-fade" data-mdb-ride="carousel" style="height: 100vh;">
+<div id="introCarousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         {{- range .items -}}
         {{ if resources.Match (printf "images/gallery/%s" .image) }}
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ $index }}" {{- if eq $index 0 }} class="active" {{- end
-            -}}></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ $index }}" {{- if eq $index 0 }} class="active" {{-
+            end -}}></li>
         {{- $index = add $index 1 -}}
         {{- end -}}
         {{- end -}}
     </ol>
 
     <!-- Inner -->
-    <div class="carousel-inner " style="height: 100vh;">
+    <div class="carousel-inner sr-fullpage-carousel-inner">
         {{- $index = 0 -}}
         {{- range .items -}}
         {{- $image := printf "images/gallery/%s" .image -}}
         {{- if resources.Match $image -}}
-        <!-- Single item -->
-        <div class="carousel-item sr-fullpage-gallery-item {{- if eq $index 0}} active{{ end -}}">
-          {{ partial "responsive_image.html" (dict "image" $image "title" .title "class" "d-flex w-100 justify-content-center pb-5 sr-fullpage-gallery-image") }}
-            <div class="carousel-caption d-none d-md-block">
+
+        <div class="carousel-item {{ if eq $index 0}} active {{end}}">
+            {{ partial "responsive_image.html" (dict "image" $image "class" "sr-fullpage-gallery-image") }}
+            <div class="carousel-caption pb-5">
                 <h1 class="mb-3">{{- .title -}}</h1>
-                <h5 class="mb-4">{{- .subtitle -}}</h5>
+                <h5 class="mb-4 pb-3">{{- .subtitle -}}</h5>
             </div>
         </div>
-    {{- $index = add $index 1 -}}
-    {{- end -}}
-    {{- end -}}
+      
+        {{- $index = add $index 1 -}}
+        {{- end -}}
+        {{- end -}}
     </div>
 
     <!-- Controls -->

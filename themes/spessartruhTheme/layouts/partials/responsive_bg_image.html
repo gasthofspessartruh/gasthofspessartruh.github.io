@@ -1,0 +1,22 @@
+<!-- creates a image for the following inputs:
+	image: the path to the image
+-->
+{{- $respSizes := slice "320" -}}
+{{- $filter := "box" -}}
+{{- $src := resources.Get .image -}}
+<div class="d-flex lazy justify-content-center align-items-end h-100 pb-5 sr-fullpage-gallery-item"
+{{ if $src }}
+style="background-image: image-set(
+{{- with $respSizes }}
+{{- range $i, $e := . -}}
+{{ $url := ($src.Resize (print . "x webp " $filter )).RelPermalink |safeCSS}}
+url(' {{- if $i }}, {{ end -}}{{- $url }}') {{ . }}w
+{{- end -}}
+{{ end -}}
+{{- end -}}
+);">
+	<div class="text-white text-center">
+		<h1 class="mb-3">{{ .title }}</h1>
+		<h5 class="mb-4">{{ .subtitle }}</h5>
+	</div>
+</div>
