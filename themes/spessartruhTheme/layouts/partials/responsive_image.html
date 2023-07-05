@@ -13,6 +13,7 @@
 {{- $image := resources.Get .image -}}
 {{- if .title -}} {{- $title = .title -}} {{ end}}
 {{ if .class }} {{- $class = .class -}} {{ end }}
+{{ if $image }}
 <!-- compute sources -->
 {{- $src := resources.Get .image -}}
 <img src="{{- ($src.Resize (print 960 "x jpg " $filter ) ).RelPermalink -}}" srcset="
@@ -32,3 +33,4 @@
 {{- end -}}
 {{- end -}}
 100vw" class="{{- $class -}}" alt="{{- $title -}}"/>
+{{ end }}

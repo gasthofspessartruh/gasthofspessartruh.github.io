@@ -7,23 +7,27 @@
         <div id="{{$id}}" class="bg-image carousel slide carousel-fade" data-mdb-ride="carousel">
             <!-- Indicators -->
             <div class="carousel-indicators">
-                {{ range .images}}
+                {{- range .images -}}
+                {{- if resources.Match .src -}}
                 <button type="button" data-mdb-target="#{{- $id}}" data-mdb-slide-to="{{$ctr}}" {{ if eq $ctr 0 }}
                     class="active" aria-current="true" {{ end }} aria-label="{{.name}}"></button>
-                {{ $ctr = add $ctr 1}}
-                {{ end }}
+                {{- $ctr = add $ctr 1}}
+                {{- end -}}
+                {{- end -}}
             </div>
 
             {{ $ctr = 0 }}
             <!-- Inner -->
             <div class="carousel-inner">
                 <!-- Single item -->
-                {{ range .images }}
-                <div class="carousel-item {{ if eq $ctr 0}} active {{end}}">
-                    <img data-src="{{ .src | relURL }}" class="d-block w-100 lazy" alt="{{.name}}" />
+                {{- range .images -}}
+                {{- if resources.Match .src -}}
+                <div class="carousel-item {{- if eq $ctr 0}} active {{end -}}">
+                    {{ partial "responsive_image.html" (dict "image" .src "title" .name "widths" (dict "lg" 33 "md" 50)) }}
                 </div>
-                {{ $ctr = add $ctr 1}}
-                {{ end }}
+                {{- $ctr = add $ctr 1 -}}
+                {{- end -}}
+                {{- end -}}
 
                 <!-- Controls -->
                 <button class="carousel-control-prev" type="button" data-mdb-target="#{{- $id}}" data-mdb-slide="prev">

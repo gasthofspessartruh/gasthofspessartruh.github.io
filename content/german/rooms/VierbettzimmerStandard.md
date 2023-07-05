@@ -8,7 +8,7 @@ resources:
     - "138,-"
     images:
     - name: "Einzelzimmer Standard 01"
-      src: "/images/rooms/Standard_04_01.avif"
+      src: "/images/rooms/Standard_04_01.jpeg"
 layout: "rooms"
 ---
 

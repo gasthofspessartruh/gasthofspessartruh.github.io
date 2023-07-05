@@ -6,7 +6,7 @@
         {{ range .Pages.ByWeight}}
         {{ if and (eq .File.Dir "rooms/") (eq .Weight 1) }}
         <div class="col-lg-8 pt-3">
-            {{ partial "room.html" (dict "context" . "content" "0") }}
+            {{ partial "room.html" (dict "context" . "content" "0" "width" (dict "lg" 66)) }}
         </div>
         {{ end }}
         {{ end }}

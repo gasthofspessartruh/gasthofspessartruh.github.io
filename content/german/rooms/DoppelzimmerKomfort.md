@@ -8,7 +8,7 @@ resources:
     - "99,-"
     images:
     - name: "Doppelzimmer Komfort 01"
-      src: "/images/rooms/Comfort_02_01.avif"
+      src: "/images/rooms/Comfort_02_01.jpeg"
 
 layout: "rooms"
 ---

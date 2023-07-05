@@ -8,7 +8,7 @@ resources:
     - "138,-"
     images:
     - name: "Standard Four-bed Room 01"
-      src: "/images/rooms/Standard_04_01.avif"
+      src: "/images/rooms/Standard_04_01.jpeg"
 layout: "rooms"
 ---
 

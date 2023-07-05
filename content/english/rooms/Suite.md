@@ -11,9 +11,9 @@ resources:
 
     images:
     - name: Suite 01 
-      src: "/images/rooms/Suite_01.avif"
+      src: "/images/rooms/Suite_01.jpeg"
     - name: Suite 02 
-      src: "/images/rooms/Suite_02.avif"
+      src: "/images/rooms/Suite_02.jpeg"
 layout: "rooms"
 ---
 

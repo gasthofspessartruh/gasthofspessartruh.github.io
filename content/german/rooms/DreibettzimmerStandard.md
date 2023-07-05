@@ -8,7 +8,7 @@ resources:
     - "112,-"
     images:
     - name: "Dreibettzimmer Standard 01"
-      src: "/images/rooms/Standard_03_01.avif"
+      src: "/images/rooms/Standard_03_01.jpeg"
 layout: "rooms"
 ---
 

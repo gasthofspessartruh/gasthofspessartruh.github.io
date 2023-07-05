@@ -1,4 +1,6 @@
 {{ $data := index site.Data site.Language.Lang}}
+{{ $width := (dict "lg" 50)}}
+{{ if .width }} {{$width = .width }} {{ end }}
 <div class="card h-100">
     {{ if gt (len .context.Params.Resources.Images) 1}}
     {{- $ctr := 0 }}
@@ -7,9 +9,11 @@
         <!-- Indicators -->
         <div class="carousel-indicators">
             {{ range .context.Params.Resources.Images}}
+            {{ if resources.Match .src }}
             <button type="button" data-mdb-target="#{{- $id}}" data-mdb-slide-to="{{$ctr}}" {{ if eq $ctr 0 }}
                 class="active" aria-current="true" {{ end }} aria-label="{{.name}}"></button>
             {{ $ctr = add $ctr 1}}
+            {{ end }}
             {{ end }}
         </div>
 
@@ -18,19 +22,21 @@
         <div class="carousel-inner">
             <!-- Single item -->
             {{ range .context.Params.Resources.Images }}
+            {{ if resources.Match .src }}
             <div class="carousel-item {{ if eq $ctr 0}} active {{end}}">
-                <img src="{{ .src | relURL }}" class="d-block w-100" alt="{{.name}}" />
+                {{ partial "responsive_image.html" (dict "image" .src "title" .title "widths" $width) }}
             </div>
             {{ $ctr = add $ctr 1}}
+            {{ end }}
             {{ end }}
 
             <!-- Controls -->
             <button class="carousel-control-prev" type="button" data-mdb-target="#{{- $id}}" data-mdb-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <i class="fas fa-arrow-left"></i>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-mdb-target="#{{- $id}}" data-mdb-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <i class="fas fa-arrow-right"></i>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
@@ -39,7 +45,7 @@
     {{ else }}
     {{ range first 1 .context.Params.Resources.Images }}
     {{ if .src }}
-    <img class="card-img-top" load="lazy" src="{{ .src | relURL}}" alt="{{.title}}" />
+    {{ partial "responsive_image.html" (dict "image" .src "title" .title "widths" $width) "class" "card-img-top" }}
     {{ end }}
     {{ end }}
     {{ end }}
