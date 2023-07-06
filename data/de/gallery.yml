@@ -1,6 +1,11 @@
 # the images have to be provided both in the horizontal and the vertical assets folder
 # assets/images/gallery/horizontal and assets/images/gallery/vertical
 gallery:
+  video:
+    title: "Ein Wirtshaus zum Wohlfühlen!"
+    subtitle: "Genießen Sie gesellige und herzliche Atmosphäre"
+    src: "ochs.mp4"
+ 
   items:
   - title: "Sonntag 30.07. „Blechschlacht“"
     subtitle: "Musikverein Keilberg gegen Winzenhohl. ab 11 Uhr Spanferkel vom Spieß"
@@ -11,9 +16,6 @@ gallery:
   - title: "Schon entdeckt?"
     subtitle: "Unsere neuen Komfort-Zimmer jetzt buchen"
     image: "Comfort_01_01.jpeg"
-  - title: "Ein Wirtshaus zum Wohlfühlen!"
-    subtitle: "Genießen Sie gesellige und herzliche Atmosphäre"
-    image: "gastraum_01.jpg"
   - title: "Lust aufs Wandern?"
     subtitle: "Der Spessartweg 1 direkt hinterm Haus"
     image: "spessartweg.jpg"
