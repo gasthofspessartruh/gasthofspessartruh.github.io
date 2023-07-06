@@ -37,7 +37,7 @@ index:
     url_title: "Mehr erfahren"
     images:
     - name: "Spessartweg"
-      src: "/images/gallery/4.jpg" 
+      src: "/images/gallery/horizontal/1.jpg" 
 
   short_info:
   - title: "Öffnungszeiten"
@@ -74,6 +74,6 @@ location:
 steiger:
   images:
   - name: "Spessartweg"
-    src: "/images/gallery/1.jpg" 
+    src: "/images/gallery/horizontal/1.jpg" 
 
 more_button: "Mehr erfahren"
