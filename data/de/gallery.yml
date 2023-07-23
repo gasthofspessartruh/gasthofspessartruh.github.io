@@ -7,6 +7,8 @@ gallery:
     src: "ochs.mp4"
  
   items:
+  - title: "Unser Biergarten"
+    image: "biergarten.jpg"
   - title: "Sonntag 30.07. „Blechschlacht“"
     subtitle: "Musikverein Keilberg gegen Winzenhohl. ab 11 Uhr Spanferkel vom Spieß"
     image: "blechschlacht.jpg"

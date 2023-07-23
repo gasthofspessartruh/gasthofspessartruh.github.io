@@ -1,13 +1,15 @@
 {{- $data := index site.Data site.Language.Lang -}}
 
 {{- with $data.gallery.gallery -}}
-{{- $index := 1 -}}
+{{- $index := 0 -}}
 
 <!-- Carousel wrapper -->
 <div id="introCarousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
+        <!--
         <li data-mdb-target="#introCarousel" data-mdb-slide-to="0"class="active"></li>
+        -->
         {{- range .items -}}
         {{ if and (resources.Match (printf "images/gallery/horizontal/%s" .image)) (resources.Match (printf "images/gallery/vertical/%s" .image)) }}
         <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ $index }}" {{- if eq $index 0 }} class="active" {{-
@@ -19,6 +21,7 @@
 
     <!-- Inner -->
     <div class="carousel-inner sr-fullpage-carousel-inner">
+        <!--
         <div class="carousel-item sr-fullpage-carousel-item  active">
             <video width="560" height="315" controls autoplay muted loop playsinline onplay="this.controls=false" class="sr-fullpage-gallery-image">
                 <source src="videos/ochs.mp4" type="video/mp4">
@@ -27,7 +30,8 @@
             <div class="carousel-caption pb-5">
             </div>
         </div>
-        {{- $index = 1 -}}
+    -->
+        {{- $index = 0 -}}
         {{- range .items -}}
         {{- $horizontal_image := printf "images/gallery/horizontal/%s" .image -}}
         {{- $vertical_image := printf "images/gallery/vertical/%s" .image -}}
@@ -35,8 +39,12 @@
         <div class="carousel-item sr-fullpage-carousel-item {{ if eq $index 0}} active {{end}}">
             {{ partial "responsive_picture.html" (dict "horizontal_image" $horizontal_image "vertical_image" $vertical_image  "title" .title "class" "sr-fullpage-gallery-image") }}
             <div class="carousel-caption pb-5">
+                {{ if .title }}
                 <h1 class="mb-3">{{- .title -}}</h1>
+                {{ end }}
+                {{ if .subtitle }}
                 <h5 class="mb-4 pb-3">{{- .subtitle -}}</h5>
+                {{ end }}
             </div>
         </div>
         {{- $index = add $index 1 -}}
