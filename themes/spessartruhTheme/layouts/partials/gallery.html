@@ -38,12 +38,12 @@
         {{ if and (resources.Match $horizontal_image) (resources.Match $vertical_image) }}
         <div class="carousel-item sr-fullpage-carousel-item {{ if eq $index 0}} active {{end}}">
             {{ partial "responsive_picture.html" (dict "horizontal_image" $horizontal_image "vertical_image" $vertical_image  "title" .title "class" "sr-fullpage-gallery-image") }}
-            <div class="carousel-caption pb-5">
+            <div class="carousel-caption">
                 {{ if .title }}
                 <h1 class="mb-3">{{- .title -}}</h1>
                 {{ end }}
                 {{ if .subtitle }}
-                <h5 class="mb-4 pb-3">{{- .subtitle -}}</h5>
+                <h5 class="mb-4">{{- .subtitle -}}</h5>
                 {{ end }}
             </div>
         </div>
