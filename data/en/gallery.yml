@@ -15,7 +15,7 @@ gallery:
     image: "komunion_gruen.jpg"
   - title: "Have you discovered it yet?"
     subtitle: "Book our new comfort rooms now"
-    image: "Comfort_01_01.jpeg"
+    image: "zimmer.jpeg"
   - title: "In the Mood for Hiking?"
     subtitle: "Spessartweg 1 right behind the house"
     image: "spessartweg.jpg"
@@ -24,7 +24,3 @@ gallery:
     image: "3.jpg"
 
 
-# link bei title
-
-# links bei Steiger & Umgebung
-# Emojis kleiner wenn untereinander
