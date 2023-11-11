@@ -12,7 +12,7 @@ url = "/menu"
 weight = 2
 
 [[Languages.de.menu.main]]
-name = "Zimmer & Suite"
+name = "Gästezimmer"
 url = "/rooms"
 weight = 3
 
@@ -42,7 +42,7 @@ url = "/menu"
 weight = 2
 
 [[Languages.en.menu.main]]
-name = "Rooms & Suites"
+name = "Rooms"
 url = "/rooms"
 weight = 3
 
