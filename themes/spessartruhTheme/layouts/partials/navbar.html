@@ -3,9 +3,9 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <!-- Navbar brand -->
-        <a class="navbar-brand nav-link text-black-50" href='{{ relLangURL "/" }}'>
+        <a class="navbar-brand nav-link mb-0 pt-0 pb-0 text-black-50" href='{{ relLangURL "/" }}'>
             {{ with $data.logos }}
-            <img src="{{ .logo_wide | relURL}}" height="28" alt="Gasthof Pension Spessartruh Steiger" loading="lazy" />
+            <img src="{{ .logo_wide | relURL}}" height="68" alt="Gasthof Pension Spessartruh Steiger" loading="lazy" />
             {{ end }}
         </a>
         <button class="navbar-toggler text-black" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
@@ -17,8 +17,8 @@
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main.ByWeight }}
                 {{ if lt .Weight 11 }}
-                <li class="nav-item ">
-                    <a class='nav-link  {{ if in $currentPage .URL  }} text-black {{ else }} text-black-50 {{ end }}'
+                <li class="nav-item mb-0 fs-4">
+                    <a class='nav-link {{ if in $currentPage .URL  }} text-black {{ else }} text-black-50 {{ end }}'
                         href="{{ .URL | relLangURL}}">
                         {{ .Name }}
                     </a>
@@ -61,7 +61,7 @@
                 <!-- Icons -->
                 {{ with $data.social_media}}
                 {{ range .items}}
-                <li class="nav-item">
+                <li class="nav-item mb-0 fs-4">
                     <a class="nav-link text-black-50" href="{{.url}}" rel="nofollow" target="_blank">
                         <i class="fab {{.item}}"></i>
                     </a>
