@@ -11,7 +11,7 @@ goto_home: "Back to start"
 fourohfour_text: "404 - Webpage not found"
 index:
   welcome_title: "Welcome to Landgasthof Spessartruh in Steiger"
-  welcome_text: "In the heart of the Spessart forest, you will find a traditional inn with polished wooden tables, a cozy tiled stove, and hearty dishes.  \n Enjoy regional cuisine that uses the best products from our own breeding and production.  \n Our homemade sausages and ham are prepared deliciously and hearty by master butcher Georg Gerber.  \n From snacks to juicy steaks, delicious salads, and vegetarian options, the menu leaves little to be desired.  \n Perhaps you can also try a glass of homemade „Äppelwoi“ (apple wine) or enjoy a freshly tapped beer from the region."
+  welcome_text: "In the heart of the Spessart forest, you will find a traditional inn with polished wooden tables, a cozy tiled stove, and hearty dishes.  \n Enjoy regional cuisine that uses the best products from our own breeding and production.  \n Our homemade sausages and ham are prepared deliciously and hearty by master butcher Georg Gerber.  \n From snacks to juicy steaks, delicious salads, and vegetarian options, the menu leaves little to be desired.  \n Perhaps you can also try a glass of our „Äppelwoi“ (apple wine) or enjoy a freshly tapped beer from the region."
 
   cards_title: "A Guesthouse to Feel at Home"
   cards:
@@ -41,6 +41,7 @@ index:
   - title: "Opening Hours"
     text: "Monday to Friday from 5:00 PM  \nSaturday from 2:00 PM  \n Sunday from 11:00 AM  \n Thursday closed  \n Continuous hot food"
     icon: "far fa-calendar-alt"
+    show_small: true
   - title: "With Heart and Soul!"
     text: "We bring the specialties of the Spessart region to your table, freshly and heartily prepared."
     icon: "fas fa-heart"

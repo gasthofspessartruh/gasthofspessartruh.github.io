@@ -14,7 +14,7 @@ fourohfour_text: "404 - Webseite nicht gefunden"
 
 index:
   welcome_title: "Wilkommen im Landgasthof Spessartruh in Steiger"
-  welcome_text: "Inmitten des Spessarts finden Sie ein traditionelles Wirtshaus mit blank gescheuerten Holztischen, gemütlichem Kachelofen und deftigen Speisen.  \n  Freuen Sie sich auf regionale Küche in der beste Produkte aus eigener Zucht und Herstellung verwendet werden.  \n Hausmacher Wurst und Schinken werden von Metzgermeister Georg Gerber herzhaft und deftig zubereitet.  \n Vom Vesper bis hin zum saftigen Steak, über leckere Salate und Vegetarisches lässt die Speisekarte kaum Wünsche offen.   \n Vielleicht kosten Sie auch ein Glas selbstgemachten „Äppelwoi“ oder genießen ein frisch gezapftes Bier aus der Region."
+  welcome_text: "Inmitten des Spessarts finden Sie ein traditionelles Wirtshaus mit blank gescheuerten Holztischen, gemütlichem Kachelofen und deftigen Speisen.  \n  Freuen Sie sich auf regionale Küche in der beste Produkte aus eigener Zucht und Herstellung verwendet werden.  \n Hausmacher Wurst und Schinken werden von Metzgermeister Georg Gerber herzhaft und deftig zubereitet.  \n Vom Vesper bis hin zum saftigen Steak, über leckere Salate und Vegetarisches lässt die Speisekarte kaum Wünsche offen.   \n Vielleicht kosten Sie auch ein Glas von unserem „Äppelwoi“ oder genießen ein frisch gezapftes Bier aus der Region."
   cards_title: "Ein Gasthof zum Wohlfühlen"
   cards:
   - title: "Unser Biergarten"
@@ -43,6 +43,7 @@ index:
   - title: "Öffnungszeiten"
     text: "Montag bis Freitag ab 17 Uhr  \n Samstag ab 14 Uhr  \n Sonntag ab 11 Uhr  \n  Donnerstag Ruhetag  \n Durchgehend warme Küche"
     icon: "far fa-calendar-alt"
+    show_small: true
   - title: "Mit Herz dabei!"
     text: "Wir bringen für Sie die Spezialitäten des Spessarts, frisch und herzhaft zubereitet auf den Tisch."
     icon: "fas fa-heart"
