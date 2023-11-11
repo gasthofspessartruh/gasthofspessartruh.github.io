@@ -7,8 +7,18 @@ resources:
     prices:
     - "58,-"
     images:
-    - name: "Einzelzimmer Standard 01"
-      src: "/images/rooms/Standard_01_01.jpeg"
+    - name: "Einzelzimmer Balkon 01"
+      src: "/images/rooms/Einzel_Balkon_1.jpeg"
+    - name: "Einzelzimmer Balkon 02"
+      src: "/images/rooms/Einzel_Balkon_2.jpeg"
+    - name: "Einzelzimmer Balkon 03"
+      src: "/images/rooms/Einzel_Balkon_3.jpeg"
+    - name: "Einzelzimmer Balkon 04"
+      src: "/images/rooms/Einzel_Balkon_4.jpeg"
+    - name: "Einzelzimmer Balkon 05"
+      src: "/images/rooms/Einzel_Balkon_5.jpeg"
+    - name: "Einzelzimmer Balkon 07"
+      src: "/images/rooms/Einzel_Balkon_7.jpeg"
 layout: "rooms"
 ---
 

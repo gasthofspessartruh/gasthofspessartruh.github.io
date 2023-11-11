@@ -7,8 +7,16 @@ resources:
     prices:
     - "92,-"
     images:
-    - name: "Doppelzimmer Standard 01"
-      src: "/images/rooms/Standard_02_01.jpeg"
+    - name: "Doppelzimmer Balkon 01"
+      src: "/images/rooms/Doppel_Balkon_1.jpeg"
+    - name: "Doppelzimmer Balkon 03"
+      src: "/images/rooms/Doppel_Balkon_3.jpeg"
+    - name: "Doppelzimmer Balkon 02"
+      src: "/images/rooms/Doppel_Balkon_2.jpeg"
+    - name: "Doppelzimmer Balkon 04"
+      src: "/images/rooms/Doppel_Balkon_4.jpeg"
+    - name: "Doppelzimmer Balkon 05"
+      src: "/images/rooms/Doppel_Balkon_5.jpeg"
 layout: "rooms"
 ---
 

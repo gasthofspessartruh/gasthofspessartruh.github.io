@@ -8,7 +8,9 @@ resources:
     - "48,-"
     images:
     - name: "Standard Single Room 01"
-      src: "/images/rooms/Standard_01_01.jpeg"
+      src: "/images/rooms/Einzel_1.jpeg"
+    - name: "Standard Single Room 02"
+      src: "/images/rooms/Einzel_2.jpeg"
 layout: "rooms"
 ---
 
