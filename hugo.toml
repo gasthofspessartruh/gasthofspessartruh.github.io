@@ -51,7 +51,7 @@ name = "Rooms"
 url = "/rooms"
 weight = 3
 
-[[Languages.de.menu.main]]
+[[Languages.en.menu.main]]
 name = "Panorama"
 url = "/panorama"
 weight = 4
