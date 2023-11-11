@@ -17,6 +17,11 @@ url = "/rooms"
 weight = 3
 
 [[Languages.de.menu.main]]
+name = "Panorama"
+url = "/panorama"
+weight = 4
+
+[[Languages.de.menu.main]]
 name = "Anfahrt"
 url = "/location"
 weight = 5
@@ -45,6 +50,11 @@ weight = 2
 name = "Rooms"
 url = "/rooms"
 weight = 3
+
+[[Languages.de.menu.main]]
+name = "Panorama"
+url = "/panorama"
+weight = 4
 
 [[Languages.en.menu.main]]
 name = "Directions"
