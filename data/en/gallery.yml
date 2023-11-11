@@ -7,9 +7,9 @@ gallery:
     src: "ochs.mp4"
     
   items:
-  - title: "Sunday, July 30th -  „Blechschlacht“"
-    subtitle: "Music Association Keilberg vs. Winzenhohl. From 11 AM, spit-roasted suckling pig"
-    image: "blechschlacht.jpg"
+ # - title: "Sunday, July 30th -  „Blechschlacht“"
+ #   subtitle: "Music Association Keilberg vs. Winzenhohl. From 11 AM, spit-roasted suckling pig"
+ #   image: "blechschlacht.jpg"
   - title: "Your Special Day!"
     subtitle: "We are happy to assist you in planning your next celebration"
     image: "komunion_gruen.jpg"
@@ -22,3 +22,9 @@ gallery:
   - title: "Explore the Spessart with an E-Bike!"
     subtitle: "We have an E-Bike charging station! - Just remember to bring your charger"
     image: "3.jpg"
+
+
+# link bei title
+
+# links bei Steiger & Umgebung
+# Emojis kleiner wenn untereinander

@@ -9,9 +9,9 @@ gallery:
   items:
   - title: "Unser Biergarten"
     image: "biergarten.jpg"
-  - title: "Sonntag 30.07. „Blechschlacht“"
-    subtitle: "Musikverein Keilberg gegen Winzenhohl. ab 11 Uhr Spanferkel vom Spieß"
-    image: "blechschlacht.jpg"
+#  - title: "Sonntag 30.07. „Blechschlacht“"
+#    subtitle: "Musikverein Keilberg gegen Winzenhohl. ab 11 Uhr Spanferkel vom Spieß"
+#    image: "blechschlacht.jpg"
   - title: "Ihr besonderer Tag!"
     subtitle: "Wir beraten Sie gerne bei der Planung Ihrer nächsten Feier"
     image: "komunion_gruen.jpg"
