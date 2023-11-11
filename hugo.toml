@@ -1,6 +1,6 @@
 baseURL = 'https://gasthofspessartruh.github.io'
 languageCode = 'en-us'
-title = 'Gasthof-Pension Spessartruh Steiger'
+title = 'Gasthof Spessartruh Steiger'
 theme = "spessartruhTheme"
 defaultContentLanguage = "de"
 timeout = "10m"
