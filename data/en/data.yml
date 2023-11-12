@@ -42,6 +42,7 @@ index:
     text: "Monday to Friday from 5:00 PM  \nSaturday from 2:00 PM  \n Sunday from 11:00 AM  \n Thursday closed  \n Continuous hot food"
     icon: "far fa-calendar-alt"
     show_small: true
+    show_small: true
   - title: "With Heart and Soul!"
     text: "We bring the specialties of the Spessart region to your table, freshly and heartily prepared."
     icon: "fas fa-heart"
