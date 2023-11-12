@@ -27,7 +27,7 @@ Vielleicht gönnen Sie sich aber auch ein Stück Zuhause auf Ihrer Geschäftsrei
 - [Flughafen Frankfurt (FRA)](https://www.frankfurt-airport.com/de.html)
 - [Messe Frankfurt](https://www.messefrankfurt.com/frankfurt/de.html)
 - [Wald erFahren (E-Bikes)](https://walderfahren.de)
-- Urlaub im Naturpark Spessart: [Tourismus](https://www.spessart-tourismus.de)
+- [Naturpark Spessart](https://www.spessart-tourismus.de)
 - [Komoot](https://www.komoot.com)
 - [Brauerei Schlappeseppel](https://www.schlappeseppel.de/8/)
 - [Brauerei Spessart Specht](https://spessart-brauerei.de)

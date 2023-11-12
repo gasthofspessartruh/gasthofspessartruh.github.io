@@ -26,7 +26,7 @@ Perhaps you would like to have a piece of home on your business trip as well. Th
 - [Frankfurt Airport (FRA)](https://www.frankfurt-airport.com/de.html)
 - [Frankfurt Trade Fair](https://www.messefrankfurt.com/frankfurt/de.html)
 - [Forest Experience (E-Bikes)](https://walderfahren.de)
-- Vacation in the Spessart Nature Park: [Tourism](https://www.spessart-tourismus.de)
+- [Spessart Nature Park](https://www.spessart-tourismus.de)
 - [Komoot](https://www.komoot.com)
 - [Schlappeseppel Brewery](https://www.schlappeseppel.de/8/)
 - [Spessart Specht Brewery](https://spessart-brauerei.de)
