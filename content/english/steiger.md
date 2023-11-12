@@ -22,7 +22,7 @@ Perhaps you would like to have a piece of home on your business trip as well. Th
 - Hiking on the [Spessartweg 1](https://www.spessartweg.de/spessartweg-1/der-weg.html) and [Spessartweg 2](https://www.spessartweg.de/spessartweg-2/der-weg.html)
 - [Wertheim Village](https://www.thebicestercollection.com/wertheim-village/de)
 - Snow White City [Lohr am Main](https://www.lohr.de)
-- Biker Beds
+- [Biker Beds](https://www.bikerbetten.de/hotel/gasthof-pension-spessartruh)
 - [Frankfurt Airport (FRA)](https://www.frankfurt-airport.com/de.html)
 - [Frankfurt Trade Fair](https://www.messefrankfurt.com/frankfurt/de.html)
 - [Forest Experience (E-Bikes)](https://walderfahren.de)

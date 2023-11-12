@@ -23,7 +23,7 @@ Vielleicht gönnen Sie sich aber auch ein Stück Zuhause auf Ihrer Geschäftsrei
 - Wandern auf dem [Spessartweg 1](https://www.spessartweg.de/spessartweg-1/der-weg.html) und [Spessartweg 2](https://www.spessartweg.de/spessartweg-2/der-weg.html)
 - [Wertheim Village](https://www.thebicestercollection.com/wertheim-village/de)
 - Schneewittchen-Stadt [Lohr am Main](https://www.lohr.de)
-- Biker Betten
+- [Biker Betten](https://www.bikerbetten.de/hotel/gasthof-pension-spessartruh)
 - [Flughafen Frankfurt (FRA)](https://www.frankfurt-airport.com/de.html)
 - [Messe Frankfurt](https://www.messefrankfurt.com/frankfurt/de.html)
 - [Wald erFahren (E-Bikes)](https://walderfahren.de)
