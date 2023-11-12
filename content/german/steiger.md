@@ -16,20 +16,18 @@ Vielleicht gönnen Sie sich aber auch ein Stück Zuhause auf Ihrer Geschäftsrei
 
 **Was sie noch interessieren könnte:**
 
-- Schloss Mespelbrunn
-- Schloss Johannisburg in Aschaffenburg
-- Pompejanum in Aschaffenburg
-- Schloss Schönbusch
-- Wandern auf dem Spessartweg 1 und 2
-- Wertheim Village
-- Schneewittchen-Stadt Lohr am Main
+- [Schloss Mespelbrunn](https://www.schloss-mespelbrunn.de/)
+- [Schloss Johannisburg in Aschaffenburg](https://www.schloesser.bayern.de/deutsch/schloss/objekte/as_joh.htm)
+- [Pompejanum in Aschaffenburg](https://www.schloesser.bayern.de/deutsch/Schloss/objekte/as_pom.htm)
+- [Schloss Schönbusch](https://www.schloesser.bayern.de/deutsch/schloss/objekte/as_sb.htm)
+- Wandern auf dem [Spessartweg 1](https://www.spessartweg.de/spessartweg-1/der-weg.html) und [Spessartweg 2](https://www.spessartweg.de/spessartweg-2/der-weg.html)
+- [Wertheim Village](https://www.thebicestercollection.com/wertheim-village/de)
+- Schneewittchen-Stadt [Lohr am Main](https://www.lohr.de)
 - Biker Betten
-- Flughafen Frankfurt (FRA)
-- Messe Frankfurt
-- Wald erFahren (E-Bikes)
-- Urlaub im Naturpark Spessart: Tourismus 
-- Spessartwege
-- komoot
-- Brauerei Schlappeseppel
-- Brauerei Spessart Specht
-- Stadtrundfahrt.com
+- [Flughafen Frankfurt (FRA)](https://www.frankfurt-airport.com/de.html)
+- [Messe Frankfurt](https://www.messefrankfurt.com/frankfurt/de.html)
+- [Wald erFahren (E-Bikes)](https://walderfahren.de)
+- Urlaub im Naturpark Spessart: [Tourismus](https://www.spessart-tourismus.de)
+- [Komoot](https://www.komoot.com)
+- [Brauerei Schlappeseppel](https://www.schlappeseppel.de/8/)
+- [Brauerei Spessart Specht](https://spessart-brauerei.de)
