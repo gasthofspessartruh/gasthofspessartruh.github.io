@@ -24,7 +24,7 @@
       <div class="col-md-3 pt-4">
         <h5 class="">{{$lang_data.data.contact_title}}</h5>
         {{ with $data.contact}}
-        <p class="text-white"> <i class="fa fa-home" aria-hidden="true"></i>  {{ .address}} </p> <br>
+        <a class="text-white" href="https://maps.app.goo.gl/JpcpRAkQHn4Fktt28"> <i class="fa fa-home" aria-hidden="true"></i>  {{ .address}} </a> <br>
         <i class="fa fa-phone" aria-hidden="true"></i>  <a href="tel:{{.festnetz}}" class="text-white"> {{.festnetz}}</a> <br>
         <p class="text-white"> <i class="fa fa-fax" aria-hidden="true"></i>  {{ .fax}} <br>
         <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:{{.email}}" class="text-white"> {{.email}}</a>
