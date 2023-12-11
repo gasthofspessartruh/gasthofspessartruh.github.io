@@ -36,8 +36,8 @@ index:
     url: "steiger"
     url_title: "Mehr erfahren"
     images:
-    - name: "Spessartweg"
-      src: "/images/gallery/horizontal/1.jpg" 
+    - name: "Steiger und Umgebung"
+      src: "/images/Steiger.jpg" 
 
   short_info:
   - title: "Öffnungszeiten"
@@ -74,7 +74,7 @@ location:
 
 steiger:
   images:
-  - name: "Spessartweg"
-    src: "/images/gallery/horizontal/1.jpg" 
+  - name: "Steiger und Umgebung"
+    src: "/images/Steiger.jpg" 
 
 more_button: "Mehr erfahren"
