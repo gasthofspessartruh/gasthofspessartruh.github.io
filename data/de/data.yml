@@ -1,17 +1,3 @@
-breakfast: "zzgl. 7,- Frühstück pro Person"
-about_title: "Über uns"
-about_text: "Willkommen bei Familie Gerber! Genießen Sie frische Luft im Herzen des Spessarts. Schon seit
-          mehr als 100 Jahren begrüßen wir unsere Gäste mit gutem Essen und warmer Gastlichkeit. Wir
-          freuen uns auf Ihren Besuch!"
-social_media_title: "Social Media"
-social_media_disclaimer: "Folgen Sie uns auch auf Social Media"
-contact_title: "Kontakt"
-calendar_title: "Anstehende Veranstaltungen"
-booking_text: "Zur Buchung"
-goto_home: "Zur Startseite zurückkehren"
-
-fourohfour_text: "404 - Webseite nicht gefunden"
-
 index:
   welcome_title: "Wilkommen im Landgasthof Spessartruh in Steiger"
   welcome_text: "Inmitten des Spessarts finden Sie ein traditionelles Wirtshaus mit blank gescheuerten Holztischen, gemütlichem Kachelofen und deftigen Speisen.  \n  Freuen Sie sich auf regionale Küche in der beste Produkte aus eigener Zucht und Herstellung verwendet werden.  \n Hausmacher Wurst und Schinken werden von Metzgermeister Georg Gerber herzhaft und deftig zubereitet.  \n Vom Vesper bis hin zum saftigen Steak, über leckere Salate und Vegetarisches lässt die Speisekarte kaum Wünsche offen.   \n Vielleicht kosten Sie auch ein Glas von unserem „Äppelwoi“ oder genießen ein frisch gezapftes Bier aus der Region."
@@ -39,17 +25,23 @@ index:
     - name: "Steiger und Umgebung"
       src: "/images/Steiger.jpg" 
 
-  short_info:
-  - title: "Öffnungszeiten"
+  open_si:
+    title: "Öffnungszeiten"
     text: "Montag bis Freitag ab 17 Uhr  \n Samstag ab 14 Uhr  \n Sonntag ab 11 Uhr  \n  Donnerstag Ruhetag  \n Durchgehend warme Küche"
     icon: "far fa-calendar-alt"
-    show_small: true
-  - title: "Mit Herz dabei!"
+  heart_si:
+    title: "Mit Herz dabei!"
     text: "Wir bringen für Sie die Spezialitäten des Spessarts, frisch und herzhaft zubereitet auf den Tisch."
     icon: "fas fa-heart"
-  - title: "Gästezimmer"
+  rooms_si:
+    title: "Gästezimmer"
     text: "Ob Geschäftsreise oder Urlaub, Entspannung oder Erlebnis - Wir haben ein Zimmer!"
     icon: "fas fa-home"
+  vacation_si:
+    title: "Wir haben Urlaub"
+    #text: "Liebe Gäste, wir haben Urlaub.  \n Unser Restaurant bleibt vom 11.02.23 - 14.02. geschlossen."
+    icon: "fas fa-mug-hot"
+
 
 contact: 
   booking_title: "Buchung"
@@ -78,3 +70,16 @@ steiger:
     src: "/images/Steiger.jpg" 
 
 more_button: "Mehr erfahren"
+breakfast: "zzgl. 7,- Frühstück pro Person"
+about_title: "Über uns"
+about_text: "Willkommen bei Familie Gerber! Genießen Sie frische Luft im Herzen des Spessarts. Schon seit
+          mehr als 100 Jahren begrüßen wir unsere Gäste mit gutem Essen und warmer Gastlichkeit. Wir
+          freuen uns auf Ihren Besuch!"
+social_media_title: "Social Media"
+social_media_disclaimer: "Folgen Sie uns auch auf Social Media"
+contact_title: "Kontakt"
+calendar_title: "Anstehende Veranstaltungen"
+booking_text: "Zur Buchung"
+goto_home: "Zur Startseite zurückkehren"
+
+fourohfour_text: "404 - Webseite nicht gefunden"

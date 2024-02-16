@@ -4,6 +4,7 @@
 {{ $lang_data := index site.Data site.Language.Lang}}
 {{ $data := index site.Data "data" }}
 {{ $contrast_color := .Site.Params.contrast_color}}
+{{ $contrast_red_color := .Site.Params.contrast_red_color}}
 
 <main class="pt-5">
   <div class="container">
@@ -12,17 +13,31 @@
       <div class="row">
         <h4 class="text-center mb-3"><strong>{{$lang_data.data.index.welcome_title}}</strong></h4>
         <p class="text-center">{{$lang_data.data.index.welcome_text | markdownify}}</p>
-        {{ range $lang_data.data.index.short_info}}
-        {{ if .show_small }}
+        {{ with $lang_data.data.index }}
         <div class="col-sm-4 pt-3">
-          {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_color)}}
+          {{ with .open_si}}
+            {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_color)}}
+          {{ end }}
+        </div>
+        {{ if .vacation_si.text }}
+        <div class="col-sm-4 pt-3">
+          {{ with .vacation_si}}
+            {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_red_color)}}
+          {{ end }}
         </div>
         {{ else }}
         <div class="d-none d-sm-block col-sm-4 pt-3">
-          {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_color)}}
+          {{ with .heart_si}}
+            {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_color)}}
+          {{ end }}
         </div>
         {{ end }}
-        {{ end }}
+        <div class="d-none d-sm-block col-sm-4 pt-3">
+          {{ with .rooms_si}}
+            {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_color)}}
+          {{ end }}
+        </div>
+       {{ end }}
       </div>
     </section>
     <hr class="my-5" />

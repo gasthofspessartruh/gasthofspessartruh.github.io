@@ -1,14 +1,3 @@
-breakfast: "plus €7 breakfast per person"
-about_title: "About Us"
-about_text: "Welcome to the Gerber Family! Enjoy fresh air in the heart of the Spessart region. For over 100 years, we have been welcoming our guests with good food and warm hospitality. We look forward to your visit!"
-social_media_title: "Social Media"
-social_media_disclaimer: "Follow us on social media too"
-contact_title: "Contact"
-calendar_title: "Upcoming Events"
-booking_text: "Booking"
-goto_home: "Back to start"
-
-fourohfour_text: "404 - Webpage not found"
 index:
   welcome_title: "Welcome to Landgasthof Spessartruh in Steiger"
   welcome_text: "In the heart of the Spessart forest, you will find a traditional inn with polished wooden tables, a cozy tiled stove, and hearty dishes.  \n Enjoy regional cuisine that uses the best products from our own breeding and production.  \n Our homemade sausages and ham are prepared deliciously and hearty by master butcher Georg Gerber.  \n From snacks to juicy steaks, delicious salads, and vegetarian options, the menu leaves little to be desired.  \n Perhaps you can also try a glass of our „Äppelwoi“ (apple wine) or enjoy a freshly tapped beer from the region."
@@ -37,18 +26,22 @@ index:
     - name: "Steiger und Surroundings"
       src: "/images/Steiger.jpg" 
 
-  short_info:
-  - title: "Opening Hours"
-    text: "Monday to Friday from 5:00 PM  \nSaturday from 2:00 PM  \n Sunday from 11:00 AM  \n Thursday closed  \n Continuous hot food"
+  open_si:
+    title: "Opening Hours"
+    text: "Monday to Friday from 5 PM  \n Saturday from 2 PM  \n Sunday from 11 AM  \n  Closed on Thursdays  \n Continuous hot meals"
     icon: "far fa-calendar-alt"
-    show_small: true
-    show_small: true
-  - title: "With Heart and Soul!"
-    text: "We bring the specialties of the Spessart region to your table, freshly and heartily prepared."
+  heart_si:
+    title: "With Heart!"
+    text: "We bring the specialties of the Spessart to the table for you, freshly and heartily prepared."
     icon: "fas fa-heart"
-  - title: "Guest Rooms"
-    text: "Whether on a business trip or vacation, for relaxation or adventure - we have a room for you!"
+  rooms_si:
+    title: "Guest Rooms"
+    text: "Whether on a business trip or vacation, for relaxation or adventure - We have a room for you!"
     icon: "fas fa-home"
+  vacation_si:
+    title: "We are on Vacation"
+    #text: "Dear guests, we are on vacation.  \n Our restaurant will be closed from 02/11 to 02/14."
+    icon: "fas fa-mug-hot"
 
 contact:
   booking_title: "Booking"
@@ -77,3 +70,14 @@ steiger:
     src: "/images/Steiger.jpg" 
 
 more_button: "Learn more"
+breakfast: "plus €7 breakfast per person"
+about_title: "About Us"
+about_text: "Welcome to the Gerber Family! Enjoy fresh air in the heart of the Spessart region. For over 100 years, we have been welcoming our guests with good food and warm hospitality. We look forward to your visit!"
+social_media_title: "Social Media"
+social_media_disclaimer: "Follow us on social media too"
+contact_title: "Contact"
+calendar_title: "Upcoming Events"
+booking_text: "Booking"
+goto_home: "Back to start"
+
+fourohfour_text: "404 - Webpage not found"
