@@ -5,7 +5,7 @@ draft: false
 weight: 3 
 resources:
     prices:
-    - "68,-"
+    - "70,-"
     images:
     - name: "Einzelzimmer Komfort 01"
       src: "/images/rooms/Comfort_01_01.jpeg"

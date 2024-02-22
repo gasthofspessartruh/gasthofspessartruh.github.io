@@ -5,7 +5,7 @@ draft: false
 weight: 2 
 resources:
     prices:
-    - "99,-"
+    - "103,-"
     images:
     - name: "Comfort Double Room 01"
       src: "/images/rooms/Comfort_02_01.jpeg"

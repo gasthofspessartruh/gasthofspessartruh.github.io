@@ -5,7 +5,7 @@ draft: false
 weight: 12 
 resources:
     prices:
-    - "82,-"
+    - "86,-"
     images:
     - name: "Doppelzimmer Standard 01"
       src: "/images/rooms/Doppel_1.jpeg"

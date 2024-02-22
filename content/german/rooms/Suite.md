@@ -6,7 +6,7 @@ weight: 1
 resources:
     persons: "Für 2-4 Personen"
     prices: 
-    - "130,- für 2 Personen"
+    - "134,- für 2 Personen"
     - "190,- für 4 Personen"
     images:
     - name: "Suite 01"

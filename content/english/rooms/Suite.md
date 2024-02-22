@@ -6,7 +6,7 @@ weight: 1
 resources:
     persons: "For 2-4 Persons"
     prices: 
-    - "130,- for 2 persons"
+    - "134,- for 2 persons"
     - "190,- for 4 persons"
 
     images:

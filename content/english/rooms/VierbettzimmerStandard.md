@@ -5,7 +5,7 @@ draft: false
 weight: 10 
 resources:
     prices:
-    - "138,-"
+    - "154,-"
     images:
     - name: "Standard Four-bed Room 01"
       src: "/images/rooms/Standard_04_01.jpeg"

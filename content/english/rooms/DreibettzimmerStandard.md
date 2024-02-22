@@ -5,7 +5,7 @@ draft: false
 weight: 11 
 resources:
     prices: 
-    - "112,-"
+    - "118,-"
     images:
     - name: "Standard Triple Room 01"
       src: "/images/rooms/Standard_03_01.jpeg"

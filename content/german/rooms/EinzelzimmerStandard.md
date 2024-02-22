@@ -5,7 +5,7 @@ draft: false
 weight: 13 
 resources:
     prices:
-    - "48,-"
+    - "50,-"
     images:
     - name: "Einzelzimmer Standard 01"
       src: "/images/rooms/Einzel_1.jpeg"
