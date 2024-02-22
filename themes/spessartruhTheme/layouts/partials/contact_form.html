@@ -38,8 +38,10 @@
             <label class="form-label" for="roomSelect">{{$lang_data.data.contact_form.room_select}}</label>
             <select class="form-select" aria-label="Default select example" id="roomSelect">
                 {{ range .Site.Pages.ByWeight}}
+                        {{ if .File}}
                         {{ if and (eq .File.Dir "rooms/") (gt .Weight 0)}}
                 <option {{ if eq .Weight 2 }} selected {{end}} value="{{.Name}}">{{.Name}}</option>
+                        {{ end }}
                         {{ end }}
                         {{ end }}
               </select>

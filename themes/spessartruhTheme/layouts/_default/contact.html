@@ -17,6 +17,7 @@
                     </thead>
                     <tbody>
                         {{ range .Site.Pages.ByWeight}}
+                        {{ if .File }}
                         {{ if and (and (eq .File.Dir "rooms/") (gt .Weight 0)) (lt .Weight 10)}}
                         <tr>
                             <td> {{.Name }}</td>
@@ -26,6 +27,7 @@
                                 {{ end }}
                             </td>
                         </tr>
+                        {{ end }}
                         {{ end }}
                         {{ end }}
                         <tr>
@@ -46,6 +48,7 @@
                     </thead>
                     <tbody>
                         {{ range .Site.Pages.ByWeight}}
+                        {{ if .File }}
                         {{ if and (eq .File.Dir "rooms/") (gt .Weight 20) (lt .Weight 30)}}
                         <tr>
                             <td> {{.Name }}</td>
@@ -57,7 +60,9 @@
                         </tr>
                         {{ end }}
                         {{ end }} 
+                        {{ end }}
                         {{ range .Site.Pages.ByWeight}}
+                        {{ if .File }}
                         {{ if and (eq .File.Dir "rooms/") (gt .Weight 9) (lt .Weight 20)}}
                         <tr>
                             <td> {{.Name }}</td>
@@ -67,6 +72,7 @@
                                 {{ end }}
                             </td>
                         </tr>
+                        {{ end }}
                         {{ end }}
                         {{ end }}
                         <tr>
