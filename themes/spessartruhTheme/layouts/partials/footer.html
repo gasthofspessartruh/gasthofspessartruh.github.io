@@ -10,7 +10,7 @@
         <p>{{$lang_data.data.about_text}}</p>
        
       </div>
-      <div class="col-md-6 pt-4 text-center align-items-center" onclick="location.href='/calendar';">
+      <div class="col-md-6 pt-4 text-center align-items-center" onclick="location.href='{{relLangURL "/calendar"}}'">
         <h5><a href='{{ relLangURL "/calendar"}}' class="text-white" >{{$lang_data.data.calendar_title}}</a></h5>
         {{ range first 3 (where ($.Site.RegularPages) "Section" "calendar").ByPublishDate.Reverse }}
          <p class=""> <small>{{.Summary | markdownify}}</br>
