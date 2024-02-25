@@ -4,9 +4,10 @@ title: "Suite"
 draft: false
 weight: 1
 resources:
-    persons: "Für 2-4 Personen"
+    persons: "Für 2-6 Personen"
     prices: 
     - "134,- für 2 Personen"
+    - "Schlafsofa pro Person 27,-"
     - "190,- für 4 Personen"
     images:
     - name: "Suite 01"

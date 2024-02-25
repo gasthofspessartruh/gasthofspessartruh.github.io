@@ -21,15 +21,6 @@
         {{ end }}
     </div>
     <hr class="my-4" />
-    <div class="row justify-content-center">
-        {{ range .Pages.ByWeight}}
-        {{ if and (and (eq .File.Dir "rooms/") (gt .Weight 20)) (lt .Weight 30)}}        <div class="col-lg-6 pt-3">
-            {{ partial "room.html" (dict "context" . "content" "0") }}
-        </div>
-        {{ end }}
-        {{ end }}
-    </div>
-    <hr class="my-4" />
 
     <div class="row justify-content-center pb-3">
         {{ range .Pages.ByWeight}}
