@@ -1,0 +1,55 @@
+{{ define "main" }}
+{{ partial "navbar.html" .}}
+
+{{/* Compute All years */}}
+{{ $years := slice }}
+{{ range where ($.Site.RegularPages) "Section" "calendar" }}
+{{ $years = $years | append (path.Base .File.Dir) }}
+{{ end }}
+{{ $years = $years | uniq }}
+{{ $years = sort $years "value" "desc"}}
+
+<div class="container pt-4 pb-4">
+
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-10">
+
+            <div class="card">
+
+                <div class="container ps-4 pe-4">
+                    {{ range $years}}
+
+                    <div class="row pt-3">
+                        <div class="col">
+                            <h2> {{ . }}</h2>
+                            <div class="container ps-4 pe-4">
+
+                                {{ $year := . }}
+                                {{ range (where ($.Site.RegularPages) "Section" "calendar").ByPublishDate.Reverse }}
+                                {{ if eq (path.Base .File.Dir) $year}}
+                                <div class="row pt-3">
+                                    <div class="col">
+                                    <h4> {{ .Title}}
+                                    </h4>
+                                    <p class="text-secondary"> {{ with .Summary }} {{.}} {{ end }} </p>
+                                    <p>
+                                        {{ .Content}}
+                                    </p>
+                                    </div>
+                                    <hr class="my-4" />
+                                </div>
+                                {{ end }}
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+
+                    {{ end }}
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{{ end }}

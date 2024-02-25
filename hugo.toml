@@ -27,6 +27,11 @@ url = "/location"
 weight = 5
 
 [[Languages.de.menu.main]]
+name = "FAQ"
+url = "/faq"
+weight = 11
+
+[[Languages.de.menu.main]]
 name = "Datenschutz"
 url = "/dsgvo"
 weight = 12
@@ -60,6 +65,11 @@ weight = 4
 name = "Directions"
 url = "/location"
 weight = 5
+
+[[Languages.en.menu.main]]
+name = "FAQ"
+url = "/faq"
+weight = 11
 
 [[Languages.en.menu.main]]
 name = "Privacy Policy"

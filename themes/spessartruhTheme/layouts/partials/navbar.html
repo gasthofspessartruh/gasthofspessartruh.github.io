@@ -16,7 +16,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main.ByWeight }}
-                {{ if lt .Weight 11 }}
+                {{ if lt .Weight 10 }}
                 <li class="nav-item mb-0 fs-5">
                     <a class='nav-link {{ if in $currentPage .URL  }} text-black {{ else }} text-black-50 {{ end }}'
                         href="{{ .URL | relLangURL}}">
