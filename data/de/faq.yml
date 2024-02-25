@@ -1,0 +1,24 @@
+faq:
+- question: "Wie kann ich eine Reservierung vornehmen?"
+  answer: "Reservierungen können telefonisch, per E-Mail oder direkt über unsere Website vorgenommen werden. Wir empfehlen, im Voraus zu buchen, um sicherzustellen, dass Ihr gewünschtes Datum verfügbar ist."
+
+- question: "Sind außreichend Parkplätze verfügbar?"
+  answer: "Ja, wir bieten unseren Gästen kostenlose Parkplätze direkt am Landgasthof an."
+
+- question: "Sind Haustiere erlaubt?"
+  answer: "Haustiere sind in einigen Zimmern gegen eine kleine Gebühr erlaubt. Bitte informieren Sie uns bei der Buchung, wenn Sie mit einem Haustier anreisen möchten."
+  
+- question: "Sind die Zimmer mit Internetzugang ausgestattet?"
+  answer: "Alle Zimmer verfügen über kostenloses WLAN. Die Zugangsdaten erhalten Sie bei Ihrer Ankunft."
+
+- question: "Kann ich bei Ihnen Fahrräder ausleihen?"
+  answer: "Ja, wir bieten unseren Gästen die Möglichkeit, Fahrräder auszuleihen, um die umliegende Landschaft zu erkunden."
+
+- question: "Bieten Sie spezielle Diäten oder vegetarische/vegane Optionen an?"
+  answer: "Ja, unser Küchenteam berücksichtigt gerne spezielle Ernährungsbedürfnisse. Bitte teilen Sie uns diese im Voraus mit."
+
+- question: "Was sind die Check-in und Check-out Zeiten?"
+  answer: "Der Check-in ist ab 15:00 Uhr möglich, und wir bitten unsere Gäste, bis 11:00 Uhr auszuchecken. Sollten Sie eine frühere Anreise oder spätere Abreise wünschen, kontaktieren Sie uns bitte im Voraus."
+
+- question: "Gibt es Aktivitäten oder Sehenswürdigkeiten in der Nähe?"
+  answer: "In der Umgebung unseres Landgasthofs finden Sie zahlreiche Wanderwege, historische Stätten und Naturparks. Gerne geben wir Ihnen persönliche Empfehlungen und Informationsmaterial."

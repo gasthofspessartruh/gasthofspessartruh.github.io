@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{- partial "navbar.html" . -}}
+{{ $lang_data := index site.Data site.Language.Lang}}
+{{ $first := true }}
+<main class="mt-5 mb-5">
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-xl-7 col-md-8">
+                <div class="card h-100">
+                    {{ with $lang_data.faq.faq}}
+                    {{ range . }}
+                    {{- $id := printf "accordeon_%d" (crypto.FNV32a .question)}}
+                    {{- $headid := printf "accordeon_head_%d" (crypto.FNV32a .question)}}
+                    <div class="accordion accordion-flush">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="{{$headid}}">
+                                <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
+                                    data-mdb-toggle="collapse" data-mdb-target="#{{- $id}}" aria-expanded="true"
+                                    aria-controls="{{$id}}">
+                                    {{ .question | markdownify}}
+                                </button>
+                            </h2>
+                            <div id="{{- $id}}" class="accordion-collapse collapse {{if $first}} {{ $first = false}} show {{ end}}" aria-labelledby="{{$headid}}">
+                                <div class="accordion-body">
+                                    {{ .answer | markdownify}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{{ end }}
