@@ -30,3 +30,4 @@ Perhaps you would like to have a piece of home on your business trip as well. Th
 - [Komoot](https://www.komoot.com)
 - [Schlappeseppel Brewery](https://www.schlappeseppel.de/8/)
 - [Spessart Specht Brewery](https://spessart-brauerei.de)
+- [Bikewald Spessart](https://www.bikewald.com)

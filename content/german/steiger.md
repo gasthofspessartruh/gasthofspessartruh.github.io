@@ -31,3 +31,4 @@ Vielleicht gönnen Sie sich aber auch ein Stück Zuhause auf Ihrer Geschäftsrei
 - [Komoot](https://www.komoot.com)
 - [Brauerei Schlappeseppel](https://www.schlappeseppel.de/8/)
 - [Brauerei Spessart Specht](https://spessart-brauerei.de)
+- [Bikewald Spessart](https://www.bikewald.com)
