@@ -1,24 +1,42 @@
 faq:
 - question: "Wie kann ich eine Reservierung vornehmen?"
-  answer: "Reservierungen können telefonisch, per E-Mail oder direkt über unsere Website vorgenommen werden. Wir empfehlen, im Voraus zu buchen, um sicherzustellen, dass Ihr gewünschtes Datum verfügbar ist."
+  answer: "Buchungen nehmen wir gerne telefonisch oder per E-Mail entgegen. Anfragen können zusätzlich auch über unsere Website gestellt werden."
 
-- question: "Sind außreichend Parkplätze verfügbar?"
+- question: "Gibt es WLAN?"
+  answer: "Ja, im gesamten Haus sowie im Biergarten steht Ihnen kostenloses WLAN zur Verfügung.  Die Zugangsdaten finden Sie auf Ihrem Zimmer oder an der Wirtshaus-Theke"
+
+- question: "Sind Parkplätze verfügbar?"
   answer: "Ja, wir bieten unseren Gästen kostenlose Parkplätze direkt am Landgasthof an."
+
+- question: "Kann ich bei Ihnen Fahrräder ausleihen?"
+  answer: "Ja, wir bieten unseren Gästen die Möglichkeit, Fahrräder gegen eine Gebühr auszuleihen, um die umliegende Landschaft zu erkunden."
 
 - question: "Sind Haustiere erlaubt?"
   answer: "Haustiere sind in einigen Zimmern gegen eine kleine Gebühr erlaubt. Bitte informieren Sie uns bei der Buchung, wenn Sie mit einem Haustier anreisen möchten."
   
-- question: "Sind die Zimmer mit Internetzugang ausgestattet?"
-  answer: "Alle Zimmer verfügen über kostenloses WLAN. Die Zugangsdaten erhalten Sie bei Ihrer Ankunft."
+- question: "Was sind die Check-in und Check-out Zeiten?"
+  answer: "Der Check-in ist ab 17:00 Uhr möglich, und wir bitten unsere Gäste, bis 10:00 Uhr auszuchecken. Sollten Sie eine frühere Anreise oder spätere Abreise wünschen, kontaktieren Sie uns bitte im Voraus."
 
-- question: "Kann ich bei Ihnen Fahrräder ausleihen?"
-  answer: "Ja, wir bieten unseren Gästen die Möglichkeit, Fahrräder auszuleihen, um die umliegende Landschaft zu erkunden."
+- question: "Frühstücksbuffet"
+  answer: "Für Hotelgäste bieten wir Frühstück Montag bis Freitag von 6.30 bis 9.00 Uhr und am Wochenende sowie an Feiertagen von 8.00 bis 10.00 Uhr an."
+
+- question: "Kann ich auch am Ruhetag anreisen?"
+  answer: "Ja, die Anreise am Ruhetag ist möglich."
+
+- question: "Haben Sie Zimmer für Gäste mit Handicap?"
+  answer: "Nein, alle Zimmer sind nur über eine Treppe erreichbar.  Einen Aufzug gibt es leider nicht."
+
+- question: "Sind Gaststätte, Biergarten und Toiletten ebenerdig zu erreichen?"
+  answer: "Ja, unser hinterer Eingang ist ebenerdig."
+
+- question: "Wird der Biergarten bedient?"
+  answer: "Ja, gerne nehmen wir Ihre Bestellung am Tisch auf. Außerdem verfügt unser Biergarten über ein online Bestellsystem, welches Sie am Tisch nutzen können."
+
+- question: "Gibt es Einkaufmöglichkeiten in Steiger?"
+  answer: "Der Weiler Steiger liegt auf einer Anhöhe idyllisch im Spessart. Die nächsten Einkaufsläden sind ca. 5 km entfernt."
 
 - question: "Bieten Sie spezielle Diäten oder vegetarische/vegane Optionen an?"
   answer: "Ja, unser Küchenteam berücksichtigt gerne spezielle Ernährungsbedürfnisse. Bitte teilen Sie uns diese im Voraus mit."
-
-- question: "Was sind die Check-in und Check-out Zeiten?"
-  answer: "Der Check-in ist ab 15:00 Uhr möglich, und wir bitten unsere Gäste, bis 11:00 Uhr auszuchecken. Sollten Sie eine frühere Anreise oder spätere Abreise wünschen, kontaktieren Sie uns bitte im Voraus."
 
 - question: "Gibt es Aktivitäten oder Sehenswürdigkeiten in der Nähe?"
   answer: "In der Umgebung unseres Landgasthofs finden Sie zahlreiche Wanderwege, historische Stätten und Naturparks. Gerne geben wir Ihnen persönliche Empfehlungen und Informationsmaterial."

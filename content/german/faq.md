@@ -1,4 +1,4 @@
 ---
-title: "Fragen und Antworten"
+title: "Gut zu Wissen"
 layout: "faq"
 ---

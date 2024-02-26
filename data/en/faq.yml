@@ -1,24 +1,29 @@
 faq:
   - question: "How can I make a reservation?"
-    answer: "Reservations can be made by phone, email, or directly through our website. We recommend booking in advance to ensure your desired date is available."
-  
-  - question: "Are there enough parking spaces available?"
+    answer: "We are happy to accept bookings by phone or email. Requests can also be made through our website."
+  - question: "Is there Wi-Fi?"
+    answer: "Yes, free Wi-Fi is available throughout the building and in the beer garden. Access details can be found in your room or at the inn's counter."
+  - question: "Are parking spaces available?"
     answer: "Yes, we offer our guests free parking right at the country inn."
-  
+  - question: "Can I rent bicycles?"
+    answer: "Yes, we offer our guests the opportunity to rent bicycles for a fee to explore the surrounding countryside."
   - question: "Are pets allowed?"
-    answer: "Pets are allowed in some rooms for a small fee. Please inform us at the time of booking if you plan to arrive with a pet."
-  
-  - question: "Are the rooms equipped with internet access?"
-    answer: "All rooms have free Wi-Fi. You will receive the access data upon arrival."
-  
-  - question: "Can I rent bicycles from you?"
-    answer: "Yes, we offer our guests the opportunity to rent bicycles to explore the surrounding countryside."
-  
-  - question: "Do you offer special diets or vegetarian/vegan options?"
-    answer: "Yes, our kitchen team is happy to accommodate special dietary needs. Please inform us in advance."
-  
+    answer: "Pets are allowed in some rooms for a small fee. Please inform us at the time of booking if you would like to arrive with a pet."
   - question: "What are the check-in and check-out times?"
-    answer: "Check-in is possible from 3:00 PM, and we ask our guests to check out by 11:00 AM. If you wish for an earlier arrival or later departure, please contact us in advance."
-  
-  - question: "Are there activities or attractions nearby?"
-    answer: "In the vicinity of our country inn, you will find numerous hiking trails, historical sites, and nature parks. We are happy to provide personal recommendations and informational material."
+    answer: "Check-in is possible from 5:00 PM, and we ask our guests to check out by 10:00 AM. If you wish to arrive earlier or leave later, please contact us in advance."
+  - question: "Breakfast buffet"
+    answer: "For hotel guests, we offer breakfast Monday to Friday from 6:30 to 9:00 AM and on weekends and public holidays from 8:00 to 10:00 AM."
+  - question: "Can I arrive on a day off?"
+    answer: "Yes, arrival on a day off is possible."
+  - question: "Do you have rooms for guests with disabilities?"
+    answer: "No, all rooms can only be reached via stairs. Unfortunately, there is no elevator."
+  - question: "Are the inn, beer garden, and toilets accessible at ground level?"
+    answer: "Yes, our rear entrance is at ground level."
+  - question: "Is service provided in the beer garden?"
+    answer: "Yes, we are happy to take your order at the table. In addition, our beer garden has an online ordering system that you can use at the table."
+  - question: "Are there shopping facilities in Steiger?"
+    answer: "The hamlet of Steiger is idyllically located on a hill in the Spessart. The nearest shopping stores are about 5 km away."
+  - question: "Do you offer special diets or vegetarian/vegan options?"
+    answer: "Yes, our kitchen team is happy to accommodate special dietary needs. Please let us know in advance."
+  - question: "Are there activities or sights in the vicinity?"
+    answer: "In the vicinity of our country inn, you will find numerous hiking trails, historic sites, and nature parks. We are happy to provide personal recommendations and informational materials."
