@@ -1,5 +1,5 @@
 ---
-date: 2023-03-01T08:20:34+01:00
+date: 2024-02-28T16:20:34+01:00
 title: "Blechschlacht in Steiger"
 summary: "June 9, 2024"
 ---

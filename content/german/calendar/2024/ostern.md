@@ -1,5 +1,5 @@
 ---
-date: 2023-03-02T07:20:34+01:05
+date: 2024-02-06T07:20:34+01:05
 title: "An Ostern durchgehend warme Küche"
 summary: "29.03.24 - 01.04.2024"
 ---
