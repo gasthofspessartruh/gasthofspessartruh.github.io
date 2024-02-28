@@ -6,7 +6,7 @@
 
     <meta name="description" content="" />
     <meta name="keywords" content="Gasthof Spessartruh, Spessart, Vorspessart, Biergarten, Bier, Pressack" />
-    <title>{{ if .Title }} {{ .Title }} {{ else }} {{ site.Params.title }} {{end}}</title>
+    <title>{{ if .IsHome }} {{ .Site.Title }} {{ else }} {{if .Title }} {{.Title}} · {{ .Site.Title }} {{ else }} {{ .Site.Title }} {{end}} {{ end}}</title>
     {{ if .Title }}
     <meta name="description" content="{{ .Title }}">
     {{ end }}
