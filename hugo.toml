@@ -27,9 +27,9 @@ url = "/location"
 weight = 5
 
 [[Languages.de.menu.main]]
-name = "FAQ"
+name = "Gut zu Wissen"
 url = "/faq"
-weight = 11
+weight = 6 
 
 [[Languages.de.menu.main]]
 name = "Datenschutz"
@@ -69,7 +69,7 @@ weight = 5
 [[Languages.en.menu.main]]
 name = "FAQ"
 url = "/faq"
-weight = 11
+weight = 6
 
 [[Languages.en.menu.main]]
 name = "Privacy Policy"
