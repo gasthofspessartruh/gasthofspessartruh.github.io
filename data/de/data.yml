@@ -44,7 +44,7 @@ index:
 
 
 contact: 
-  booking_title: "Buchung"
+  booking_title: "Zimmeranfrage"
   price_comfort: "Zimmerpreise Komfort"
   price_standard: "Zimmerpreise Standard"
 
@@ -79,7 +79,7 @@ social_media_title: "Social Media"
 social_media_disclaimer: "Folgen Sie uns auch auf Social Media"
 contact_title: "Kontakt"
 calendar_title: "Anstehende Veranstaltungen"
-booking_text: "Zur Buchung"
+booking_text: "Zimmeranfrage"
 goto_home: "Zur Startseite zurückkehren"
 
 fourohfour_text: "404 - Webseite nicht gefunden"
