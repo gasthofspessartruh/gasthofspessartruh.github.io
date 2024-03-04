@@ -40,7 +40,6 @@ index:
     icon: "fas fa-home"
   vacation_si:
     title: "We are on Vacation"
-    #text: "Dear guests, we are on vacation.  \n Our restaurant will be closed from 02/11 to 02/14."
     icon: "fas fa-mug-hot"
 
 contact:
