@@ -65,8 +65,8 @@
 <script>
   function activate_calendar(start_date_str, end_date_str, target_id, target) {
     var today = new Date().setHours(0, 0, 0, 0);
-    var start_date = new Date(start_date_str)
-    var end_date = new Date(end_date_str)
+    var start_date = new Date(start_date_str).setHours(0, 0, 0, 0);
+    var end_date = new Date(end_date_str).setHours(0, 0, 0, 0);
     if ((start_date <= today) && (today <= end_date)) {
       console.log('activated start for', target)
       document.getElementById(target_id).style.display = "block";
