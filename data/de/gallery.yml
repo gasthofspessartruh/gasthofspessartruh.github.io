@@ -1,17 +1,12 @@
 # the images have to be provided both in the horizontal and the vertical assets folder
 # assets/images/gallery/horizontal and assets/images/gallery/vertical
 gallery:
-  video:
-    title: "Ein Wirtshaus zum Wohlfühlen!"
-    subtitle: "Genießen Sie gesellige und herzliche Atmosphäre"
-    src: "ochs.mp4"
- 
   items:
   - title: "Unser Biergarten"
     image: "biergarten.jpg"
-#  - title: "Sonntag 30.07. „Blechschlacht“"
-#    subtitle: "Musikverein Keilberg gegen Winzenhohl. ab 11 Uhr Spanferkel vom Spieß"
-#    image: "blechschlacht.jpg"
+  #- title: "Sonntag 30.07. „Blechschlacht“"
+  #  subtitle: "Musikverein Keilberg gegen Winzenhohl. ab 11 Uhr Spanferkel vom Spieß"
+  #  image: "blechschlacht.jpg"
   - title: "Ihr besonderer Tag!"
     subtitle: "Wir beraten Sie gerne bei der Planung Ihrer nächsten Feier"
     image: "komunion_gruen.jpg"
