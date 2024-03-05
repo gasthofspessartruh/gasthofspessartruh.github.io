@@ -1,4 +1,12 @@
 vacation:
-- start: "2024-03-05" #YYYY-MM-DD
-  end: "2024-03-05" # YYY-MM-DD
-  message: "Dear guests, we are on vacation.  \n Our restaurant will be closed from 02/11 to 02/14." # Hier auch nochmal das Datum erwähnen
+  - start: "2024-06-17" #YYYY-MM-DD
+    end: "2024-06-23" # YYY-MM-DD
+    message: "Dear guests, we are on vacation. \n Our restaurant will remain closed until the 23rd of June, 2024." # Mention the date here again
+  
+  - start: "2024-09-16" #YYYY-MM-DD
+    end: "2024-09-30" # YYY-MM-DD
+    message: "Dear guests, we are on vacation. \n Our restaurant will remain closed until the 30th of September, 2024." # Mention the date here again
+
+  - start: "2024-12-23" #YYYY-MM-DD
+    end: "2024-12-26" # YYY-MM-DD
+    message: "Dear guests, we are on vacation. \n Our restaurant will remain closed until the 26th of December, 2024." # Mention the date here again
