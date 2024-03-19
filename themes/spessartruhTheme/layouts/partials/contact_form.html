@@ -36,7 +36,7 @@
     </div>
 
     <div class="row mb-4">
-        <div class="col">
+        <div class="col-6">
             <label class="form-label" for="roomSelect">{{$lang_data.data.contact_form.room_select}}</label>
             <select class="form-select" aria-label="Default select example" id="roomSelect" name="Zimmertyp">
                 {{ range .Site.Pages.ByWeight}}
@@ -48,6 +48,7 @@
                         {{ end }}
               </select>
         </div>
+        <!--
         <div class="col">
             <label class="form-label" for="numPersons">{{$lang_data.data.contact_form.persons_select}}</label>
             <div class="range">
@@ -55,6 +56,7 @@
                     name="AnzahlPersonen" />
             </div>
         </div>
+        -->
     </div>
 
     <div class="row ">
