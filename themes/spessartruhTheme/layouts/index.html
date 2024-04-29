@@ -24,7 +24,7 @@
           {{ range $lang_data.vacation.vacation}}
             {{- $id := printf "vacation%d" (crypto.FNV32a (printf "%s%s%s" .start .end .message))}}
             <div id="{{$id}}" style="display: none;">
-              {{ $context := (dict "icon" $lang_data.data.index.vacation_si.icon "title" $lang_data.data.index.vacation_si.title "text" .message  )}}
+              {{ $context := (dict "icon" $lang_data.data.index.vacation_si.icon "title" $lang_data.data.index.vacation_si.title "text" .message "title" .title  )}}
               {{ partial "index_short_infos.html" (dict "context" $context "color" $contrast_red_color)}}
             </div>
             {{ end }}

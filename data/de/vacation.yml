@@ -1,12 +1,35 @@
 vacation:
 - start: "2024-06-17" #YYYY-MM-DD
   end: "2024-06-23" # YYY-MM-DD
+  title: "Wir haben Urlaub"
   message: "Liebe Gäste, wir haben Urlaub.  \n Unser Restaurant bleibt bis einschließlich 23.06.2024 geschlossen." # Hier auch nochmal das Datum erwähnen
+
+- start: "2024-08-15" #YYYY-MM-DD
+  end: "2024-08-15" # YYY-MM-DD
+  title: "Heute ist Ruhetag"
+  message: "Liebe Gäste, heute ist Ruhetag.  \n Unser Restaurant bleibt heute geschlossen." # Hier auch nochmal das Datum erwähnen
   
 - start: "2024-09-16" #YYYY-MM-DD
-  end: "2024-09-30" # YYY-MM-DD
+  end: "2024-09-29" # YYY-MM-DD
+  title: "Wir haben Urlaub"
   message: "Liebe Gäste, wir haben Urlaub.  \n Unser Restaurant bleibt bis einschließlich 30.09.2024 geschlossen." # Hier auch nochmal das Datum erwähnen
+
+- start: "2024-10-03" #YYYY-MM-DD
+  end: "2024-10-03" # YYY-MM-DD
+  title: "Heute ist Ruhetag"
+  message: "Liebe Gäste, heute ist Ruhetag.  \n Unser Restaurant bleibt heute geschlossen." # Hier auch nochmal das Datum erwähnen
+
+- start: "2024-11-01" #YYYY-MM-DD
+  end: "2024-11-01" # YYY-MM-DD
+  title: "Heute ist Ruhetag"
+  message: "Liebe Gäste, heute ist Ruhetag.  \n Unser Restaurant bleibt heute geschlossen." # Hier auch nochmal das Datum erwähnen
 
 - start: "2024-12-23" #YYYY-MM-DD
   end: "2024-12-26" # YYY-MM-DD
+  title: "Wir haben Urlaub"
   message: "Liebe Gäste, wir haben Urlaub.  \n Unser Restaurant bleibt bis einschließlich 26.12.2024 geschlossen." # Hier auch nochmal das Datum erwähnen
+
+- start: "2025-01-01" #YYYY-MM-DD
+  end: "2025-01-01" # YYY-MM-DD
+  title: "Heute ist Ruhetag"
+  message: "Liebe Gäste, heute ist Ruhetag.  \n Unser Restaurant bleibt heute geschlossen." # Hier auch nochmal das Datum erwähnen
