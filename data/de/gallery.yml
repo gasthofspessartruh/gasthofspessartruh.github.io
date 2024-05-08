@@ -2,6 +2,9 @@
 # assets/images/gallery/horizontal and assets/images/gallery/vertical
 gallery:
   items:
+  - title: "Vatertag, 09. Mai"
+    subtitle: "Ab 11:00 Uhr Ochs am Spieß."
+    image: "Ochs.png"
   - title: "Unser Biergarten"
     image: "biergarten.jpg"
   #- title: "Sonntag 30.07. „Blechschlacht“"
