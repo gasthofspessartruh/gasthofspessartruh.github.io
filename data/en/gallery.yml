@@ -2,12 +2,12 @@
 # assets/images/gallery/horizontal and assets/images/gallery/vertical
 gallery:
   items:
-  - title: "Father's Day, May 9th"
-    subtitle: "From 11:00 AM Ox on the Spit."
-    image: "Ochs.png"
- # - title: "Sunday, July 30th -  „Blechschlacht“"
- #   subtitle: "Music Association Keilberg vs. Winzenhohl. From 11 AM, spit-roasted suckling pig"
- #   image: "blechschlacht.jpg"
+  #- title: "Father's Day, May 9th"
+  #  subtitle: "From 11:00 AM Ox on the Spit."
+  #  image: "Ochs.png"
+  - title: "Sunday, June 9th -  „Blechschlacht“"
+    subtitle: "Music Association Keilberg vs. Waldaschaff. From 11 AM, spit-roasted suckling pig"
+    image: "blechschlacht.jpg"
   - title: "Your Special Day!"
     subtitle: "We are happy to assist you in planning your next celebration"
     image: "komunion_gruen.jpg"

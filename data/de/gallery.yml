@@ -2,14 +2,14 @@
 # assets/images/gallery/horizontal and assets/images/gallery/vertical
 gallery:
   items:
-  - title: "Vatertag, 09. Mai"
-    subtitle: "Ab 11:00 Uhr Ochs am Spieß."
-    image: "Ochs.png"
+  - title: "Sonntag 09.06. „Blechschlacht“"
+    subtitle: "Musikverein Keilberg gegen Waldaschaff. Ab 11 Uhr Spanferkel vom Spieß"
+    image: "blechschlacht.jpg"
+ # - title: "Vatertag, 09. Mai"
+ #   subtitle: "Ab 11:00 Uhr Ochs am Spieß."
+ #   image: "Ochs.png"
   - title: "Unser Biergarten"
     image: "biergarten.jpg"
-  #- title: "Sonntag 30.07. „Blechschlacht“"
-  #  subtitle: "Musikverein Keilberg gegen Winzenhohl. ab 11 Uhr Spanferkel vom Spieß"
-  #  image: "blechschlacht.jpg"
   - title: "Ihr besonderer Tag!"
     subtitle: "Wir beraten Sie gerne bei der Planung Ihrer nächsten Feier"
     image: "komunion_gruen.jpg"
