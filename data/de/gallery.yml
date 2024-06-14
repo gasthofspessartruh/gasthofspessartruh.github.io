@@ -2,9 +2,9 @@
 # assets/images/gallery/horizontal and assets/images/gallery/vertical
 gallery:
   items:
-  - title: "Sonntag 09.06. „Blechschlacht“"
-    subtitle: "Musikverein Keilberg gegen Waldaschaff. Ab 11 Uhr Spanferkel vom Spieß"
-    image: "blechschlacht.jpg"
+#  - title: "Sonntag 09.06. „Blechschlacht“"
+#    subtitle: "Musikverein Keilberg gegen Waldaschaff. Ab 11 Uhr Spanferkel vom Spieß"
+#    image: "blechschlacht.jpg"
  # - title: "Vatertag, 09. Mai"
  #   subtitle: "Ab 11:00 Uhr Ochs am Spieß."
  #   image: "Ochs.png"
