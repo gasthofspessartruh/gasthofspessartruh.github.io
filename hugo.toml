@@ -46,6 +46,11 @@ name = "Jobs"
 url = "/jobs"
 weight = 14 
 
+[[Languages.de.menu.main]]
+name = "Barrierefreiheit"
+url = "/accessibility"
+weight = 15 
+
 [[Languages.en.menu.main]]
 name = "Menu"
 url = "/menu"
@@ -85,6 +90,11 @@ weight = 13
 name = "Jobs"
 url = "/jobs"
 weight = 14 
+
+[[Languages.en.menu.main]]
+name = "Accessibility"
+url = "/accessibility"
+weight = 15 
 
 
 

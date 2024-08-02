@@ -1,0 +1,57 @@
+{{ define "main" }}
+{{- partial "navbar.html" . -}}
+{{ $data := index site.Data "data" }}
+
+{{ with $data.contact}}
+<main class="mt-5 mb-5 ">
+  <div class="container pb-4">
+    <div class="row">
+      <div class="col-lg-12 pt-4">
+        <div class='impressum'>
+          <h1>Erkl&auml;rung zur Barrierefreiheit</h1>
+
+          <p>Wir, der Gasthof Spessartruh Steiger, als Websitebetreiber sind bem&uuml;ht, die Website in Einklang mit den
+            einschl&auml;gigen Vorschriften zur Barrierefreiheit zu gestalten. F&uuml;r uns gelten folgende
+            Rechtsvorschriften:</p>
+          <p>Bayerisches Gesetz zur Gleichstellung, Integration und Teilhabe von Menschen mit Behinderung (Bayerisches
+            Behindertengleichstellungsgesetz &ndash; BayBGG) und Bayerische Barrierefreie Informationstechnik-Verordnung
+            (BayBITV)</p>
+          <h2>Website</h2>
+          <p>Diese Erkl&auml;rung zur Barrierefreiheit gilt f&uuml;r die Website <a
+              href="https://www.spessartruh-steiger.de">https://www.spessartruh-steiger.de</a>.</p>
+          <h3>Letzte Aktualisierung der Website</h3>
+          <p>Diese Website wurde zuletzt am 02.08.2024 in wesentlichen Punkten inhaltlich &uuml;berarbeitet.</p>
+          <h2>Feedback und Kontaktangaben</h2>
+          <p>Sind Ihnen M&auml;ngel beim barrierefreien Zugang zu Inhalten auf unserer Website aufgefallen oder haben
+            Sie Anmerkungen sowie Fragen zum barrierefreien Zugang? Melden Sie sich gerne bei uns unter:</p>
+            <p>{{.owner}}<br> 
+              {{.address}}
+            </p>
+            <p><strong>Kontakt:</strong> <br>
+            Telefon: {{.festnetz}}<br>
+            E-Mail: {{.email}}</br>
+          <a href="https://www.spessartruh-steiger.de/contact/">https://www.spessartruh-steiger.de/contact/</a></p>
+
+          <h2>Stand der Vereinbarkeit mit den Anforderungen</h2>
+          <p>Diese Website ist vollst&auml;ndig mit den f&uuml;r uns geltenden Vorschriften zur Barrierefreiheit
+            vereinbar.</p>
+          <h3>Evaluationsmethode</h3> Google PageSpeed Insights
+          <h2>Durchsetzungsverfahren</h2>
+          <p>Sollten Sie der Ansicht sein, dass Sie durch eine nicht ausreichende barrierefreie Gestaltung unserer
+            Website benachteiligt sind, k&ouml;nnen Sie sich an die zust&auml;ndige Durchsetzungsstelle wenden. Diese
+            erreichen Sie unter:</p>
+          <p>Landesamt f&uuml;r Digitalisierung, Breitband und Vermessung<br />IT-Dienstleistungszentrum des Freistaats
+            Bayern<br />Durchsetzungs- und &Uuml;berwachungsstelle f&uuml;r barrierefreie
+            Informationstechnik<br />St.-Martin-Stra&szlig;e 47<br />81541 M&uuml;nchen</p>
+          <p>E-Mail: <a href="mailto:bitv@bayern.de">bitv@bayern.de</a></p>
+          <h2>Erstellung dieser Erkl&auml;rung zur Barrierefreiheit</h2>
+          <p>Diese Erkl&auml;rung wurde am 02.08.2024 erstellt.</p>
+          <p>Die Erkl&auml;rung wurde zuletzt am 02.08.2024 &uuml;berpr&uuml;ft.</p>
+          <p>Quelle: <a href="https://www.e-recht24.de/barrierefreiheitserklaerung.html">eRecht24</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{ end }}
+{{ end }}
