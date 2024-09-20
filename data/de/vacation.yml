@@ -12,7 +12,7 @@ vacation:
 - start: "2024-09-16" #YYYY-MM-DD
   end: "2024-09-29" # YYY-MM-DD
   title: "Wir haben Urlaub"
-  message: "Liebe Gäste, wir haben Urlaub.  \n Unser Restaurant bleibt bis einschließlich 30.09.2024 geschlossen." # Hier auch nochmal das Datum erwähnen
+  message: "Liebe Gäste, wir haben Urlaub.  \n Unser Restaurant bleibt bis einschließlich 29.09.2024 geschlossen." # Hier auch nochmal das Datum erwähnen
 
 - start: "2024-10-03" #YYYY-MM-DD
   end: "2024-10-03" # YYY-MM-DD

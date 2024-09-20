@@ -10,7 +10,7 @@ vacation:
 - start: "2024-09-16" # Start date in YYYY-MM-DD format
   end: "2024-09-29" # End date in YYYY-MM-DD format
   title: "We are on Vacation"
-  message: "Dear guests, we are on vacation.  \n Our restaurant will be closed until September 30, 2024." # Mention the date again here
+  message: "Dear guests, we are on vacation.  \n Our restaurant will be closed until September 29, 2024." # Mention the date again here
 - start: "2024-10-03" # Start date in YYYY-MM-DD format
   end: "2024-10-03" # End date in YYYY-MM-DD format
   title: "Today is Closed"
