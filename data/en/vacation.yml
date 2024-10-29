@@ -15,10 +15,12 @@ vacation:
   end: "2024-10-03" # End date in YYYY-MM-DD format
   title: "Today is Closed"
   message: "Dear guests, today is closed.  \n Our restaurant will be closed today." # Mention the date again here
+
 - start: "2024-11-01" # Start date in YYYY-MM-DD format
-  end: "2024-11-01" # End date in YYYY-MM-DD format
+  end: "2024-11-07" # End date in YYYY-MM-DD format
   title: "Today is Closed"
-  message: "Dear guests, today is closed.  \n Our restaurant will be closed today." # Mention the date again here
+  message: "Dear guests, we are on vacation.  \n Our restaurant will be closed until November 11, 2024." # Mention the date again here
+
 - start: "2024-12-23" # Start date in YYYY-MM-DD format
   end: "2024-12-26" # End date in YYYY-MM-DD format
   title: "We are on Vacation"
