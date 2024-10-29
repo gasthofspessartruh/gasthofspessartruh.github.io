@@ -15,7 +15,7 @@ gallery:
     image: "komunion_gruen.jpg"
   - title: "Schon entdeckt?"
     subtitle: "Unsere neuen Komfort-Zimmer"
-    image: "zimmer.jpeg"
+    image: "room.jpeg"
     url: "rooms"
     url_text: "jetzt buchen"
   - title: "Lust aufs Wandern?"
