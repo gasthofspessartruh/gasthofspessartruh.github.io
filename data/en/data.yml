@@ -28,7 +28,7 @@ index:
 
   open_si:
     title: "Opening Hours"
-    text: "Monday to Friday from 5 PM  \n Saturday from 2 PM  \n Sunday from 11 AM  \n  Closed on Thursdays  \n Continuous hot meals"
+    text: "Monday to Saturday from 5 PM  \n Sunday from 11 AM  \n  Closed on Thursdays  \n Continuous hot meals"
     icon: "far fa-calendar-alt"
   heart_si:
     title: "With Heart!"

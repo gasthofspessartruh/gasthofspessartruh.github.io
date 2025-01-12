@@ -27,7 +27,7 @@ index:
 
   open_si:
     title: "Öffnungszeiten"
-    text: "Montag bis Freitag ab 17 Uhr  \n Samstag ab 14 Uhr  \n Sonntag ab 11 Uhr  \n  Donnerstag Ruhetag  \n Durchgehend warme Küche"
+    text: "Montag bis Samstag ab 17 Uhr  \n Sonntag ab 11 Uhr  \n  Donnerstag Ruhetag  \n Durchgehend warme Küche"
     icon: "far fa-calendar-alt"
   heart_si:
     title: "Mit Herz dabei!"

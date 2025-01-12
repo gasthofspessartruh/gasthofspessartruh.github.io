@@ -4,6 +4,7 @@ title = 'Gasthof Spessartruh Steiger'
 theme = "spessartruhTheme"
 defaultContentLanguage = "de"
 timeout = "10m"
+buildFuture = true                               # Include future-dated content
 ################### German Navigation ########################
 
 [[Languages.de.menu.main]]
@@ -29,7 +30,7 @@ weight = 5
 [[Languages.de.menu.main]]
 name = "Gut zu Wissen"
 url = "/faq"
-weight = 6 
+weight = 6
 
 [[Languages.de.menu.main]]
 name = "Datenschutz"
@@ -39,17 +40,17 @@ weight = 12
 [[Languages.de.menu.main]]
 name = "Impressum"
 url = "/impress"
-weight = 13 
+weight = 13
 
 [[Languages.de.menu.main]]
 name = "Jobs"
 url = "/jobs"
-weight = 14 
+weight = 14
 
 [[Languages.de.menu.main]]
 name = "Barrierefreiheit"
 url = "/accessibility"
-weight = 15 
+weight = 15
 
 [[Languages.en.menu.main]]
 name = "Menu"
@@ -84,19 +85,17 @@ weight = 12
 [[Languages.en.menu.main]]
 name = "Imprint"
 url = "/impress"
-weight = 13 
+weight = 13
 
 [[Languages.en.menu.main]]
 name = "Jobs"
 url = "/jobs"
-weight = 14 
+weight = 14
 
 [[Languages.en.menu.main]]
 name = "Accessibility"
 url = "/accessibility"
-weight = 15 
-
-
+weight = 15
 
 
 ################################ German Language ########################
@@ -117,4 +116,4 @@ weight = 2
 formspark_form_id = "ziXjlqs59"
 contrast_color = "#8ab42f"
 contrast_red_color = "#a12312"
-notification_color ="#6a8530"
+notification_color = "#6a8530"
