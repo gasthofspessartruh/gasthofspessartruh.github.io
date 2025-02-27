@@ -1,0 +1,12 @@
+---
+date: 2025-04-18T07:20:34+01:05
+title: "An Ostern durchgehend warme Küche"
+summary: "18.04.24 - 21.04.2024"
+start: "2025-02-01"
+end: "2025-04-21"
+---
+
+- Karfreitag ab 11.00 Uhr,  
+- Samstag ab 17.00 Uhr,  
+- Sonntag ab 11.00 Uhr  
+- Ostermontag ab 11.00 Uhr
