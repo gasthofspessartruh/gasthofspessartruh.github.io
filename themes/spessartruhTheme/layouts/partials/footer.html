@@ -17,7 +17,7 @@
         {{ range (sort (where ($.Site.RegularPages) "Section" "calendar") "Params.end" "desc") }}
             {{ $startTime := time .Params.End }}
             {{ if ge $startTime.Year $currentYear }}
-                {{- $id := printf "calendar_entry%d" (crypto.FNV32a (printf "%s%s" .Title .Summary)) }}
+                {{- $id := printf "calendar_entry%d" (hash.FNV32a (printf "%s%s" .Title .Summary)) }}
                 <p id="{{$id}}" style="display: none;"> <small>{{.Summary | markdownify}}</br> <b> {{.Title | markdownify}} </b></small>
             {{ end }}
         {{ end }}
@@ -78,7 +78,7 @@
   {{ range (where ($.Site.RegularPages) "Section" "calendar").ByPublishDate.Reverse }}
       {{ $startTime := time .Params.End }}
       {{ if ge $startTime.Year $currentYear }}
-          {{- $id := printf "calendar_entry%d" (crypto.FNV32a (printf "%s%s" .Title .Summary)) }}
+          {{- $id := printf "calendar_entry%d" (hash.FNV32a (printf "%s%s" .Title .Summary)) }}
           activate_calendar("{{ .Params.Start }}", "{{ .Params.End }}", "{{ $id }}", "{{ .Title }}");
       {{ end }}
   {{ end }}

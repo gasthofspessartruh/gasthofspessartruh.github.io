@@ -9,8 +9,8 @@
                 <div class="card h-100">
                     {{ with $lang_data.faq.faq}}
                     {{ range . }}
-                    {{- $id := printf "accordeon_%d" (crypto.FNV32a .question)}}
-                    {{- $headid := printf "accordeon_head_%d" (crypto.FNV32a .question)}}
+                    {{- $id := printf "accordeon_%d" (hash.FNV32a .question)}}
+                    {{- $headid := printf "accordeon_head_%d" (hash.FNV32a .question)}}
                     <div class="accordion accordion-flush">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="{{$headid}}">

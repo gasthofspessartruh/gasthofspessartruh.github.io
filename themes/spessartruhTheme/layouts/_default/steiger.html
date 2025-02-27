@@ -11,7 +11,7 @@
                     {{ with $lang_data.data.steiger}}
                     {{ if .images }}
                     {{- $ctr := 0 }}
-                    {{- $id := printf "index_carousel%d" (crypto.FNV32a .title)}}
+                    {{- $id := printf "index_carousel%d" (hash.FNV32a .title)}}
                     {{ if gt (len .images) 1}}
                     <!-- Carousel wrapper -->
                     <div id="{{$id}}" class="bg-image carousel slide carousel-fade" data-mdb-ride="carousel">

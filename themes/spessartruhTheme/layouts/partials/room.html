@@ -4,7 +4,7 @@
 <div class="card h-100">
     {{ if gt (len .context.Params.Resources.Images) 1}}
     {{- $ctr := 0 }}
-    {{- $id := printf "room_carousel%d" (crypto.FNV32a .context.Params.Title)}}    <!-- Carousel wrapper -->
+    {{- $id := printf "room_carousel%d" (hash.FNV32a .context.Params.Title)}}    <!-- Carousel wrapper -->
     <div id="{{$id}}" class="carousel slide carousel-fade" data-mdb-interval="6000" data-mdb-ride="carousel">
         <!-- Indicators -->
         <div class="carousel-indicators">
