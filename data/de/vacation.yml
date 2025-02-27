@@ -5,9 +5,9 @@ vacation:
   message: "Liebe Gäste, heute ist Ruhetag.  \n Unser Restaurant bleibt heute geschlossen." # Hier auch nochmal das Datum erwähnen
 
 - start: "2025-01-13" #YYYY-MM-DD
-  end: "2025-03-13" # YYY-MM-DD
+  end: "2025-04-03" # YYY-MM-DD
   title: "Winterpause"
-  message: "Liebe Gäste,  \n Unser Restaurant hat Winterpause. Unser Hotelbetrieb mit Frühstück hat weiterhin für Sie geöffnet." # Hier auch nochmal das Datum erwähnen
+  message: "Liebe Gäste,  \n Unser Restaurant hat bis 03. April Winterpause. Unser Hotelbetrieb mit Frühstück hat weiterhin für Sie geöffnet." # Hier auch nochmal das Datum erwähnen
 
 - start: "2025-06-19" #YYYY-MM-DD
   end: "2025-06-19" # YYY-MM-DD

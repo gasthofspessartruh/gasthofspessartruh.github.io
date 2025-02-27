@@ -5,9 +5,9 @@ vacation:
   message: "Dear guests, today is a rest day.  \n Our restaurant will remain closed on 01.01.2025."
 
 - start: "2025-01-13" #YYYY-MM-DD
-  end: "2025-03-13" #YYYY-MM-DD
+  end: "2025-04-03" #YYYY-MM-DD
   title: "Winter Break"
-  message: "Dear guests,  \n Our restaurant is on a winter break. Our hotel with breakfast remain open for you during this time."
+  message: "Dear guests,  \n Our restaurant is on a winter break until April 3rd. Our hotel with breakfast remain open for you during this time."
 
 - start: "2025-06-19" #YYYY-MM-DD
   end: "2025-06-19" #YYYY-MM-DD
