@@ -10,7 +10,7 @@ resources:
     - name: "Double Room Standard 05"
       src: "/images/rooms/standard/Zimmer_1.png"
     - name: "Double Room Standard 04"
-      src: "/images/rooms/standard/einzel_balkon_7.png"
+      src: "/images/rooms/standard/Einzel_Balkon7.png"
     - name: "Double Room Standard 01"
       src: "/images/rooms/standard/Doppel_1.jpeg"
     - name: "Double Room Standard 02"
