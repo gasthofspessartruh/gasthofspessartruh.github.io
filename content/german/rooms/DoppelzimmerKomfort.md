@@ -8,11 +8,11 @@ resources:
     - "103,-"
     images:
     - name: "Doppelzimmer Komfort 30"
-      src: "/images/rooms/comfort/Zimmer 30.jpg"
+      src: "/images/rooms/comfort/Zimmer_30.jpg"
     - name: "Doppelzimmer Komfort 01"
       src: "/images/rooms/comfort/Comfort_02_01.jpeg"
     - name: "Komfort Badezimmer"
-      src: "/images/rooms/comfort/Komfort Badezimmer.jpg"
+      src: "/images/rooms/comfort/Komfort_Badezimmer.jpg"
 layout: "rooms"
 ---
 
