@@ -21,15 +21,15 @@
         <!-- Inner -->
         <div class="carousel-inner">
             <!-- Single item -->
-            {{ $ctr := 0 }}
             {{ range .context.Params.Resources.Images }}
-            {{ if .src }}  <!-- Ensure .src is not empty -->
+            {{ $asset := resources.GetMatch .src }}  <!-- Check if .src exists as an asset -->
+            {{ if and .src $asset }}  <!-- Ensure .src is not empty and is a valid asset -->
                 <div class="carousel-item {{ if eq $ctr 0 }} active {{ end }}">
-                    {{ partial "responsive_image.html" (dict "image" .src "title" .name "widths" $width) }}
+                    {{ partial "responsive_image.html" (dict "image" $asset.RelPermalink "title" .name "widths" $width) }}
                 </div>
                 {{ $ctr = add $ctr 1 }}
             {{ end }}
-        {{ end }}
+            {{ end }}
 
             <!-- Controls -->
             <button class="carousel-control-prev" type="button" data-mdb-target="#{{- $id}}" data-mdb-slide="prev">
