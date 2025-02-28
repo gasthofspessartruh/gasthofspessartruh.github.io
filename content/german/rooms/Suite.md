@@ -15,7 +15,7 @@ resources:
     - name: "Suite Wohnbereich"
       src: "/images/rooms/suite/Wohnbereich Suite.jpg"
     - name: "Suite Küche"
-      src: "/images/rooms/suite/Küche Suite.jpg"
+      src: "/images/rooms/suite/Kuche Suite.jpg"
     - name: "Suite Gesamt"
       src: "/images/rooms/suite/Suite gesamt.png"
     - name: "Suite Terrasse"
