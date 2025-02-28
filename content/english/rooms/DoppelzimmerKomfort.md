@@ -8,7 +8,7 @@ resources:
     - "103,-"
     images:
     - name: "Double Room Comfort 30"
-      src: "/images/rooms/comfort/Zimmer 30.JPG"
+      src: "/images/rooms/comfort/Zimmer 30.jpg"
     - name: "Double Room Comfort 01"
       src: "/images/rooms/comfort/Comfort_02_01.jpeg"
     - name: "Comfort Bathroom"
