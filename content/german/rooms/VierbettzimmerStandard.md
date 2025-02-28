@@ -7,8 +7,10 @@ resources:
     prices:
     - "154,-"
     images:
-    - name: "Einzelzimmer Standard 01"
-      src: "/images/rooms/Standard_04_01.jpeg"
+    - name: "Vierbettzimmer Standard 01"
+      src: "/images/rooms/standard/Standard_04_01.jpeg"
+    - name: "Vierbettzimmer Standard Bad"
+      src: "/images/rooms/standard/Einzel_Balkon_5.png"
 layout: "rooms"
 ---
 

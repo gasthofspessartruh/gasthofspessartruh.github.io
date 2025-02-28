@@ -4,20 +4,28 @@ title: "Suite"
 draft: false
 weight: 1
 resources:
-    persons: "For 2-4 Persons"
+    persons: "For 2-6 people"
     prices: 
-    - "134,- for 2 persons"
-    - "190,- for 4 persons"
-
+    - "134,- for 2 people"
+    - "Sofa bed per person 27,-"
+    - "190,- for 4 people"
     images:
-    - name: Suite 01 
-      src: "/images/rooms/Suite_01.jpeg"
-    - name: Suite 02 
-      src: "/images/rooms/Suite_02.jpeg"
+    - name: "Suite"
+      src: "/images/rooms/suite/Suite_01.jpeg"
+    - name: "Suite Living Area"
+      src: "/images/rooms/suite/Wohnbereich Suite.jpg"
+    - name: "Suite Kitchen"
+      src: "/images/rooms/suite/Küche Suite.jpg"
+    - name: "Suite Overview"
+      src: "/images/rooms/suite/Suite gesamt.png"
+    - name: "Suite Terrace"
+      src: "/images/rooms/suite/Terasse Suite.jpg"
+    - name: "Suite Bathroom"
+      src: "/images/rooms/comfort/Komfort Badezimmer.jpg"
 layout: "rooms"
 ---
 
-Facilities:
+Amenities:
 
 - Comfortable box spring beds
 - Living area with dining table & espresso machine

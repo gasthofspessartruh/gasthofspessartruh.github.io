@@ -1,22 +1,25 @@
 ---
 date: 2023-03-02T08:20:34+01:00
-title: "Comfort Double Room"
+title: "Double Room Comfort"
 draft: false
 weight: 2 
 resources:
     prices:
     - "103,-"
     images:
-    - name: "Comfort Double Room 01"
-      src: "/images/rooms/Comfort_02_01.jpeg"
-
+    - name: "Double Room Comfort 30"
+      src: "/images/rooms/comfort/Zimmer 30.JPG"
+    - name: "Double Room Comfort 01"
+      src: "/images/rooms/comfort/Comfort_02_01.jpeg"
+    - name: "Comfort Bathroom"
+      src: "/images/rooms/comfort/Komfort Badezimmer.jpg"
 layout: "rooms"
 ---
 
-Facilities:
+Amenities:
 
 - Comfortable box spring beds
 - Modern TV
-- Some with balcony
+- Some rooms with balcony
 - Bathroom with shower, toilet, and hairdryer
 - Wi-Fi

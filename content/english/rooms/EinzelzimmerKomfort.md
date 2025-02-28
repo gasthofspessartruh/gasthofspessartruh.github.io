@@ -1,21 +1,23 @@
 ---
 date: 2023-03-02T08:19:34+01:00
-title: "Comfort Single Room"
+title: "Single Room Comfort"
 draft: false
 weight: 3 
 resources:
     prices:
     - "70,-"
     images:
-    - name: "Comfort Single Room 01"
-      src: "/images/rooms/Comfort_01_01.jpeg"
+    - name: "Single Room Comfort 01"
+      src: "/images/rooms/comfort/Comfort_01_01.jpeg"
+    - name: "Comfort Bathroom"
+      src: "/images/rooms/comfort/Komfort Badezimmer.jpg"
 layout: "rooms"
 ---
 
-Facilities:
+Amenities:
 
 - Comfortable box spring beds
 - Modern TV
-- Some with balcony
+- Some rooms with balcony
 - Bathroom with shower, toilet, and hairdryer
 - Wi-Fi

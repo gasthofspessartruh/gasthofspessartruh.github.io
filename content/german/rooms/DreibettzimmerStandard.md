@@ -8,7 +8,9 @@ resources:
     - "118,-"
     images:
     - name: "Dreibettzimmer Standard 01"
-      src: "/images/rooms/Standard_03_01.jpeg"
+      src: "/images/rooms/standard/Standard_03_01.jpeg"
+    - name: "Dreibettzimmer Standard Bad"
+      src: "/images/rooms/standard/Einzel_Balkon_5.png"
 layout: "rooms"
 ---
 

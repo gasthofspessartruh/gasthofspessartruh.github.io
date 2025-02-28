@@ -10,10 +10,18 @@ resources:
     - "Schlafsofa pro Person 27,-"
     - "190,- für 4 Personen"
     images:
-    - name: "Suite 01"
-      src: "/images/rooms/Suite_01.jpeg"
-    - name: "Suite 02"
-      src: "/images/rooms/Suite_02.jpeg"
+    - name: "Suite"
+      src: "/images/rooms/suite/Suite_01.jpeg"
+    - name: "Suite Wohnbereich"
+      src: "/images/rooms/suite/Wohnbereich Suite.jpg"
+    - name: "Suite Küche"
+      src: "/images/rooms/suite/Küche Suite.jpg"
+    - name: "Suite Gesamt"
+      src: "/images/rooms/suite/Suite gesamt.png"
+    - name: "Suite Terrasse"
+      src: "/images/rooms/suite/Terasse Suite.jpg"
+    - name: "Suite Badezimmer"
+      src: "/images/rooms/comfort/Komfort Badezimmer.jpg"
 layout: "rooms"
 ---
 

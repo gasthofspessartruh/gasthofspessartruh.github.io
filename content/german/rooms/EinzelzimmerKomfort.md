@@ -8,7 +8,9 @@ resources:
     - "70,-"
     images:
     - name: "Einzelzimmer Komfort 01"
-      src: "/images/rooms/Comfort_01_01.jpeg"
+      src: "/images/rooms/comfort/Comfort_01_01.jpeg"
+    - name: "Komfort Badezimmer"
+      src: "/images/rooms/comfort/Komfort Badezimmer.jpg"
 layout: "rooms"
 ---
 

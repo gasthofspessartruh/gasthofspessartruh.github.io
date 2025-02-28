@@ -7,10 +7,18 @@ resources:
     prices:
     - "86,-"
     images:
+    - name: "Doppelzimmer Standard 05"
+      src: "/images/rooms/standard/Zimmer 1.png"
+    - name: "Doppelzimmer Standard 04"
+      src: "/images/rooms/standard/einzel_balkon_7.png"
     - name: "Doppelzimmer Standard 01"
-      src: "/images/rooms/Doppel_1.jpeg"
+      src: "/images/rooms/standard/Doppel_1.jpeg"
     - name: "Doppelzimmer Standard 02"
-      src: "/images/rooms/Doppel_2.jpeg"
+      src: "/images/rooms/standard/Doppel_2.jpeg"
+    - name: "Doppelzimmer Standard 03"
+      src: "/images/rooms/standard/Einzel_Balkon_5.png"
+    - name: "Doppelzimmer Standard 06"
+      src: "/images/rooms/standard/Zimmer 1 bad.png"
 layout: "rooms"
 ---
 
