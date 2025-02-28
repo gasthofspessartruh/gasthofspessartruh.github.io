@@ -23,14 +23,13 @@
             <!-- Single item -->
             {{ $ctr := 0 }}
             {{ range .context.Params.Resources.Images }}
-                {{ $match := resources.Match .src }}
-                {{ if $match }}
-                    <div class="carousel-item {{ if eq $ctr 0 }} active {{ end }}">
-                        {{ partial "responsive_image.html" (dict "image" .src "title" .title "widths" $width) }}
-                    </div>
-                    {{ $ctr = add $ctr 1 }}
-                {{ end }}
+            {{ if .src }}  <!-- Ensure .src is not empty -->
+                <div class="carousel-item {{ if eq $ctr 0 }} active {{ end }}">
+                    {{ partial "responsive_image.html" (dict "image" .src "title" .name "widths" $width) }}
+                </div>
+                {{ $ctr = add $ctr 1 }}
             {{ end }}
+        {{ end }}
 
             <!-- Controls -->
             <button class="carousel-control-prev" type="button" data-mdb-target="#{{- $id}}" data-mdb-slide="prev">
