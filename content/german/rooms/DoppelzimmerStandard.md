@@ -8,7 +8,7 @@ resources:
     - "86,-"
     images:
     - name: "Doppelzimmer Standard 05"
-      src: "/images/rooms/standard/Zimmer 1.png"
+      src: "/images/rooms/standard/Zimmer_1.png"
     - name: "Doppelzimmer Standard 04"
       src: "/images/rooms/standard/einzel_balkon_7.png"
     - name: "Doppelzimmer Standard 01"
@@ -18,7 +18,7 @@ resources:
     - name: "Doppelzimmer Standard 03"
       src: "/images/rooms/standard/Einzel_Balkon_5.png"
     - name: "Doppelzimmer Standard 06"
-      src: "/images/rooms/standard/Zimmer 1 bad.png"
+      src: "/images/rooms/standard/Zimmer_1_Bad.png"
 layout: "rooms"
 ---
 
