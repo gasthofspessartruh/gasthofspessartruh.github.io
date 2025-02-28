@@ -10,7 +10,7 @@ resources:
     - name: "Single Room Comfort 01"
       src: "/images/rooms/comfort/Comfort_01_01.jpeg"
     - name: "Comfort Bathroom"
-      src: "/images/rooms/comfort/Komfort Badezimmer.jpg"
+      src: "/images/rooms/comfort/Komfort_Badezimmer.jpg"
 layout: "rooms"
 ---
 
