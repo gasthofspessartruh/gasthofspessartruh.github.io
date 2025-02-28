@@ -21,13 +21,15 @@
         <!-- Inner -->
         <div class="carousel-inner">
             <!-- Single item -->
+            {{ $ctr := 0 }}
             {{ range .context.Params.Resources.Images }}
-            {{ if resources.Match .src }}
-            <div class="carousel-item {{ if eq $ctr 0}} active {{end}}">
-                {{ partial "responsive_image.html" (dict "image" .src "title" .title "widths" $width) }}
-            </div>
-            {{ $ctr = add $ctr 1}}
-            {{ end }}
+                {{ $match := resources.Match .src }}
+                {{ if $match }}
+                    <div class="carousel-item {{ if eq $ctr 0 }} active {{ end }}">
+                        {{ partial "responsive_image.html" (dict "image" .src "title" .title "widths" $width) }}
+                    </div>
+                    {{ $ctr = add $ctr 1 }}
+                {{ end }}
             {{ end }}
 
             <!-- Controls -->
