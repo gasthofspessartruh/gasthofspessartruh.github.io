@@ -12,7 +12,7 @@ resources:
     - name: "Doppelzimmer Komfort 01"
       src: "/images/rooms/comfort/Comfort_02_01.jpeg"
     - name: "Komfort Badezimmer"
-      src: "/images/rooms/comfort/Komfort_Badezimmer.jpg"
+      src: "/images/rooms/comfort/Komfort_Badezimmer.jpeg"
 layout: "rooms"
 ---
 

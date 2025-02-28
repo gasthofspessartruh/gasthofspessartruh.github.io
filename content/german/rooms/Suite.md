@@ -21,7 +21,7 @@ resources:
     - name: "Suite Terrasse"
       src: "/images/rooms/suite/Terasse_Suite.jpg"
     - name: "Suite Badezimmer"
-      src: "/images/rooms/comfort/Komfort_Badezimmer.jpg"
+      src: "/images/rooms/comfort/Komfort_Badezimmer.jpeg"
 layout: "rooms"
 ---
 
