@@ -11,6 +11,8 @@ resources:
       src: "/images/rooms/comfort/Comfort_01_01.jpeg"
     - name: "Komfort Badezimmer"
       src: "/images/rooms/comfort/Komfort_Badezimmer.jpg"
+    - name: "Komfort Badezimmer"
+      src: "/images/rooms/comfort/Komfort_Badezimmer.jpeg"
 layout: "rooms"
 ---
 
