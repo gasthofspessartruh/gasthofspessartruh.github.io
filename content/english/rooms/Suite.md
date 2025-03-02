@@ -20,8 +20,6 @@ resources:
       src: "/images/rooms/suite/Suite_gesamt.png"
     - name: "Suite Terrace"
       src: "/images/rooms/suite/terrasse.jpg"
-    - name: "Suite Bathroom"
-      src: "/images/rooms/comfort/Komfort_Badezimmer.jpg"
 layout: "rooms"
 ---
 

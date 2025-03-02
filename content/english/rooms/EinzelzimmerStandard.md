@@ -7,6 +7,8 @@ resources:
     prices:
     - "50,-"
     images:
+    - name: "Double Room Standard 04"
+      src: "/images/rooms/standard/einzelbalkon.png"
     - name: "Single Room Standard 01"
       src: "/images/rooms/standard/Einzel_1.jpeg"
     - name: "Single Room Standard Room 1"
