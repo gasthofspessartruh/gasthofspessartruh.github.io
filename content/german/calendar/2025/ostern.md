@@ -7,6 +7,5 @@ end: "2025-04-21"
 ---
 
 - Karfreitag ab 11.00 Uhr,  
-- Samstag ab 17.00 Uhr,  
-- Sonntag ab 11.00 Uhr  
+- Samstag und Sonntag ab 11.00 Uhr,  
 - Ostermontag ab 11.00 Uhr

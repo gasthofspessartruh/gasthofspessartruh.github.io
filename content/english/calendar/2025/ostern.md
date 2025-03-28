@@ -7,6 +7,5 @@ end: "2025-04-21"
 ---
 
 - Good Friday from 11:00 AM,  
-- Saturday from 5:00 PM,  
-- Sunday from 11:00 AM,  
+- Saturday and Sunday from 5:00 PM,  
 - Easter Monday from 11:00 AM
