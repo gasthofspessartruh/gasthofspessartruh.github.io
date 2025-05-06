@@ -1,15 +1,15 @@
 {{- $data := index site.Data site.Language.Lang -}}
 
 {{- with $data.gallery.gallery -}}
-{{- $index := 0 -}}
+{{- $index := 1 -}}
 
 <!-- Carousel wrapper -->
 <div id="introCarousel" class="carousel slide carousel-fade" data-mdb-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-        <!--
+        
         <li data-mdb-target="#introCarousel" data-mdb-slide-to="0"class="active"></li>
-        -->
+        
         {{- range .items -}}
         {{ if and (resources.Match (printf "images/gallery/horizontal/%s" .image)) (resources.Match (printf "images/gallery/vertical/%s" .image)) }}
         <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{ $index }}" {{- if eq $index 0 }} class="active" {{-
@@ -21,17 +21,17 @@
 
     <!-- Inner -->
     <div class="carousel-inner sr-fullpage-carousel-inner">
-        <!--
         <div class="carousel-item sr-fullpage-carousel-item  active">
             <video width="560" height="315" controls autoplay muted loop playsinline onplay="this.controls=false" class="sr-fullpage-gallery-image">
-                <source src="videos/ochs.mp4" type="video/mp4">
+                <source src="videos/grilled_ochs.mov" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             <div class="carousel-caption pb-5">
+                <h1 class="mb-3">{{.video.title}}</h1>
+                <h5 class="mb-4">{{.video.subtitle}}</h5>
             </div>
         </div>
-    -->
-        {{- $index = 0 -}}
+        {{- $index = 1 -}}
         {{- range .items -}}
         {{- $horizontal_image := printf "images/gallery/horizontal/%s" .image -}}
         {{- $vertical_image := printf "images/gallery/vertical/%s" .image -}}

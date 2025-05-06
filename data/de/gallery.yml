@@ -24,3 +24,6 @@ gallery:
   - title: "Mit dem E-Bike den Spessart erkunden!"
     subtitle: "Wir haben eine E-Bike Ladestation! - Sie müssen nur an Ihr Ladekabel denken"
     image: "3.jpg"
+  video:
+    title: "Vatertag, 29. Mai"
+    subtitle: "Ab 11:00 Uhr Ochs am Spieß."
