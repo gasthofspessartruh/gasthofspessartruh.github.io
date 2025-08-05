@@ -25,9 +25,9 @@ vacation:
   message: "Liebe Gäste, heute ist Ruhetag.  \n Unser Restaurant bleibt heute geschlossen." # Hier auch nochmal das Datum erwähnen
 
 - start: "2025-09-17" #YYYY-MM-DD
-  end: "2025-10-01" # YYY-MM-DD
+  end: "2025-10-02" # YYY-MM-DD
   title: "Wir haben Urlaub"
-  message: "Liebe Gäste, wir haben Urlaub.  \n Unser Restaurant bleibt bis einschließlich 01.10.2025 geschlossen." # Hier auch nochmal das Datum erwähnen
+  message: "Liebe Gäste, wir haben Urlaub.  \n Unser Restaurant bleibt bis einschließlich 02.10.2025 geschlossen." # Hier auch nochmal das Datum erwähnen
 
 - start: "2025-12-22" #YYYY-MM-DD
   end: "2025-12-26" # YYY-MM-DD

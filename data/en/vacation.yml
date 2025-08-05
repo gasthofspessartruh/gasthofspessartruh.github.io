@@ -25,9 +25,9 @@ vacation:
   message: "Dear guests, today is a rest day.  \n Our restaurant will remain closed on 15.08.2025."
 
 - start: "2025-09-17" #YYYY-MM-DD
-  end: "2025-10-01" #YYYY-MM-DD
+  end: "2025-10-02" #YYYY-MM-DD
   title: "We Are on Vacation"
-  message: "Dear guests, we are on vacation.  \n Our restaurant will remain closed until 01.10.2025 inclusive."
+  message: "Dear guests, we are on vacation.  \n Our restaurant will remain closed until 02.10.2025 inclusive."
 
 - start: "2025-12-22" #YYYY-MM-DD
   end: "2025-12-26" #YYYY-MM-DD
