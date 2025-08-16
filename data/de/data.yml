@@ -62,6 +62,8 @@ contact_form:
 location:
   title: "Anfahrt"
   text: "**Anfahrt mit dem Auto:**  \n Von der Autobahn A3 nehmen Sie die Ausfahrt 63 Richtung Bessenbach und fahren auf die L2305. Folgen Sie der Straße für etwa 2 Kilometer und biegen Sie dann rechts auf die Steiger Straße ab. Unser Gasthof Spessartruh befindet sich auf der Nummer 16 und ist deutlich ausgeschildert. Parkplätze stehen Ihnen direkt vor dem Gasthof zur Verfügung.  \n\n Für weitere Fragen oder spezifische Informationen zur Anreise stehen wir Ihnen gerne telefonisch oder per E-Mail zur Verfügung.  \n *Wir freuen uns darauf, Sie bei uns im Gasthof Spessartruh begrüßen zu dürfen!*"
+  osm: "In OpenStreetMap öffnen"
+  gmaps: "In Google Maps öffnen"
 
 steiger:
   images:

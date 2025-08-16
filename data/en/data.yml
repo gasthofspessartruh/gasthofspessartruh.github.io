@@ -63,6 +63,8 @@ contact_form:
 location:
   title: "Directions"
   text: "**By Car:**  \n From the A3 highway, take exit 63 towards Bessenbach and merge onto L2305. Follow the road for about 2 kilometers, then turn right onto Steiger Straße. Our Gasthof Spessartruh is located at number 16 and is clearly signposted. Parking spaces are available directly in front of the guesthouse. \n\n For further questions or specific information about the journey, please feel free to contact us by phone or email.  \n*We look forward to welcoming you at Gasthof Spessartruh!*"
+  osm: "Open in OpenStreetMap"
+  gmaps: "Open in Google Maps"
 
 steiger:
   images:
