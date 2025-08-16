@@ -1,0 +1,68 @@
+{{ define "main" }}
+{{ partial "navbar.html" .}}
+
+{{/* Load YAML calendar events for current language (fallback to de) */}}
+          {{- $events := or (index site.Data site.Language.Lang "calendar" "events")
+          (index site.Data "de" "calendar" "events") -}}
+
+
+{{/* Collect all years from YAML events (use calendar_end year; fallback to calendar_start) */}}
+{{- $years := slice -}}
+{{- range $events -}}
+  {{- if and (isset . "calendar_start") (isset . "calendar_end") (isset . "calendar_title") (isset . "calendar_summary")
+              (ne .calendar_start "") (ne .calendar_end "") (ne .calendar_title "") (ne .calendar_summary "") -}}
+    {{- $yr := (time .calendar_end).Year -}}
+    {{- $years = $years | append (printf "%d" $yr) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $years = sort (uniq $years) "value" "desc" -}}
+<div class="container pt-4 pb-4">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-sm-10">
+      <div class="card">
+        <div class="container ps-4 pe-4">
+
+          {{ range $years }}
+            {{- $year := . -}}
+            <div class="row pt-3">
+              <div class="col">
+                <h2>{{ $year }}</h2>
+                <div class="container ps-4 pe-4">
+
+                  {{/* Build list of YAML events for this year */}}
+                  {{- $yearInt := int $year -}}
+                  {{- $list := slice -}}
+                  {{- range $events -}}
+                    {{- if and (isset . "calendar_start") (isset . "calendar_end") (isset . "calendar_title") (isset . "calendar_summary")
+                                (ne .calendar_start "") (ne .calendar_end "") (ne .calendar_title "") (ne .calendar_summary "") -}}
+                      {{- if eq ((time .calendar_end).Year) $yearInt -}}
+                        {{- $list = $list | append . -}}
+                      {{- end -}}
+                    {{- end -}}
+                  {{- end -}}
+
+                  {{- $list = sort $list "calendar_end" "desc" -}}
+
+                  {{ range $list }}
+                    <div class="row pt-3">
+                      <div class="col">
+                        <h4>{{ .calendar_title }}</h4>
+                        <p class="text-secondary">{{ .calendar_summary }}</p>
+                        {{ with .calendar_message }}<p>{{ . | markdownify }}</p>{{ end }}
+                      </div>
+                      <hr class="my-4" />
+                    </div>
+                  {{ end }}
+
+                </div>
+              </div>
+            </div>
+          {{ end }}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

@@ -16,30 +16,40 @@
         {{ with $lang_data.data.index }}
         <div class="col-sm-4 pt-3">
           {{ with .open_si}}
-            {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_color)}}
+          {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_color)}}
           {{ end }}
         </div>
         <!-- Here comes vacation -->
-        <div class="col-sm-4 pt-3" style="display: none;"  id="vacationDIV">
-          {{ range $lang_data.vacation.vacation}}
-            {{- $id := printf "vacation%d" (hash.FNV32a (printf "%s%s%s" .start .end .message))}}
-            <div id="{{$id}}" style="display: none;">
-              {{ $context := (dict "icon" $lang_data.data.index.vacation_si.icon "title" $lang_data.data.index.vacation_si.title "text" .message "title" .title  )}}
-              {{ partial "index_short_infos.html" (dict "context" $context "color" $contrast_red_color)}}
-            </div>
-            {{ end }}
+        <div class="col-sm-4 pt-3" style="display: none;" id="vacationDIV">
+          {{- $events := or (index site.Data site.Language.Lang "calendar" "events")
+          (index site.Data "de" "calendar" "events") -}}
+          {{- range $events }}
+          {{- if and (isset . "vacation_start") (isset . "vacation_end") (isset . "vacation_title") (isset .
+          "vacation_message")
+          (ne .vacation_start "") (ne .vacation_end "") (ne .vacation_title "") (ne .vacation_message "") -}}
+          {{- $id := printf "vacation%d" (hash.FNV32a (printf "%s|%s|%s|%s" .vacation_start .vacation_end
+          .vacation_title .vacation_message)) -}}
+          <div id="{{ $id }}" style="display: none;">
+            {{- $context := dict
+            "icon" (index site.Data site.Language.Lang "data" "index" "vacation_si" "icon")
+            "title" .vacation_title
+            "text" .vacation_message -}}
+            {{- partial "index_short_infos.html" (dict "context" $context "color" $contrast_red_color) -}}
+          </div>
+          {{- end }}
+          {{- end }}
         </div>
-          <div class="d-none d-sm-block col-sm-4 pt-3" id="heartDIV">
-            {{ with .heart_si}}
-            {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_color)}}
-            {{ end }}
-          </div>
-          <div class="d-none d-sm-block col-sm-4 pt-3">
-            {{ with .rooms_si}}
-            {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_color)}}
-            {{ end }}
-          </div>
-       {{ end }}
+        <div class="d-none d-sm-block col-sm-4 pt-3" id="heartDIV">
+          {{ with .heart_si}}
+          {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_color)}}
+          {{ end }}
+        </div>
+        <div class="d-none d-sm-block col-sm-4 pt-3">
+          {{ with .rooms_si}}
+          {{ partial "index_short_infos.html" (dict "context" . "color" $contrast_color)}}
+          {{ end }}
+        </div>
+        {{ end }}
       </div>
     </section>
     <hr class="my-5" />
@@ -66,19 +76,26 @@
   function activate_vacation(start_date_str, end_date_str, target_id) {
     var today = new Date().setHours(0, 0, 0, 0);
     var start_date = new Date(start_date_str).setHours(0, 0, 0, 0);
-    var end_date = new Date(end_date_str).setHours(0, 0, 0, 0);
+    var end_date   = new Date(end_date_str).setHours(0, 0, 0, 0);
     if ((start_date <= today) && (today <= end_date)) {
-      document.getElementById("heartDIV").classList.add("d-sm-none");
+      var heart = document.getElementById("heartDIV");
+      if (heart) heart.classList.add("d-sm-none");
       document.getElementById(target_id).style.display = "block";
       document.getElementById("vacationDIV").style.display = "block";
-    } 
+    }
   }
-
-  {{ range $lang_data.vacation.vacation}}
-    {{- $id := printf "vacation%d" (hash.FNV32a (printf "%s%s%s" .start .end .message))}}       
-    activate_vacation("{{.start}}", "{{.end}}", "{{$id}}")
-  {{ end }}
 </script>
 
+<script>
+  {{- $events := or (index site.Data site.Language.Lang "calendar" "events")
+                    (index site.Data "de" "calendar" "events") -}}
+  {{- range $events }}
+    {{- if and (isset . "vacation_start") (isset . "vacation_end") (isset . "vacation_title") (isset . "vacation_message")
+                (ne .vacation_start "") (ne .vacation_end "") (ne .vacation_title "") (ne .vacation_message "") -}}
+      {{- $id := printf "vacation%d" (hash.FNV32a (printf "%s|%s|%s|%s" .vacation_start .vacation_end .vacation_title .vacation_message)) -}}
+      activate_vacation("{{ .vacation_start }}", "{{ .vacation_end }}", "{{ $id }}");
+    {{- end }}
+  {{- end }}
+</script>
 
 {{ end }}

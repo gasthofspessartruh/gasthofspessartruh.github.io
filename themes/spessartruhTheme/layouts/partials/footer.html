@@ -13,14 +13,16 @@
       <div class="col-md-6 pt-4 text-center align-items-center" onclick="location.href='{{relLangURL "/calendar"}}'">
         <h5><a href='{{- relLangURL "/calendar" -}}' class="text-white">{{$lang_data.data.calendar_title}}</a></h5>
         <!-- Here starts the calendar section -->
-        {{ $currentYear := (now).Year }}
-        {{ range (sort (where ($.Site.RegularPages) "Section" "calendar") "Params.end" "desc") }}
-            {{ $startTime := time .Params.End }}
-            {{ if ge $startTime.Year $currentYear }}
-                {{- $id := printf "calendar_entry%d" (hash.FNV32a (printf "%s%s" .Title .Summary)) }}
-                <p id="{{$id}}" style="display: none;"> <small>{{.Summary | markdownify}}</br> <b> {{.Title | markdownify}} </b></small>
-            {{ end }}
-        {{ end }}
+      {{- $events := index site.Data site.Language.Lang "calendar" "events" -}}
+      {{- range $events -}}
+        {{- if and (isset . "calendar_start") (isset . "calendar_end") (isset . "calendar_title") (isset . "calendar_summary")
+                    (ne .calendar_start "") (ne .calendar_end "") (ne .calendar_title "") (ne .calendar_summary "") -}}
+          {{- $id := printf "calendar_entry-%d" (hash.FNV32a (printf "%s|%s" .calendar_title .calendar_summary)) -}}
+          <p id="{{ $id }}" style="display: none;">
+            <small>{{ .calendar_summary }}<br/> <b>{{ .calendar_title }}</b></small>
+          </p>
+        {{- end -}}
+      {{- end -}}
 
         <!-- calendar ends -->
       </div>
@@ -75,12 +77,12 @@
   }
 </script>
 <script>
-  {{ range (where ($.Site.RegularPages) "Section" "calendar").ByPublishDate.Reverse }}
-      {{ $startTime := time .Params.End }}
-      {{ if ge $startTime.Year $currentYear }}
-          {{- $id := printf "calendar_entry%d" (hash.FNV32a (printf "%s%s" .Title .Summary)) }}
-          activate_calendar("{{ .Params.Start }}", "{{ .Params.End }}", "{{ $id }}", "{{ .Title }}");
-      {{ end }}
-  {{ end }}
+  {{- $events := index site.Data site.Language.Lang "calendar" "events" -}}
+  {{- range $events -}}
+    {{- if and (isset . "calendar_start") (isset . "calendar_end") (isset . "calendar_title") (isset . "calendar_summary")
+                (ne .calendar_start "") (ne .calendar_end "") (ne .calendar_title "") (ne .calendar_summary "") -}}
+      {{- $id := printf "calendar_entry-%d" (hash.FNV32a (printf "%s|%s" .calendar_title .calendar_summary)) -}}
+      activate_calendar("{{ .calendar_start }}", "{{ .calendar_end }}", "{{ $id }}", "{{ .calendar_title }}");
+    {{- end -}}
+  {{- end -}}
 </script>
-

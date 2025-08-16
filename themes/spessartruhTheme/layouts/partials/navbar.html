@@ -27,35 +27,48 @@
                 {{ end }}
             </ul>
 
-            <div class="nav-item dropdown">
-                <a class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown"
-                    aria-expanded="false">
-                    {{if eq $.Site.Language.Lang "en"}}
-                    <i class="flag-united-kingdom flag m-0"></i>
-                    {{ else }}
-                    <i class="flag-germany flag m-0"></i>
-                    {{ end }}
-                </a>
-                <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="Dropdown">
-                {{ range .AllTranslations}}
-                {{ if eq .Language.Lang "en"}}
-                    <li>
-                        <a class="dropdown-item" href="{{ .Permalink | relURL }}"><i class="flag-united-kingdom flag"></i>English 
-                            {{if eq $.Site.Language.Lang .Language.Lang}} <i class="fa fa-check text-success ms-2 "></i> {{end}}
-                        </a>
-                    </li>
-                {{ end }}
-                {{ if eq .Language.Lang "de"}}
-                    <li>
-                        <a class="dropdown-item" href="{{ .Permalink | relURL }}"><i class="flag-germany flag"></i>Deutsch
-                            {{if eq $.Site.Language.Lang .Language.Lang}} <i class="fa fa-check text-success ms-2 "></i> {{end}}
-                        </a>
-                    </li>
-                
-                {{ end }}
-                {{ end }}
-                </ul>
-            </div>
+{{/* Language dropdown (DRY + accessible) */}}
+{{- $curr := site.Language.Lang -}}
+{{- $labels := dict
+    "en" (dict "label" "English" "icon" "flag-united-kingdom")
+    "de" (dict "label" "Deutsch" "icon" "flag-germany")
+-}}
+{{- $currCfg := or (index $labels $curr) (dict "label" $curr "icon" "fa-globe") -}}
+
+<div class="nav-item dropdown">
+  <a class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown"
+     aria-expanded="false" aria-haspopup="true" aria-label="Language selector">
+    {{ if isset $currCfg "icon" }}
+      <i class="{{ $currCfg.icon }} {{ if hasPrefix $currCfg.icon "flag-" }}flag{{ end }} m-0"></i>
+    {{ else }}
+      <i class="fas fa-globe m-0"></i>
+    {{ end }}
+  </a>
+
+  <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="Dropdown">
+    {{ range .AllTranslations }}
+      {{- $lang := .Language.Lang -}}
+      {{- $cfg  := or (index $labels $lang) (dict "label" $lang "icon" "fa-globe") -}}
+      <li>
+        <a class="dropdown-item"
+           href="{{ .RelPermalink }}"
+           hreflang="{{ $lang }}"
+           lang="{{ $lang }}"
+           aria-current="{{ if eq $lang $curr }}true{{ else }}false{{ end }}">
+          {{ if hasPrefix $cfg.icon "flag-" }}
+            <i class="{{ $cfg.icon }} flag"></i>
+          {{ else }}
+            <i class="fas {{ $cfg.icon }}"></i>
+          {{ end }}
+          {{ $cfg.label }}
+          {{ if eq $lang $curr }}
+            <i class="fa fa-check text-success ms-2"></i>
+          {{ end }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</div>
             <ul class="navbar-nav list-inline">
 
                 <!-- Icons -->
